@@ -1,0 +1,11 @@
+[book]
+authors = ["funkill2"]
+language = "en"
+multilingual = true 
+src = "src"
+title = ""
+
+[[output.i18n.translations]]
+language = "it"
+translators = [""]
+title = ""
