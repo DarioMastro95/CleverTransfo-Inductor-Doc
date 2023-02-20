@@ -1,0 +1,1 @@
+# Bulging of the windings

@@ -1,1 +1,0 @@
-# Coefficienti stipamento

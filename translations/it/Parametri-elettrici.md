@@ -1,1 +1,0 @@
-# Parametri elettrici

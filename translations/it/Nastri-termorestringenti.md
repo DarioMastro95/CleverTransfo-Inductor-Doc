@@ -1,1 +1,0 @@
-# Nastri termorestringenti

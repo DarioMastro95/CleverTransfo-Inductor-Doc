@@ -1,1 +1,0 @@
-# Foratura barre

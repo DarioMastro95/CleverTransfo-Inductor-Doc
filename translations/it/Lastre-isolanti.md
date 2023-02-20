@@ -1,1 +1,0 @@
-# Lastre isolanti
