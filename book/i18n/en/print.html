@@ -151,27 +151,65 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="user"><a class="header" href="#user">User</a></h1>
-<h2 id="introduzione"><a class="header" href="#introduzione">Introduzione:</a></h2>
-<p>Questa tabella permette di inserire tutti gli utenti che utilizzeranno le applicazioni.
-Il nr. degli utenti non deve necessariamente coincidere con il nr. di licenze.<br />
-Infatti, il nr. di licenze limita solo il nr. di accessi contemporanei a Clever Suite.
-Ad esempio: Se un’azienda ha acquistato 3 licenze significa che potrà avere 3 progettisti che lavorano contemporaneamente, ma Clever Suite potrà essere installato su un numero di PCs maggiore di 3, così come il numero degli utenti potrà essere maggiore di 3.</p>
-<h2 id="campi-tabella"><a class="header" href="#campi-tabella">Campi Tabella:</a></h2>
+<h2 id="introduzione"><a class="header" href="#introduzione">Introduzione</a></h2>
+<p>Questa tabella permette di inserire tutti gli utenti che utilizzeranno le applicazioni.<br>
+Il numero degli utenti non deve necessariamente coincidere con il numero di licenze.<br />
+Infatti, il numero di licenze limita solo il numero di accessi contemporanei a Clever Suite.</p>
+<h2 id="esempio"><a class="header" href="#esempio">Esempio</a></h2>
+<p><em>Se un’azienda ha acquistato 3 licenze significa che potrà avere 3 progettisti che lavorano contemporaneamente, ma Clever Suite potrà essere installato su un numero di Computer maggiore di 3, così come il numero degli utenti potrà essere maggiore di 3.</em></p>
+<h2 id="campi-tabella"><a class="header" href="#campi-tabella">Campi Tabella</a></h2>
 <ul>
-<li><strong>UserName</strong>:  è lo username che è costituito da due caratteri in lettera maiuscola
+<li><strong>UserName</strong>: è lo username che è costituito da due caratteri in lettera maiuscola. Massimo 2 caratteri alfabetici in lettera maiuscola. 
 Regole: Max 2 caratteri alfabetici in lettera maiuscola. </li>
-<li><strong>Nome</strong>:  è il nome di battesimo dell’utente. 
-Regole: Prima lettera maiuscola.</li>
-<li><strong>Cognome</strong>:  è il cognome  dell’utente. 
-Regole: Prima lettera maiuscola.</li>
-<li><strong>Ruolo</strong>: Ruolo dell’utente all’interno dell’applicazione
-Regole: In un’azienda ci può essere un solo “admin” tutti gli altri utenti devono essere “user”.
-Solo l’utente “admin” può accedere alle opzioni e modificarle.</li>
+<li><strong>Nome</strong>: è il nome di battesimo dell’utente. Prima lettera maiuscola.</li>
+<li><strong>Cognome</strong>: è il cognome dell’utente. Prima lettera maiuscola.</li>
+<li><strong>Ruolo</strong>: ruolo dell’utente all’interno dell’applicazione In un’azienda ci può essere un solo “<strong>admin</strong>” tutti gli altri utenti devono essere “<strong>user</strong>”. Solo l’utente “<strong>admin</strong>” può accedere alle opzioni e modificarle. In un gruppo di lavoro deve essere definito il responsabile della configurazione di Clever Suite.</li>
 </ul>
-<p>In un gruppo di lavoro deve essere definito il responsabile della configurazione di Clever Suite.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="general-settings"><a class="header" href="#general-settings">General settings</a></h1>
+<h2 id="introduzione-1"><a class="header" href="#introduzione-1">Introduzione</a></h2>
+<p>Qui si definiscono le caratteristiche generali delle applicazioni qui sotto riportate.<br>
+Percorso per salvataggio documenti:<br>
+Durante l’utilizzo delle applicazioni, premendo il bottone <strong>esporta</strong>, tutti i documenti prodotti dall’applicazione stessa vengono salvati in una cartella ben definita.<br>
+Percorso per il salvataggio dei documenti = Percorso della cartella di partenza. 
+L’applicazione, a partire da questa cartella di base, definisce la cartella in cui verranno salvati i documenti in questo modo:<br>
+<em>Cartella di partenza\Tipo applicazione\Codice prodotto\Versione</em></p>
+<h2 id="esempio-1"><a class="header" href="#esempio-1">Esempio</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Campo</th><th>Valore</th></tr></thead><tbody>
+<tr><td>Applicazione</td><td>Clever Inductor</td></tr>
+<tr><td>Cartella di partenza</td><td>C:\Progettazione</td></tr>
+<tr><td>Nome del prodotto</td><td>000111</td></tr>
+<tr><td>Versione</td><td>2</td></tr>
+<tr><td>Cartella di archiviazione documenti</td><td>C:\Progettazione\Clever Inductor\000111\2</td></tr>
+</tbody></table>
+</div>
+<p>È buona norma che l’archiviazione dei documenti avvenga in rete.</p>
+<h2 id="descrizione"><a class="header" href="#descrizione">Descrizione</a></h2>
+<ul>
+<li><strong>Logo</strong>: si può inserire il proprio logo aziendale che deve avere una risoluzione massima in pixel di 300 x 300.
+Premendo il bottone a lato del logo (…) si aprirà una finestra di dialogo che permetterà di caricare il disegno voluto.<br>Ridurre le dimensioni se non è possibile inserirlo.</li>
+<li><strong>Moneta</strong>: scegliendo nel box sottostante è possibile selezionare la moneta desiderata.</li>
+<li><strong>Password eliminazione Archivio Aziendale</strong>: poiché l’eliminazione di progetti dall’Archivio Aziendale è un’operazione critica, occorre introdurre una password per procedere in quest’operazione. Per sicurezza il campo successivo chiede conferma.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="elettrical-parameters"><a class="header" href="#elettrical-parameters">Elettrical parameters</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="bulging-of-the-windings"><a class="header" href="#bulging-of-the-windings">Bulging of the windings</a></h1>
+<h2 id="introduzione-2"><a class="header" href="#introduzione-2">Introduzione</a></h2>
+<p>Qui si trovano alcuni parametri che intervengono nel calcolo elettrico e nella progettazione meccanica e che sono tipici di ogni azienda.</p>
+<h3 id="sporgenza-isolante-a-lato-degli-avvti-mm"><a class="header" href="#sporgenza-isolante-a-lato-degli-avvti-mm">Sporgenza isolante a lato degli avv.ti (mm)</a></h3>
+<p>Inserire la sporgenza dell’isolante tra le spire in caso di avvolgimento in nastro. Questo valore viene impostato automaticamente nei progetti. Vale solo per il conduttore nastro poiché per i conduttori piattina e filo la sporgenza impostata è 0.<br>
+Per tutti i tipi di conduttore, durante il progetto, c’è la possibilità di modificare questo valore.<br></p>
+<h3 id="spessore-isolamento-conduttore-piatto"><a class="header" href="#spessore-isolamento-conduttore-piatto">Spessore isolamento conduttore piatto</a></h3>
+<p>Il conduttore piatto (piattina) può essere smaltato o isolato Nomex. A seconda del tipo di isolamento cambia lo spessore dello stesso.
+Inserire qui lo spessore utilizzato nella vostra azienda.</p>
+<h3 id="fattore-di-sfrido-conduttori"><a class="header" href="#fattore-di-sfrido-conduttori">Fattore di sfrido conduttori</a></h3>
+<p>Se desiderate che, nella distinta base e nel calcolo costo, il peso dell’avvolgimento venga aumentato di un fattore che tiene conto degli eventuali scarti, inserite qui il fattore moltiplicativo. Nelle specifiche tecniche e nel calcolo del peso dell’avvolgimento ci sarà comunque il peso esatto (teorico).</p>
+<h3 id="fattore-di-sfrido-nucleo"><a class="header" href="#fattore-di-sfrido-nucleo">Fattore di sfrido nucleo</a></h3>
+<p>Stesso principio del punto precedente applicato al peso del nucleo.</p>
+<h2 id="esempio-2"><a class="header" href="#esempio-2">Esempio</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Campo</th><th>Valore</th></tr></thead><tbody>
+<tr><td>Peso teorico del  conduttore</td><td>10.00 kg</td></tr>
+<tr><td>Fattore di sfrido</td><td>1.03</td></tr>
+<tr><td>Peso che compare in distinta base e calcolo costo</td><td>10.30 kg</td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="bulging-of-the-windings"><a class="header" href="#bulging-of-the-windings">Bulging of the windings</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="construction-parameters"><a class="header" href="#construction-parameters">Construction parameters</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="no-core"><a class="header" href="#no-core">NO core</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="go-core"><a class="header" href="#go-core">GO core</a></h1>
