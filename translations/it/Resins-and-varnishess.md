@@ -1,0 +1,1 @@
+# Resine e vernici

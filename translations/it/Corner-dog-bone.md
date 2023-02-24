@@ -1,0 +1,1 @@
+# Stecche d'angolo

@@ -1,0 +1,1 @@
+# Isolante tra avvolgimenti

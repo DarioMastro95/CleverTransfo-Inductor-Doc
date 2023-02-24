@@ -1,0 +1,1 @@
+# Selecting output terminal type
