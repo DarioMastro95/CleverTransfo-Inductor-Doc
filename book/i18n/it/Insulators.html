@@ -155,7 +155,28 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="insulators"><a class="header" href="#insulators">Insulators</a></h1>
+                        <h1 id="isolatori"><a class="header" href="#isolatori">Isolatori</a></h1>
+<h2 id="introduzione"><a class="header" href="#introduzione">Introduzione</a></h2>
+<p>Gli isolatori, si utilizzano per isolare e fissare all’elemento i terminali d’uscita.
+Generalmente vengono impiegati in presenza di tensioni di isolamento o di esercizio che superano 4 KV, oppure quando il basso numero di uscite rende più economico utilizzarli al posto di una piastra per fissare capicorda o sbarrette. Esistono molti tipi di isolatori, molto differenti tra di loro. Qui è stato inserito un isolatore standard. In fase di personalizzazione è possibile inserire tabelle di isolatori anche molto differenti da questi.</p>
+<img src="img/Isolatori.jpg" height="170px">
+<h3 id="campi-della-tabella-isolatori"><a class="header" href="#campi-della-tabella-isolatori">Campi della tabella (Isolatori)</a></h3>
+<ul>
+<li><strong>Codice</strong>: codice che identifica il tipo di golfare. Il golfare standard rappresentato nel disegno corrisponde a GF. 
+Quello con foro filettato all’esterno corrisponde a GM.</li>
+<li><strong>Tensione esercizio V</strong>: tensione nominale massina supportata.</li>
+<li><strong>Diametro esterno</strong>: diametro esterno <strong>D</strong>. Vedi disegno.</li>
+<li><strong>Altezza</strong>: altezza isolatore <strong>H</strong>. Vedi disegno.</li>
+<li><strong>Tipo</strong>: nome dell’isolatore. Generalmente il nome che gli dà il fornitore.</li>
+<li><strong>Larghezza</strong>: larghezza in chiave dell’isolatore <strong>Ch</strong>. Vedi disegno.</li>
+<li><strong>Prof. filetto inf</strong>: profondità filetto <strong>F</strong>. Vedi disegno.</li>
+<li><strong>M vite inferiore</strong>: dimensione <strong>M</strong> della filettatura interna inferiore. Vedi disegno.</li>
+<li><strong>Prof. filetto superiore</strong>: profondità del filetto superiore. Il foro superiore potrebbe non esistere, a seconda del modello dell’isolatore.</li>
+<li><strong>M vite superiore</strong>: dimensione <strong>M</strong> della filettatura interna superiore. Il foro superiore potrebbe non esistere, a seconda del modello dell’isolatore.</li>
+<li><strong>Forza NM</strong>: campo per usi futuri. Non compilare.</li>
+<li><strong>Standard</strong>: inserire <strong>SI</strong> se le dimensioni sono standard, ossia fanno parte di una serie STD del fornitore.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
 
                     </main>
 
@@ -186,6 +207,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

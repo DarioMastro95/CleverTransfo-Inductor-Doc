@@ -155,7 +155,20 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="magnetic-steel"><a class="header" href="#magnetic-steel">Magnetic steel</a></h1>
+                        <h1 id="lamierini"><a class="header" href="#lamierini">Lamierini</a></h1>
+<h2 id="introduzione"><a class="header" href="#introduzione">Introduzione</a></h2>
+<p>In questa tabella si inseriscono i lamierini magnetici a disposizione. È possibile indicare le dimensioni sia del lamierino fornito in forma di bobina sia del lamierino fornito già tagliato a lunghezze normalizzate. Per il lamierino già tagliato è necessario inserire il nr. dei fori per distinguere l’impiego di quest’ultimo nei gioghi o nelle colonne. Il tipo si potrebbe desumere dal materiale ma è stato inserito per un’informazione immediata.</p>
+<h3 id="campi-della-tabella-lamierini"><a class="header" href="#campi-della-tabella-lamierini">Campi della tabella (Lamierini)</a></h3>
+<ul>
+<li><strong>Materiale</strong>: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Spessore</strong>: inserire lo spessore del lamierino</li>
+<li><strong>Tipo lam</strong>: a partire dal materiale si inserisce la sigla correntemente utilizzata per individuare quel lamierino.
+<em><strong>Esempio: NOM270</strong></em></li>
+<li><strong>Larghezza</strong>: larghezza del lamierino che corrisponde alla larghezza della colonna nella quale è impiegato</li>
+<li><strong>Lunghezza</strong>: qui è possibile inserire sia la lunghezza del semilavorato (se si acquista in rotoli nelle dimensioni STD e si procede al taglio in fabbrica) oppure tutte le lunghezze disponibili se si acquista già tagliato a misura. Le applicazioni controllano se esiste la misura esatta. Se non esiste cercano il semilavorato.</li>
+<li><strong>Numero fori</strong>: numero dei fori per il passaggio dei tiranti di serraggio. Solo per lamierini tagliati a misura e utilizzati per i gioghi.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
 
                     </main>
 
@@ -186,6 +199,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

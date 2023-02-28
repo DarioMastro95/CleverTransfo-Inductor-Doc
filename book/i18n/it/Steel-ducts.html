@@ -155,7 +155,23 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="steel-ducts"><a class="header" href="#steel-ducts">Steel ducts</a></h1>
+                        <h1 id="distanziatori"><a class="header" href="#distanziatori">Distanziatori</a></h1>
+<h2 id="introduzione"><a class="header" href="#introduzione">Introduzione</a></h2>
+<p>I Distanziatori si utilizzano per la formazione di canali di raffreddamento <strong>frontali o laterali</strong> negli avvolgimenti  di trasformatori o induttori. Non sono adatti per canali lungo tutto il perimetro della bobina. La forma è generalmente a U come quella della figura, esistono varianti a C con gli spigoli arrotondati.
+Possono essere in Ac Zn per i canali nucleo/bobina dei trasformatori. In tutti gli altri casi il materiale consigliato è AC inox 18/10.</p>
+<img src="img/Distanziatori.jpg" height="120px">
+<h3 id="campi-della-tabella-distanziatori"><a class="header" href="#campi-della-tabella-distanziatori">Campi della tabella (Distanziatori)</a></h3>
+<ul>
+<li>**Materiale:
+Sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Numero</strong>: numero dei distanziatori impiegati per un canale. È possibile infatti, per ragioni di standardizzazione, affiancare 2 o anche 3 distanziatori allo scopo di ottenere la larghezza del canale desiderata. Normalmente questo valore è 1.</li>
+<li><strong>Largh. Lam</strong>: larghezza del lamierino della colonna sulla quale viene eseguito l’avvolgimento.</li>
+<li><strong>Larghezza</strong>: larghezza del distanziatore.</li>
+<li><strong>Lunghezza</strong>: lunghezza del distanziatore. Se il distanziatore si ricava da un semilavorato di lunghezza &gt; dell’altezza degli avvolgimenti, questa misura si può omettere.</li>
+<li><strong>Spessore</strong>: spessore del foglio di acciaio dal quale viene ricavato il distanziatore.</li>
+<li><strong>Canale</strong>: spessore del canale di raffreddamento che il distanziatore realizza.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
 
                     </main>
 
@@ -186,6 +202,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

@@ -155,7 +155,39 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="nuts"><a class="header" href="#nuts">Nuts</a></h1>
+                        <h1 id="dadi"><a class="header" href="#dadi">Dadi</a></h1>
+<h2 id="introduzione"><a class="header" href="#introduzione">Introduzione</a></h2>
+<p>I dadi si utilizzano per il serraggio orizzontale e verticale degli elementi, per la vite di terra e per il fissaggio dei terminali d’uscita (capicorda o barre) su piastre o isolatori.</p>
+<img src="img/Dadi.jpg" height="150px">
+<h3 id="campi-della-tabella-dadi"><a class="header" href="#campi-della-tabella-dadi">Campi della tabella (Dadi)</a></h3>
+<ul>
+<li>
+<p><strong>Codice</strong>: sigla con la quale viene identificata la forma del dado. LE SIGLE TUTTORA IN USO SONO:<br>
+DE = Dado esagonale è il dado (standard)<br>
+DA = Dado esagonale alto<br>
+altre forme potrebbero essere definite in fase di personalizzazione delle applicazioni.</p>
+</li>
+<li>
+<p><strong>Dimensione M</strong>:
+M del foro filettato interno (quota D nel disegno).</p>
+</li>
+<li>
+<p><strong>Dim. max</strong>: corrisponde alla quota E del disegno e può essere omessa.</p>
+</li>
+<li>
+<p><strong>Larghezza in chiave</strong>: corrisponde alla quota SW del disegno e può essere omessa.</p>
+</li>
+<li>
+<p><strong>Spessore</strong>: corrisponde alla quota H del disegno e può essere omesso.</p>
+</li>
+<li>
+<p><strong>Materiale</strong>:
+sigla del materiale. Aprendo il menu a tendina del campo <strong>Materiale</strong> vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</p>
+</li>
+<li>
+<p><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</p>
+</li>
+</ul>
 
                     </main>
 
@@ -186,6 +218,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

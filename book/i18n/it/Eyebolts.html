@@ -155,7 +155,21 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="eyebolts"><a class="header" href="#eyebolts">Eyebolts</a></h1>
+                        <h1 id="golfari"><a class="header" href="#golfari">Golfari</a></h1>
+<h2 id="introduzione"><a class="header" href="#introduzione">Introduzione</a></h2>
+<p>I golfari o ganci di sollevamento vengono montati sulla parte superiore degli elementi per agevolarne il sollevamento.  Esistono in forme: con foro filettato interno e con foro filettato esterno.</p>
+<img src="img/Golfari.png" height="120px">
+<h3 id="campi-della-tabella-golfari"><a class="header" href="#campi-della-tabella-golfari">Campi della tabella (Golfari)</a></h3>
+<ul>
+<li><strong>Dimensione B</strong>: diametro foro interno. Vedi disegno.</li>
+<li><strong>Dimensione C</strong>: diametro esterno. Vedi disegno.</li>
+<li><strong>Dimensione F</strong>: altezza anello. Vedi disegno.</li>
+<li><strong>Codice</strong>: codice che identifica il tipo di golfare. Il golfare standard, rappresentato nel disegno corrisponde a GF. 
+Quello con foro filettato all’esterno corrisponde a GM.</li>
+<li><strong>Dimensione M</strong>: diametro del foro filettato. Vedi disegno.</li>
+<li><strong>Materiale</strong>: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
 
                     </main>
 
@@ -186,6 +200,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

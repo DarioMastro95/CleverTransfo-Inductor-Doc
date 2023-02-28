@@ -285,8 +285,22 @@ soprattutto per gli induttori). Se non esiste canale laterale introdurre 0.</li>
 <li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="bussole-isolanti"><a class="header" href="#bussole-isolanti">Bussole isolanti</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="capicorda"><a class="header" href="#capicorda">Capicorda</a></h1>
 <h2 id="introduzione-6"><a class="header" href="#introduzione-6">Introduzione</a></h2>
+<p>Le bussole isolanti si utilizzano nelle applicazioni Clever Small-T e Clever Small-I per l’isolamento delle viti nel serraggio orizzontale. Possono essere sostituite da tubetti isolanti se richiesto. Nella tabella sono stati inseriti alcuni campi che, attualmente, non vengono utilizzati e quindi devono avere valore 0. </p>
+<img src="img/BussoleIsolanti.png" height="180px">
+<h3 id="campi-della-tabella-bussole"><a class="header" href="#campi-della-tabella-bussole">Campi della tabella (Bussole)</a></h3>
+<ul>
+<li><strong>Diametro esterno</strong>: dimensione B del disegno. Questo valore non viene utilizzato inserire 0 (dimensione B del disegno).</li>
+<li><strong>Diametro collare</strong>: dimensione C del disegno. Questo valore non viene utilizzato inserire 0.</li>
+<li><strong>Spessore</strong>: dimensione D del disegno. Questo valore non viene utilizzato inserire 0.</li>
+<li><strong>Lunghezza</strong>: dimensione E del disegno. Questo valore non viene utilizzato inserire 0.</li>
+<li><strong>Dimensione M</strong>: dimensione A del disegno. Inserire qui il valore M.</li>
+<li><strong>Materiale</strong>: sigla del materiale. L’associazione delle sigle alla descrizione estesa del materiale è descritta nella tabella “Nomi dei materiali”.</li>
+<li><strong>Codice</strong>: questo codice è utile per eventuali sotto-famiglie. Al momento occorre utilizzare come codice BUI per tutte le bussole.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="capicorda"><a class="header" href="#capicorda">Capicorda</a></h1>
+<h2 id="introduzione-7"><a class="header" href="#introduzione-7">Introduzione</a></h2>
 <p>I capicorda non isolati si utilizzano nelle applicazioni Clever Small-T e Clever Small-I come terminali d’uscita quando la corrente o altri parametri non permettono l’uso dei morsetti. Possono essere fissate a degli isolatori o a una piastra. </p>
 <img src="img/Capicorda.png" height="120px">
 <h3 id="campi-della-tabella-coefficienti-stipamento-1"><a class="header" href="#campi-della-tabella-coefficienti-stipamento-1">Campi della tabella (Coefficienti stipamento)</a></h3>
@@ -300,17 +314,233 @@ AL in caso di alluminio o CU in caso di rame.</li>
 <li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="cavetti-multifilari"><a class="header" href="#cavetti-multifilari">Cavetti multifilari</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="conductors"><a class="header" href="#conductors">Conductors</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="nuts"><a class="header" href="#nuts">Nuts</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="steel-ducts"><a class="header" href="#steel-ducts">Steel ducts</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="eyebolts"><a class="header" href="#eyebolts">Eyebolts</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="sheaths"><a class="header" href="#sheaths">Sheaths</a></h1>
+<h2 id="introduzione-8"><a class="header" href="#introduzione-8">Introduzione</a></h2>
+<p>I cavetti sono conduttori multifilari isolati in classe B o F o H che si possono utilizzare come terminali d’uscita di uno schermo (in quel caso saranno di colore giallo/verde) oppure nelle bobine il filo di piccole dimensioni, saldate ai conduttori per collegarvi i morsetti. In quest’ultimo caso l’isolamento esterno sarà costituito da materiale differente a seconda della classe di temperatura e potrà avere colori differenti per rispettare i codici colore definiti dall’azienda.</p>
+<h3 id="campi-della-tabella-bussole-1"><a class="header" href="#campi-della-tabella-bussole-1">Campi della tabella (Bussole)</a></h3>
+<ul>
+<li><strong>I Nominale A</strong>: corrente massima supportata.</li>
+<li><strong>Diametro esterno</strong>: diametro esterno di solito ricavabile dalle tabelle dei fornitori. Non è un dato obbligatorio, può anche essere omesso.</li>
+<li><strong>Tensione isol. KV</strong>: tensione d’isolamento massima del cavetto. Le applicazioni confrontano questo valore con la Tensione di isolamento dell’elemento.</li>
+<li><strong>Codice</strong>: si utilizza questa codifica per distinguere il tipo di isolamento. LSIL = Silicone che è lo standard. Per altri materiali occorre definire altri codici che però dovranno essere riconosciuti dalla regola di progetto che sceglie il cavetto e lo inserisce nella distinta base. Si demanda quindi la definizione di altri codici alla fase di personalizzazione delle applicazioni.</li>
+<li><strong>Materiale</strong>: sigla del materiale. L’associazione delle sigle alla descrizione estesa del materiale è descritta nella tabella “Nomi dei materiali” In questo caso s’intende il materiale conduttore e non il materiale d’isolamento.</li>
+<li><strong>Sezione mm2</strong>: sezione utile del conduttore. Questo dato è obbligatorio.</li>
+<li><strong>Colore</strong>: colore del rivestimento isolante.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino..</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="conduttori"><a class="header" href="#conduttori">Conduttori</a></h1>
+<h2 id="introduzione-9"><a class="header" href="#introduzione-9">Introduzione</a></h2>
+<p>In questa tabella sono stati inseriti tutti i tipi di conduttore (filo, conduttore piatto, nastro) nei due materiali AL e CU.</p>
+<h3 id="campi-della-tabella-bussole-2"><a class="header" href="#campi-della-tabella-bussole-2">Campi della tabella (Bussole)</a></h3>
+<ul>
+<li><strong>Dim. Assiale</strong>: in caso di filo inserire il diametro nudo, in caso di conduttore piatto o nastro inserire la dimensione assiale.</li>
+<li><strong>Dim. Radiale</strong>: in caso di filo inserire il diametro isolato, in caso di conduttore piatto o nastro inserire la dimensione radiale.</li>
+<li><strong>Sezione mm2</strong>: inserire la sezione netta, possibilmente ricavata dalla tabella del fornitore. Se non fosse possibile, nel caso del conduttore piatto la sezione netta si calcola nel modo seguente:
+<ol>
+<li>Caso spessore radiale &lt;= 2.24 <br>Sezione = Dim. Assiale x Dim. Radiale – 0.363</li>
+<li>Caso spessore radiale &gt; 2.24 <br>
+Sezione = Dim. Assiale x Dim. Radiale – 0.55</li>
+</ol>
+</li>
+</ul>
+<p>Per filo e Nastro invece si calcola l’area precisa.</p>
+<ul>
+<li><strong>Peso/metro</strong>: si consiglia di ricavare questo parametro dalle tabelle del fornitore. Altrimenti occorre calcolarlo a partire dalla sezione e dal peso specifico (CU = 8,90 kg/dm3  AL = 2,70 kg/dm3).</li>
+<li><strong>R/metro Ohm</strong>: si consiglia di ricavare questo parametro dalle tabelle del fornitore. Altrimenti occorre calcolarlo a partire dalla sezione e dalla resistenza specifica (CU = 0,00175  Ω/m  AL = 0 ,0028  Ω/m).</li>
+<li><strong>Codice</strong>: questo codice definisce completamente il conduttore sia come tipo che come materiale.<br>Inserire:</li>
+</ul>
+<div class="table-wrapper"><table><thead><tr><th>Codice</th><th>Materiale</th></tr></thead><tbody>
+<tr><td>B3</td><td>Nastro AL</td></tr>
+<tr><td>B4</td><td>Filo CU</td></tr>
+<tr><td>P3</td><td>Conduttore piatto AL</td></tr>
+<tr><td>P4</td><td>Conduttore piatto CU</td></tr>
+</tbody></table>
+</div>
+<ul>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="dadi"><a class="header" href="#dadi">Dadi</a></h1>
+<h2 id="introduzione-10"><a class="header" href="#introduzione-10">Introduzione</a></h2>
+<p>I dadi si utilizzano per il serraggio orizzontale e verticale degli elementi, per la vite di terra e per il fissaggio dei terminali d’uscita (capicorda o barre) su piastre o isolatori.</p>
+<img src="img/Dadi.jpg" height="150px">
+<h3 id="campi-della-tabella-dadi"><a class="header" href="#campi-della-tabella-dadi">Campi della tabella (Dadi)</a></h3>
+<ul>
+<li>
+<p><strong>Codice</strong>: sigla con la quale viene identificata la forma del dado. LE SIGLE TUTTORA IN USO SONO:<br>
+DE = Dado esagonale è il dado (standard)<br>
+DA = Dado esagonale alto<br>
+altre forme potrebbero essere definite in fase di personalizzazione delle applicazioni.</p>
+</li>
+<li>
+<p><strong>Dimensione M</strong>:
+M del foro filettato interno (quota D nel disegno).</p>
+</li>
+<li>
+<p><strong>Dim. max</strong>: corrisponde alla quota E del disegno e può essere omessa.</p>
+</li>
+<li>
+<p><strong>Larghezza in chiave</strong>: corrisponde alla quota SW del disegno e può essere omessa.</p>
+</li>
+<li>
+<p><strong>Spessore</strong>: corrisponde alla quota H del disegno e può essere omesso.</p>
+</li>
+<li>
+<p><strong>Materiale</strong>:
+sigla del materiale. Aprendo il menu a tendina del campo <strong>Materiale</strong> vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</p>
+</li>
+<li>
+<p><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</p>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="distanziatori"><a class="header" href="#distanziatori">Distanziatori</a></h1>
+<h2 id="introduzione-11"><a class="header" href="#introduzione-11">Introduzione</a></h2>
+<p>I Distanziatori si utilizzano per la formazione di canali di raffreddamento <strong>frontali o laterali</strong> negli avvolgimenti  di trasformatori o induttori. Non sono adatti per canali lungo tutto il perimetro della bobina. La forma è generalmente a U come quella della figura, esistono varianti a C con gli spigoli arrotondati.
+Possono essere in Ac Zn per i canali nucleo/bobina dei trasformatori. In tutti gli altri casi il materiale consigliato è AC inox 18/10.</p>
+<img src="img/Distanziatori.jpg" height="120px">
+<h3 id="campi-della-tabella-distanziatori"><a class="header" href="#campi-della-tabella-distanziatori">Campi della tabella (Distanziatori)</a></h3>
+<ul>
+<li>**Materiale:
+Sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Numero</strong>: numero dei distanziatori impiegati per un canale. È possibile infatti, per ragioni di standardizzazione, affiancare 2 o anche 3 distanziatori allo scopo di ottenere la larghezza del canale desiderata. Normalmente questo valore è 1.</li>
+<li><strong>Largh. Lam</strong>: larghezza del lamierino della colonna sulla quale viene eseguito l’avvolgimento.</li>
+<li><strong>Larghezza</strong>: larghezza del distanziatore.</li>
+<li><strong>Lunghezza</strong>: lunghezza del distanziatore. Se il distanziatore si ricava da un semilavorato di lunghezza &gt; dell’altezza degli avvolgimenti, questa misura si può omettere.</li>
+<li><strong>Spessore</strong>: spessore del foglio di acciaio dal quale viene ricavato il distanziatore.</li>
+<li><strong>Canale</strong>: spessore del canale di raffreddamento che il distanziatore realizza.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="golfari"><a class="header" href="#golfari">Golfari</a></h1>
+<h2 id="introduzione-12"><a class="header" href="#introduzione-12">Introduzione</a></h2>
+<p>I golfari o ganci di sollevamento vengono montati sulla parte superiore degli elementi per agevolarne il sollevamento.  Esistono in forme: con foro filettato interno e con foro filettato esterno.</p>
+<img src="img/Golfari.png" height="120px">
+<h3 id="campi-della-tabella-golfari"><a class="header" href="#campi-della-tabella-golfari">Campi della tabella (Golfari)</a></h3>
+<ul>
+<li><strong>Dimensione B</strong>: diametro foro interno. Vedi disegno.</li>
+<li><strong>Dimensione C</strong>: diametro esterno. Vedi disegno.</li>
+<li><strong>Dimensione F</strong>: altezza anello. Vedi disegno.</li>
+<li><strong>Codice</strong>: codice che identifica il tipo di golfare. Il golfare standard, rappresentato nel disegno corrisponde a GF. 
+Quello con foro filettato all’esterno corrisponde a GM.</li>
+<li><strong>Dimensione M</strong>: diametro del foro filettato. Vedi disegno.</li>
+<li><strong>Materiale</strong>: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="guaine"><a class="header" href="#guaine">Guaine</a></h1>
+<h2 id="introduzione-13"><a class="header" href="#introduzione-13">Introduzione</a></h2>
+<p>Le guaine servono a isolare quel tratto di conduttore che esce dall’avvolgimento per arrivare al terminale d’uscita (morsetto o capicorda).<br>
+Sono dei tubetti che esistono in vari colori che l’azienda può associare a un codice preciso. Solitamente sono un semilavorato 
+Il tipo di materiale di cui sono costituite dipende principalmente dalla classe di temperatura e dalla tensione d’isolamento dell’elemento.</p>
+<h3 id="campi-della-tabella-guaine"><a class="header" href="#campi-della-tabella-guaine">Campi della tabella (Guaine)</a></h3>
+<ul>
+<li><strong>Tensione isol KV</strong>:
+Tensione d’isolamento massima che la guaina può sopportare.</li>
+<li><strong>Codice</strong>:
+Codice che identifica la guaina. Generalmente esprime l’impiego della guaina stessa:
+UL  = valida solo per norme UL, GSI = valida per elementi generici classe B, LSI = Guaina tutti gli elementi classe F - H</li>
+<li><strong>Materiale</strong>:
+Sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Diametro int</strong>:
+Diametro interno della guaina.</li>
+<li><strong>Colore</strong>:
+Scrivere il colore per esteso in lettere maiuscole.</li>
+<li><strong>Articolo</strong>:
+Inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="foglio-isolanti"><a class="header" href="#foglio-isolanti">Foglio Isolanti</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="insulators"><a class="header" href="#insulators">Insulators</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="magnetic-steel"><a class="header" href="#magnetic-steel">Magnetic steel</a></h1>
+<h2 id="introduzione-14"><a class="header" href="#introduzione-14">Introduzione</a></h2>
+<p>I fogli in materiale isolanti si differenziano tra di loro essenzialmente per il tipo di materiale di cui sono costituiti. La scelta dipende dalla classe di temperatura e, in taluni casi anche dalle norme alle quali l’elemento è sottoposto.</p>
+<h3 id="campi-della-tabella-fogli-isolanti"><a class="header" href="#campi-della-tabella-fogli-isolanti">Campi della tabella (Fogli isolanti)</a></h3>
+<ul>
+<li><strong>Materiale</strong>: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Spessore</strong>: inserire lo spessore del foglio isolante.</li>
+<li><strong>Peso/m2</strong>: si consiglia di ricavare questo parametro dalle tabelle del fornitore. Altrimenti occorre calcolarlo a partire dallo spessore e dal peso specifico del materiale.</li>
+<li><strong>Larghezza</strong>: qui è possibile inserire sia la larghezza del semilavorato (se si acquista in rotoli nelle dimensioni STD e si procede al taglio in fabbrica) sia tutte le larghezze corrispondenti alle varie altezze (se si acquista già tagliata a misura). Le applicazioni controllano se esiste la misura esatta. Se non esiste cercano il semilavorato.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="isolatori"><a class="header" href="#isolatori">Isolatori</a></h1>
+<h2 id="introduzione-15"><a class="header" href="#introduzione-15">Introduzione</a></h2>
+<p>Gli isolatori, si utilizzano per isolare e fissare all’elemento i terminali d’uscita.
+Generalmente vengono impiegati in presenza di tensioni di isolamento o di esercizio che superano 4 KV, oppure quando il basso numero di uscite rende più economico utilizzarli al posto di una piastra per fissare capicorda o sbarrette. Esistono molti tipi di isolatori, molto differenti tra di loro. Qui è stato inserito un isolatore standard. In fase di personalizzazione è possibile inserire tabelle di isolatori anche molto differenti da questi.</p>
+<img src="img/Isolatori.jpg" height="170px">
+<h3 id="campi-della-tabella-isolatori"><a class="header" href="#campi-della-tabella-isolatori">Campi della tabella (Isolatori)</a></h3>
+<ul>
+<li><strong>Codice</strong>: codice che identifica il tipo di golfare. Il golfare standard rappresentato nel disegno corrisponde a GF. 
+Quello con foro filettato all’esterno corrisponde a GM.</li>
+<li><strong>Tensione esercizio V</strong>: tensione nominale massina supportata.</li>
+<li><strong>Diametro esterno</strong>: diametro esterno <strong>D</strong>. Vedi disegno.</li>
+<li><strong>Altezza</strong>: altezza isolatore <strong>H</strong>. Vedi disegno.</li>
+<li><strong>Tipo</strong>: nome dell’isolatore. Generalmente il nome che gli dà il fornitore.</li>
+<li><strong>Larghezza</strong>: larghezza in chiave dell’isolatore <strong>Ch</strong>. Vedi disegno.</li>
+<li><strong>Prof. filetto inf</strong>: profondità filetto <strong>F</strong>. Vedi disegno.</li>
+<li><strong>M vite inferiore</strong>: dimensione <strong>M</strong> della filettatura interna inferiore. Vedi disegno.</li>
+<li><strong>Prof. filetto superiore</strong>: profondità del filetto superiore. Il foro superiore potrebbe non esistere, a seconda del modello dell’isolatore.</li>
+<li><strong>M vite superiore</strong>: dimensione <strong>M</strong> della filettatura interna superiore. Il foro superiore potrebbe non esistere, a seconda del modello dell’isolatore.</li>
+<li><strong>Forza NM</strong>: campo per usi futuri. Non compilare.</li>
+<li><strong>Standard</strong>: inserire <strong>SI</strong> se le dimensioni sono standard, ossia fanno parte di una serie STD del fornitore.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lamierini"><a class="header" href="#lamierini">Lamierini</a></h1>
+<h2 id="introduzione-16"><a class="header" href="#introduzione-16">Introduzione</a></h2>
+<p>In questa tabella si inseriscono i lamierini magnetici a disposizione. È possibile indicare le dimensioni sia del lamierino fornito in forma di bobina sia del lamierino fornito già tagliato a lunghezze normalizzate. Per il lamierino già tagliato è necessario inserire il nr. dei fori per distinguere l’impiego di quest’ultimo nei gioghi o nelle colonne. Il tipo si potrebbe desumere dal materiale ma è stato inserito per un’informazione immediata.</p>
+<h3 id="campi-della-tabella-lamierini"><a class="header" href="#campi-della-tabella-lamierini">Campi della tabella (Lamierini)</a></h3>
+<ul>
+<li><strong>Materiale</strong>: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Spessore</strong>: inserire lo spessore del lamierino</li>
+<li><strong>Tipo lam</strong>: a partire dal materiale si inserisce la sigla correntemente utilizzata per individuare quel lamierino.
+<em><strong>Esempio: NOM270</strong></em></li>
+<li><strong>Larghezza</strong>: larghezza del lamierino che corrisponde alla larghezza della colonna nella quale è impiegato</li>
+<li><strong>Lunghezza</strong>: qui è possibile inserire sia la lunghezza del semilavorato (se si acquista in rotoli nelle dimensioni STD e si procede al taglio in fabbrica) oppure tutte le lunghezze disponibili se si acquista già tagliato a misura. Le applicazioni controllano se esiste la misura esatta. Se non esiste cercano il semilavorato.</li>
+<li><strong>Numero fori</strong>: numero dei fori per il passaggio dei tiranti di serraggio. Solo per lamierini tagliati a misura e utilizzati per i gioghi.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="lastre-isolanti"><a class="header" href="#lastre-isolanti">Lastre isolanti</a></h1>
+<h2 id="introduzione-17"><a class="header" href="#introduzione-17">Introduzione</a></h2>
+<p>Le lastre in materiale isolante si utilizzano principalmente nella formazione dei traferri oppure come piastre di serraggio dei terminali d’uscita. Si differenziano tra di loro essenzialmente per il tipo di materiale di cui sono costituite. La scelta dipende dalla classe di temperatura e, in taluni casi anche dalle norme alle quali l’elemento è sottoposto.</p>
+<h3 id="campi-della-tabella-lastre-isolanti"><a class="header" href="#campi-della-tabella-lastre-isolanti">Campi della tabella (Lastre isolanti)</a></h3>
+<ul>
+<li><strong>Larghezza</strong>: inserire la larghezza del semilavorato.</li>
+<li><strong>Lunghezza</strong>: qui è possibile inserire sia la lunghezza del semilavorato (se si acquista a metri nelle dimensioni STD e si procede al taglio in fabbrica) sia tutte le larghezze normalizzate (se si acquista già tagliata a misura). Le applicazioni controllano se esiste la misura esatta. Se non esiste utilizzano il semilavorato.</li>
+<li><strong>Codice</strong>: il codice definisce la forma della piastra, normalmente = LI. Durante la personalizzazione è possibile definire lastre di forme differenti e di conseguenza si definiranno codici diversi.</li>
+<li><strong>Materiale</strong>: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Spessore</strong>: inserire lo spessore della lastra isolante.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="morsetti"><a class="header" href="#morsetti">Morsetti</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="thermo-shrink-ribbon"><a class="header" href="#thermo-shrink-ribbon">Thermo shrink ribbon</a></h1>
+<h2 id="introduzione-18"><a class="header" href="#introduzione-18">Introduzione</a></h2>
+<p>I morsetti si utilizzano nelle applicazioni Clever Transfo e Clever Inductor, come terminali d’uscita quando la corrente o altri parametri ne permettono l’uso. Si noti che questa tabella non è valida per le applicazioni Clever Small-T e Clever Small-I che utilizzano la tabella Morsetti St.
+I morsetti possono essere fissati direttamente ai profili di serraggio (morsetti in liste) oppure su un binario che a sua volta verrà fissato al profilo, come nel disegno sopra riportato.
+Esistono svariati tipi di morsetto e la tabella consente di distinguerli tramite il campo Codice.</p>
+<img src="img/Morsetti.png" height="130px">
+<h3 id="campi-della-tabella-morsetti"><a class="header" href="#campi-della-tabella-morsetti">Campi della tabella (Morsetti)</a></h3>
+<ul>
+<li><strong>Sezione in mm2</strong>: sezione nominale utile. Si riferisce alla sezione massima del conduttore che vi verrà inserito</li>
+<li><strong>Larghezza</strong>: spessore del singolo morsetto (Dimensione B nel disegno)</li>
+<li><strong>Altezza</strong>: altezza del morsetto (Dimensione H nel disegno)</li>
+<li><strong>Lunghezza</strong>: lunghezza massima del morsetto (Dimensione L nel disegno)</li>
+<li><strong>Diametro esterno foro</strong>: diametro del foro d’entrata dei conduttori.</li>
+<li><strong>Codice</strong>: sigla con la quale viene identificato la tipologia di morsetto.
+<em><strong>Esempio: Binario = Morsetto su binario Omega</strong></em>. <br>
+Se in fase di personalizzazione occorre utilizzare altri tipi di morsetto, vi preghiamo di contattarci per la scelta del codice.</li>
+<li><strong>I Nominale A</strong>: corrente massima supportata.</li>
+<li><strong>Tipo</strong>: sigla con la quale viene identificato il morsetto (può essere la sigla del fornitore).</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="nastri-termorestringenti"><a class="header" href="#nastri-termorestringenti">Nastri termorestringenti</a></h1>
+<h2 id="introduzione-19"><a class="header" href="#introduzione-19">Introduzione</a></h2>
+<p>I nastri termorestringenti si utilizzano come fasciatura esterna delle bobine. Durante l’impregnazione sottovuoto della bobina, per effetto del riscaldamento, si restringono, contribuendo così alla compattezza della stessa. Si differenziano tra di loro essenzialmente per il tipo di materiale. La scelta dipende dalla classe di temperatura e, in taluni, casi anche dall’ambiente d’installazione. </p>
+<h3 id="campi-della-tabella-nastri-termorestringenti"><a class="header" href="#campi-della-tabella-nastri-termorestringenti">Campi della tabella (Nastri termorestringenti)</a></h3>
+<ul>
+<li><strong>Peso gr/m</strong>:
+Peso grammi al metro. Dato recuperabile dal fornitore.
+Codice:
+Il codice definisce il tipo di mastro, normalmente = NAT.<br> Durante la personalizzazione è possibile definire nastri differenti e di conseguenza si definiranno codici diversi.</li>
+<li><strong>Materiale</strong>:
+Sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Spessore</strong>:
+Spessore del nastro.</li>
+<li><strong>Larghezza</strong>:
+Larghezza del nastro.</li>
+<li><strong>Articolo</strong>:
+Inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="profili-a-u"><a class="header" href="#profili-a-u">Profili a U</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="profili-a-l"><a class="header" href="#profili-a-l">Profili a L</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="profili-piatti"><a class="header" href="#profili-piatti">Profili piatti</a></h1>
@@ -351,6 +581,22 @@ AL in caso di alluminio o CU in caso di rame.</li>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

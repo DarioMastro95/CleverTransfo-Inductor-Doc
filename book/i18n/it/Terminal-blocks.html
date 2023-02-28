@@ -156,6 +156,25 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="morsetti"><a class="header" href="#morsetti">Morsetti</a></h1>
+<h2 id="introduzione"><a class="header" href="#introduzione">Introduzione</a></h2>
+<p>I morsetti si utilizzano nelle applicazioni Clever Transfo e Clever Inductor, come terminali d’uscita quando la corrente o altri parametri ne permettono l’uso. Si noti che questa tabella non è valida per le applicazioni Clever Small-T e Clever Small-I che utilizzano la tabella Morsetti St.
+I morsetti possono essere fissati direttamente ai profili di serraggio (morsetti in liste) oppure su un binario che a sua volta verrà fissato al profilo, come nel disegno sopra riportato.
+Esistono svariati tipi di morsetto e la tabella consente di distinguerli tramite il campo Codice.</p>
+<img src="img/Morsetti.png" height="130px">
+<h3 id="campi-della-tabella-morsetti"><a class="header" href="#campi-della-tabella-morsetti">Campi della tabella (Morsetti)</a></h3>
+<ul>
+<li><strong>Sezione in mm2</strong>: sezione nominale utile. Si riferisce alla sezione massima del conduttore che vi verrà inserito</li>
+<li><strong>Larghezza</strong>: spessore del singolo morsetto (Dimensione B nel disegno)</li>
+<li><strong>Altezza</strong>: altezza del morsetto (Dimensione H nel disegno)</li>
+<li><strong>Lunghezza</strong>: lunghezza massima del morsetto (Dimensione L nel disegno)</li>
+<li><strong>Diametro esterno foro</strong>: diametro del foro d’entrata dei conduttori.</li>
+<li><strong>Codice</strong>: sigla con la quale viene identificato la tipologia di morsetto.
+<em><strong>Esempio: Binario = Morsetto su binario Omega</strong></em>. <br>
+Se in fase di personalizzazione occorre utilizzare altri tipi di morsetto, vi preghiamo di contattarci per la scelta del codice.</li>
+<li><strong>I Nominale A</strong>: corrente massima supportata.</li>
+<li><strong>Tipo</strong>: sigla con la quale viene identificato il morsetto (può essere la sigla del fornitore).</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
 
                     </main>
 
@@ -186,6 +205,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>
