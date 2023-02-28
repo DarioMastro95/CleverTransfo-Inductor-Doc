@@ -156,6 +156,21 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="profili-a-u"><a class="header" href="#profili-a-u">Profili a U</a></h1>
+<h2 id="introduzione"><a class="header" href="#introduzione">Introduzione</a></h2>
+<p>I profili a U possono essere utilizzati per il serraggio verticale degli elementi oppure come profilo di base.<br />
+Possono essere in acciaio piegato o UNP (come da disegno)  Si differenziano tra di loro essenzialmente per il tipo di materiale. La scelta dipende essenzialmente dall’ambiente d’installazione. Sono prodotti semilavorati.</p>
+<img src="img/ProfiliU.png" height="150px">
+<h3 id="campi-della-tabella-profili-a-u"><a class="header" href="#campi-della-tabella-profili-a-u">Campi della tabella (Profili a U)</a></h3>
+<ul>
+<li><strong>Codice</strong>: il codice definisce la forma del semilavorato, normalmente = UG. Durante la personalizzazione è possibile definire profili di forme differenti e di conseguenza si definiranno codici diversi.</li>
+<li><strong>Materiale</strong>: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Larghezza</strong>: larghezza del semilavorato (Dimensione H del disegno).</li>
+<li><strong>Altezza</strong>: altezza del semilavorato (Dimensione B del disegno).</li>
+<li><strong>Spessore 1</strong>: spessore 1 del semilavorato (Dimensione S del disegno).</li>
+<li><strong>Spessore 2</strong>: spessore 1 del semilavorato (Dimensione T del disegno).</li>
+<li><strong>Peso kg/m</strong>: peso al metro. Valore da recuperare dalla tabella del fornitore.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
 
                     </main>
 
@@ -186,22 +201,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
         <script>
