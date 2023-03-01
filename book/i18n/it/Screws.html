@@ -156,6 +156,19 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="viti"><a class="header" href="#viti">Viti</a></h1>
+<h3 id="introduzione"><a class="header" href="#introduzione">Introduzione</a></h3>
+<p>Le viti hanno svariati usi: serraggi orizzontali, viti di terra, fissaggio di terminali d’uscita, fissaggio di piastre o isolatori ecc.</p>
+<img src="img/Viti.jpg" height="120px">
+<h3 id="campi-della-tabella-viti"><a class="header" href="#campi-della-tabella-viti">Campi della tabella (Viti)</a></h3>
+<ul>
+<li><strong>Codice</strong>: questo codice è utile per eventuali sotto-famiglie. I codici tutto in uso sono i seguenti:
+TE = Vite a testa esagonale
+TC = Vite a testa cilindrica</li>
+<li><strong>Dimensione M</strong>: dimensione “d” nel disegno.</li>
+<li><strong>Lunghezza</strong>: dimensione “l” nel disegno.</li>
+<li><strong>Materiale</strong>: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
 
                     </main>
 
@@ -186,6 +199,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

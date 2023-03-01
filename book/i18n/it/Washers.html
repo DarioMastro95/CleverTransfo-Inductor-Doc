@@ -155,7 +155,24 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="washers"><a class="header" href="#washers">Washers</a></h1>
+                        <h1 id="rondelle"><a class="header" href="#rondelle">Rondelle</a></h1>
+<h2 id="introduzione"><a class="header" href="#introduzione">Introduzione</a></h2>
+<p>Le rondelle si utilizzano nei serraggi orizzontale e verticale, nel serraggio della vite di terra e nel serraggio dei terminali d’uscita (capicorda o barre) su piastre o isolatori.</p>
+<img src="img/Rondelle.jpg" height="150px">
+<h3 id="campi-della-tabella-rondelle"><a class="header" href="#campi-della-tabella-rondelle">Campi della tabella (Rondelle)</a></h3>
+<ul>
+<li><strong>Codice</strong>: sigla con la quale viene identificata la forma della rondella. Le sigle correnti sono:<br>
+RGR = Rondella Grower<br>
+RPN = Rondella piana<br> 
+RPNL = Rondella piana larga.<br>
+Altre forme potrebbero essere definite in fase di personalizzazione delle applicazioni.</li>
+<li><strong>Dimensione M</strong>: M del foro filettato interno (quota D nel disegno).</li>
+<li><strong>Materiale</strong>: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Diametro interno</strong>: corrisponde alla quota D del disegno.</li>
+<li><strong>Diametro esterno</strong>: corrisponde alla quota D2 del disegno.</li>
+<li><strong>Spessore</strong>: corrisponde alla quota S del disegno.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
 
                     </main>
 
@@ -186,6 +203,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

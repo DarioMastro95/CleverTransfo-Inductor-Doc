@@ -156,6 +156,16 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="resine-e-vernici"><a class="header" href="#resine-e-vernici">Resine e vernici</a></h1>
+<h2 id="introduzione"><a class="header" href="#introduzione">Introduzione</a></h2>
+<p>In questa tabella è possibile inserire tutte le resine d’impregnazione e tutte le vernici utilizzate.
+Le regoli progetto che scelgono il prodotto da utilizzare nel progetto in base al codice.</p>
+<h3 id="campi-della-tabella-resine-e-vernici"><a class="header" href="#campi-della-tabella-resine-e-vernici">Campi della tabella (Resine e vernici)</a></h3>
+<ul>
+<li><strong>Materiale</strong>: in questo caso non bisogna inserire il materiale. Queto campo è stato inserito per usi futuri</li>
+<li><strong>Descrizione</strong>: nome della resina o della vernice.</li>
+<li><strong>Codice</strong>: il codice definisce il tipo di resina d’impregnazione o di vernice. La resina d’impregnazione standard per l’azienda viene identificata con il codice = LIX. Durante la personalizzazione è possibile definire altri codici abbinati ad altre regole di progetto.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
 
                     </main>
 
@@ -186,6 +196,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

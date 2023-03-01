@@ -156,6 +156,18 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="tubetti-isolanti"><a class="header" href="#tubetti-isolanti">Tubetti isolanti</a></h1>
+<h2 id="introduzione"><a class="header" href="#introduzione">Introduzione</a></h2>
+<p>Le tubetti isolanti si utilizzano per l’isolamento dei tiranti nel serraggio orizzontale, oppure per l’isolamento delle viti di serraggio nei piccoli elementi, dove non  è possibile utilizzare le bussole.</p>
+<h3 id="campi-della-tabella-tubetti-isolanti"><a class="header" href="#campi-della-tabella-tubetti-isolanti">Campi della tabella (Tubetti isolanti)</a></h3>
+<ul>
+<li><strong>Codice</strong>: questo codice è utile per eventuali sotto-famiglie. Al momento occorre utilizzare come codice TUI per tutte i tubetti.</li>
+<li><strong>Spessore</strong>: spessore del materiale (valore da recuperare dalle tabelle del fornitore). Questo valore si può omettere.</li>
+<li><strong>Diametro esterno</strong>: diametro esterno del tubetto.</li>
+<li><strong>Diametro interno</strong>: diametro interno del tubetto.</li>
+<li><strong>Materiale</strong>: sigla del materiale.<br>Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Dimensione M</strong>: dimensione M del tirante che vi può alloggiare.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
 
                     </main>
 
@@ -186,6 +198,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>
