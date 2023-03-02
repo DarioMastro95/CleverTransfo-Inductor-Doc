@@ -2,7 +2,7 @@
 
 - [Operatori](./User.md)
 - [Impostazioni generali](./General-settings.md)
-- [Parametri elettrici](./Elettrical-parameters.md)
+- [Parametri elettrici](./Electrical-parameters.md)
 - [Coefficienti di stipamento](./Bulging-of-the-windings.md)
 - [Parametri costruttivi](./Construction-parameters.md)
     - [Lamierino NO](./NO-core.md)
@@ -28,7 +28,7 @@
     - [Profili a U](./U-profile.md)
     - [Profili a L](./L-profile.md)
     - [Profili piatti](./Flat-profile.md)
-    - [Resine e vernici](./Resins-and-varnishess.md)
+    - [Resine e vernici](./Resins-and-varnishes.md)
     - [Rondelle](./Washers.md)
     - [Barre](./Bars.md)
     - [Stecche d'angolo](./Corner-dog-bone.md)

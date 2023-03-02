@@ -2,7 +2,7 @@
 
 - [User](./User.md)
 - [General settings](./General-settings.md)
-- [Electrical parameters](./Elettrical-parameters.md)
+- [Electrical parameters](./Electrical-parameters.md)
 - [Bulging of the windings](./Bulging-of-the-windings.md)
 - [Construction parameters](./Construction-parameters.md)
     - [NO core](./NO-core.md)
@@ -28,7 +28,7 @@
     - [U profile](./U-profile.md)
     - [L profile](./L-profile.md)
     - [Flat profile](./Flat-profile.md)
-    - [Resins and varnishes](./Resins-and-varnishess.md)
+    - [Resins and varnishes](./Resins-and-varnishes.md)
     - [Washers](./Washers.md)
     - [Bars](./Bars.md)
     - [Corner dog bone](./Corner-dog-bone.md)
