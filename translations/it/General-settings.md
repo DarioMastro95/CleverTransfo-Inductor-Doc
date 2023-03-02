@@ -10,8 +10,8 @@ L’applicazione, a partire da questa cartella di base, definisce la cartella in
 
 
 ## Esempio
-| Campo                        | Valore                         |
-|-------------------------------------|-------------------------------------------|
+| Campo                        | Valore                  |
+|------------------------------|-------------------------------------------|
 | Applicazione              | Clever Inductor                         |
 | Cartella di partenza                | C:\Progettazione                          |
 | Nome del prodotto                   | 000111                                    |
