@@ -18,7 +18,6 @@
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/print.css" media="print">
 
         <!-- Fonts -->
@@ -101,7 +100,7 @@
                         <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
                         </button>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" style="display:none" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
@@ -119,13 +118,6 @@
                     <h1 class="menu-title"></h1>
 
                     <div class="right-buttons">
-                        <button id="lang-toggle" class="icon-button" type="button" title="Change language" aria-label="Change language" aria-haspopup="true" aria-expanded="false" aria-controls="lang-list">
-                            <i class="fa fa-globe"></i>
-                        </button>
-                        <ul id="lang-list" class="theme-popup" style="left: auto;" aria-label="Languages" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="it">Italian</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="en">English</button></li>
-                        </ul>
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
