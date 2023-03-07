@@ -511,7 +511,7 @@ Esistono svariati tipi di morsetto e la tabella consente di distinguerli tramite
 <li><strong>Larghezza</strong>: spessore del singolo morsetto (Dimensione B nel disegno)</li>
 <li><strong>Altezza</strong>: altezza del morsetto (Dimensione H nel disegno)</li>
 <li><strong>Lunghezza</strong>: lunghezza massima del morsetto (Dimensione L nel disegno)</li>
-<li><strong>Diametro esterno foro</strong>: diametro del foro d’entrata dei conduttori.</li>
+<li><strong>Diametro foro</strong>: diametro del foro d’entrata dei conduttori.</li>
 <li><strong>Codice</strong>: sigla con la quale viene identificato la tipologia di morsetto.
 <em><strong>Esempio: Binario = Morsetto su binario Omega</strong></em>. <br>
 Se in fase di personalizzazione occorre utilizzare altri tipi di morsetto, vi preghiamo di contattarci per la scelta del codice.</li>
@@ -597,9 +597,27 @@ Altre forme potrebbero essere definite in fase di personalizzazione delle applic
 <li><strong>Spessore</strong>: corrisponde alla quota S del disegno.</li>
 <li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="bars"><a class="header" href="#bars">Bars</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="stecche-dangolo"><a class="header" href="#stecche-dangolo">Stecche d'angolo</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="barre"><a class="header" href="#barre">Barre</a></h1>
 <h2 id="introduzione-25"><a class="header" href="#introduzione-25">Introduzione</a></h2>
+<p>Le barre, in Alluminio o in Rame, si utilizzano come uscite avvolgimento e possono essere saldate direttamente sul nastro conduttore o essere saldate esternamente alla bobina in caso di conduttore piatto o filo. In quest’ultimi due casi la loro funzione sarà analoga al capocorda o al morsetto. Le barre sono semilavorati che saranno tagliati a misura e/o sagomati a seconda delle esigenze.</p>
+<p>Le barre di uscita e di collegamento sono dimensionate, in funzione della <strong>corrente termica</strong> che le attraversa, secondo i limiti previsti dalle norme DIN.
+Nella tabella seguente occorre inserire la correlazione tra la <strong>corrente massima ammessa</strong> e il tipo di barra.
+Viene fatta distinzione tra barre che costituiscono un attacco per il cliente, che vengono dimensionate utilizzando come corrente massima i valori riportati nella colonna “I massima cliente”, quelle interne alla macchina la cui corrente massima corrisponde a <strong>“I massima uscita avv.”</strong> e quelle di <strong>collegamento</strong> la cui corrente massima corrisponde a <strong>“I massima connessione”</strong>.</p>
+<h3 id="campi-della-tabella-barre"><a class="header" href="#campi-della-tabella-barre">Campi della tabella (Barre)</a></h3>
+<ul>
+<li><strong>Materiale</strong>: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Larghezza</strong>: larghezza della barra.</li>
+<li><strong>Spessore</strong>: spessore della barra.</li>
+<li><strong>Sezione mm2</strong>: sezione della barra Larghezza x Spessore (le barre sono a spigolo vivo). </li>
+<li><strong>I massima uscita avv</strong>: corrente massima ammessa per le barre d’uscita avvolgimento che non vengono utilizzate direttamente come attacco cliente. </li>
+<li><strong>Esempio</strong>: barra uscita di un elemento monofase con collegamento parallelo</li>
+<li><strong>I massima connessione</strong>: corrente massima ammessa per le barre di connessione che non vengono utilizzate direttamente come attacco cliente.</li>
+<li><strong>Esempio</strong>: barra connessione di un elemento trifase con collegamento a triangolo </li>
+<li><strong>I massima cliente</strong>: corrente massima ammessa per le barre che vengono utilizzate direttamente come attacco cliente.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="stecche-dangolo"><a class="header" href="#stecche-dangolo">Stecche d'angolo</a></h1>
+<h2 id="introduzione-26"><a class="header" href="#introduzione-26">Introduzione</a></h2>
 <p>Le stecche d’angolo si utilizzano per realizzare il canale nucleo/bobina quando quest’ultimo è stato previsto lungo tutto il perimetro della colonna. Vengono poste sui 4 angoli del nucleo.</p>
 <h3 id="campi-della-tabella-stecche-dangolo"><a class="header" href="#campi-della-tabella-stecche-dangolo">Campi della tabella (Stecche d’angolo)</a></h3>
 <ul>
@@ -617,7 +635,7 @@ Corrisponde allo spessore del canale.</li>
 Inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="stecche-in-triglass"><a class="header" href="#stecche-in-triglass">Stecche in triglass</a></h1>
-<h2 id="introduzione-26"><a class="header" href="#introduzione-26">Introduzione</a></h2>
+<h2 id="introduzione-27"><a class="header" href="#introduzione-27">Introduzione</a></h2>
 <p>Le stecche in triglass, dette “dog bone” nel  gergo corrente, si utilizzano per realizzare i canali di ventilazione negli avvolgimenti, quando questi ultimi sono stati previsti lungo tutto il perimetro della bobina. Vengono utilizzate anche come rinforzo supplementare nei canali solo frontali o solo laterali realizzati mediante distanziatori in acciaio.</p>
 <img src="img/SteccheTriglass.png" height="200px">
 <h3 id="campi-della-tabella-stecche-in-triglass"><a class="header" href="#campi-della-tabella-stecche-in-triglass">Campi della tabella (Stecche in triglass)</a></h3>
@@ -633,7 +651,7 @@ Altre forme potrebbero essere definite in fase di personalizzazione delle applic
 <li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="tubetti-isolanti"><a class="header" href="#tubetti-isolanti">Tubetti isolanti</a></h1>
-<h2 id="introduzione-27"><a class="header" href="#introduzione-27">Introduzione</a></h2>
+<h2 id="introduzione-28"><a class="header" href="#introduzione-28">Introduzione</a></h2>
 <p>Le tubetti isolanti si utilizzano per l’isolamento dei tiranti nel serraggio orizzontale, oppure per l’isolamento delle viti di serraggio nei piccoli elementi, dove non  è possibile utilizzare le bussole.</p>
 <h3 id="campi-della-tabella-tubetti-isolanti"><a class="header" href="#campi-della-tabella-tubetti-isolanti">Campi della tabella (Tubetti isolanti)</a></h3>
 <ul>
@@ -646,7 +664,7 @@ Altre forme potrebbero essere definite in fase di personalizzazione delle applic
 <li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="viti"><a class="header" href="#viti">Viti</a></h1>
-<h3 id="introduzione-28"><a class="header" href="#introduzione-28">Introduzione</a></h3>
+<h3 id="introduzione-29"><a class="header" href="#introduzione-29">Introduzione</a></h3>
 <p>Le viti hanno svariati usi: serraggi orizzontali, viti di terra, fissaggio di terminali d’uscita, fissaggio di piastre o isolatori ecc.</p>
 <img src="img/Viti.jpg" height="120px">
 <h3 id="campi-della-tabella-viti"><a class="header" href="#campi-della-tabella-viti">Campi della tabella (Viti)</a></h3>
@@ -660,17 +678,316 @@ TC = Vite a testa cilindrica</li>
 <li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rocchetti"><a class="header" href="#rocchetti">Rocchetti</a></h1>
+<h2 id="introduzione-30"><a class="header" href="#introduzione-30">Introduzione</a></h2>
+<p>Questa tabella di rocchetti viene utilizzata dalle applicazioni per gli elementi generici, mentre per gli elementi che devono sottostare alle norme UL esiste una tabella apposita. </p>
+<img src="img/Rocchetti.png" height="150px">
+<h3 id="campi-della-tabella-rocchetti"><a class="header" href="#campi-della-tabella-rocchetti">Campi della tabella (Rocchetti)</a></h3>
+<ul>
+<li>**Codice:
+Sigla con la quale viene identificato il tipo di lamierino stampato che può montare il rocchetto.</li>
+<li><strong>Tipo</strong>: definizione del rocchetto: A x B (vedi disegno)</li>
+<li><strong>Larghezza lamierino</strong>: larghezza della colonna del lamierino sulla quale il rocchetto viene montato (Dimensione B nel disegno).</li>
+<li><strong>Spess. nucleo</strong>: spessore a disposizione per il nucleo (Dimensione B nel disegno).</li>
+<li><strong>H avvolgimento</strong>: altezza a disposizione per l’avvolgimento (Dimensione F nel disegno).</li>
+<li><strong>Spess. avv</strong>: spazio disponibile per l’avvolgimento.</li>
+<li><strong>Spess. frontale</strong>: spazio disponibile lato uscite.</li>
+<li><strong>Peso gr.</strong>: inserire il valore recuperato dalla tabella del fornitore.</li>
+<li><strong>Materiale</strong>: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rocchetti-ul"><a class="header" href="#rocchetti-ul">Rocchetti UL</a></h1>
+<h2 id="introduzione-31"><a class="header" href="#introduzione-31">Introduzione</a></h2>
+<p>Questa tabella di rocchetti viene utilizzata dalle applicazioni per gli elementi che devono sottostare alle norme UL. La scelta della categoria UL nella prima videata di ingresso dati di CLEVER SMALL-T e CLEVER SMALL-I ne determina l’utilizzo.</p>
+<img src="img/RocchettiUL.png" height="150px">
+<h3 id="campi-della-tabella-rocchetti-ul"><a class="header" href="#campi-della-tabella-rocchetti-ul">Campi della tabella (Rocchetti UL)</a></h3>
+<ul>
+<li><strong>Codice</strong>: sigla con la quale viene identificato il tipo di lamierino stampato che può montare il rocchetto.</li>
+<li><strong>Tipo</strong>: definizione del rocchetto**: A x B (vedi disegno)</li>
+<li><strong>Larghezza lamierino</strong>: larghezza della colonna del lamierino sulla quale il rocchetto viene montato (Dimensione B nel disegno).</li>
+<li><strong>Spess. nucleo</strong>: spessore a disposizione per il nucleo (Dimensione B nel disegno).</li>
+<li><strong>H avvolgimento</strong>: altezza a disposizione per l’avvolgimento (Dimensione F nel disegno).</li>
+<li><strong>Spess. avv</strong>: spazio disponibile per l’avvolgimento.</li>
+<li>**Spess. frontale: spazio disponibile lato uscite.</li>
+<li><strong>Peso gr.</strong>: Inserire il valore recuperato dalla tabella del fornitore.</li>
+<li><strong>Materiale</strong>: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="lamierini-stampati"><a class="header" href="#lamierini-stampati">Lamierini stampati</a></h1>
+<h2 id="introduzione-32"><a class="header" href="#introduzione-32">Introduzione</a></h2>
+<p>In questa tabella si inseriscono i lamierini stampati a disposizione. 
+<img src="img/LamieriniStampati.png" height="150px"></p>
+<h3 id="campi-della-tabella-lamierini-stampati"><a class="header" href="#campi-della-tabella-lamierini-stampati">Campi della tabella (Lamierini Stampati)</a></h3>
+<ul>
+<li><strong>Lamierino</strong>: tipo di lamierino.<br> 
+<em><strong>Esempio: EI.</strong></em></li>
+<li><strong>Codice</strong>: in questo caso occorre inserire la sigla della qualità del lamierino, facendo attenzione che sia scritta correttamente, come da tabella materiali.</li>
+<li><strong>A</strong>: inserire la larghezza del lamierino (Dimensione A del disegno).</li>
+<li><strong>B</strong>: inserire l’altezza totale del nucleo (Dimensione B del disegno).</li>
+<li><strong>C</strong>: inserire la larghezza della colonna centrale (Dimensione C del disegno).</li>
+<li><strong>D</strong>: inserire la larghezza della finestra del lamierino (Dimensione D del disegno).</li>
+<li><strong>E</strong>: inserire l’altezza della finestra del lamierino (Dimensione E del disegno).</li>
+<li><strong>F</strong>: inserire la larghezza della colonna laterale del lamierino (Dimensione F del disegno).</li>
+<li><strong>Diametro foro</strong>: inserire il diametro dei fori per il passaggio dei tiranti di serraggio.</li>
+<li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="staffe-di-serraggio"><a class="header" href="#staffe-di-serraggio">Staffe di serraggio</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="design-rules"><a class="header" href="#design-rules">Design rules</a></h1>
+<h2 id="introduzione-33"><a class="header" href="#introduzione-33">Introduzione</a></h2>
+<p>I morsetti si utilizzano nelle applicazioni Clever Transfo e Clever Le staffe di serraggio inserite in questa tabella si utilizzano per assiemare gli elementi su lamierino stampato. 
+Nel disegno sopra è rappresentata una staffa a L a titolo. In realtà in questa tabella è possibile inserire qualsiasi forma di staffa. Il codice sarà il discriminante. L’obiettivo di questa tabella è fornire le sporgenze delle staffe dall’elemento per poter calcolare correttamente le dimensioni d’ingombro dell’elemento stesso.</p>
+<img src="img/StaffeDi Serraggio.png" height="150px">
+<h3 id="campi-della-tabella-staffe"><a class="header" href="#campi-della-tabella-staffe">Campi della tabella (Staffe)</a></h3>
+<ul>
+<li>
+<p><strong>Lamierino</strong>: tipo di lamierino compatibile.<br>
+<em><strong>Esempi: 
+EI oppure EIT (trifase) o UI (per elementi a due colonne).</strong></em></p>
+</li>
+<li>
+<p><strong>Lunghezza</strong>: lunghezza del lamierino relativa alla specifica staffa.<br>
+<em><strong>Esempio: 
+Se si tratta di un EI120 qui si inserirà 120.</strong></em></p>
+</li>
+<li>
+<p><strong>Descrizione</strong>: descrizione della staffa che può essere di aiuto per il riconoscimento della stessa.</p>
+</li>
+<li>
+<p><strong>Codice</strong>: codice identificativo della staffa. Qui di seguito l’elenco dei codici normalmente utilizzati:<br>
+ANG = Staffa a L<br>
+PMP = Piatto portamorsetti<br>
+PM = Piatto<br>
+TEL = Telaio con foro passante<br>
+TELF = Telaio con foro filettato<br>
+Per ulteriori forme occorre contattarci per scegliere i codici corretti.</p>
+</li>
+<li>
+<p><strong>Materiale</strong>: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</p>
+</li>
+<li>
+<p><strong>Sporgenza_A</strong>: sporgenza della staffa rispetto alla larghezza dell’elemento.</p>
+</li>
+<li>
+<p><strong>Sporgenza_B</strong>: sporgenza della staffa rispetto alla profondità dell’elemento.</p>
+</li>
+<li>
+<p><strong>Sporgenza_H</strong>: sporgenza della staffa rispetto all’altezza dell’elemento.</p>
+</li>
+<li>
+<p><strong>Fissaggio_L</strong>: quota di fissaggio dell’elemento nel senso della larghezza.</p>
+</li>
+<li>
+<p><strong>Fissaggio_B</strong>: quota di fissaggio dell’elemento nel senso della profondità da imputare a una singola staffa. Serve per calcolare la quota di fissaggio dell’elemento in profondità.<br>
+<em><strong>Esempio:<br>
+Fissaggio_B = 15 <br>
+Spessore nucleo = 70<br>
+Quota di fissaggio elemento in profondità = 2x15 + 70 = 100.</strong></em></p>
+</li>
+<li>
+<p><strong>Asola_L</strong>: dimensione L dell’asola ospitata dalla staffa (nel senso della larghezza).</p>
+</li>
+<li>
+<p><strong>Asola_B</strong>: dimensione L dell’asola ospitata dalla staffa (nel senso della profondità).</p>
+</li>
+<li>
+<p><strong>Peso kg</strong>: valore normalmente dato dal fornitore. Altrimenti calcolare con volume x 7.65 (peso specifico dell’acciaio).</p>
+</li>
+<li>
+<p><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</p>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="regole-di-progetto"><a class="header" href="#regole-di-progetto">Regole di progetto</a></h1>
+<h2 id="introduzione-34"><a class="header" href="#introduzione-34">Introduzione</a></h2>
+<p>In questa sezione trovate le regole di progetto che sono state parametrizzate. Quindi tabelle dove alcuni valori dimensionali si definiscono in funzione di differenti parametri.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="isolante-tra-avvolgimenti"><a class="header" href="#isolante-tra-avvolgimenti">Isolante tra avvolgimenti</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="bar-drilling"><a class="header" href="#bar-drilling">Bar drilling</a></h1>
+<h2 id="introduzione-35"><a class="header" href="#introduzione-35">Introduzione</a></h2>
+<p>In questa tabella si definisce lo spessore totale dello strato isolante da interporre tra gli avvolgimenti, in funzione della tensione d’isolamento. Le applicazioni utilizzano il tipo e lo spessore dell’isolante interstrato e calcolano il nr. di giri necessari per raggiungere spessore indicato in tabella. Se non ci fossero interstrati le applicazioni utilizzerebbero un materiale di default in funzione della classe di temperatura, di spessore tra 0.18 e 0,25 a seconda degli spessori standard a disposizione.</p>
+<h3 id="campi-della-tabella-isolante-tra-avvolgimenti"><a class="header" href="#campi-della-tabella-isolante-tra-avvolgimenti">Campi della tabella (Isolante tra avvolgimenti)</a></h3>
+<ul>
+<li><strong>Spessore totale isolante</strong>: spessore dell’isolante necessario.</li>
+<li><strong>U isolamento KV</strong>: tensione d’isolamento.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="forature-barre"><a class="header" href="#forature-barre">Forature barre</a></h1>
+<h2 id="introduzione-36"><a class="header" href="#introduzione-36">Introduzione</a></h2>
+<p>Questa tabella presenta le forature standard delle barre d’uscita, lato attacco cliente secondo DIN 43673.
+La figura in alto mostra i tipi di foratura che sono complessivamente 6, mentre la figura più in basso mostra le quote che vedrete in tabella, che si ripetono anche nelle forature 5 – 6 . In fase di esecuzione del progetto, è possibile scegliere il tipo di foratura e le applicazioni considereranno le quote secondo la questa tabella.
+Potete aggiungere altre forature speciali o modificare quelle esistenti. Resta il fatto che non sarete più in linea con le Norme DIN.</p>
+<img src="img/ForaturaBarre1.png" height="100px">
+<br>
+<img src="img/ForaturaBarre2.png" height="124px">
+<h3 id="campi-della-tabella-foratura-barre"><a class="header" href="#campi-della-tabella-foratura-barre">Campi della tabella (Foratura barre)</a></h3>
+<ul>
+<li><strong>Largh. barra</strong>: dimensione b del disegno.</li>
+<li><strong>Lungh. minima barra</strong>: dimensione L min. del disegno. Si tratta della lunghezza minima che occorre lasciare a disposizione per l’attacco del cliente.</li>
+<li><strong>Diametro foro</strong>: dimensione d del disegno. Tutti i fori sono uguali.</li>
+<li><strong>Dim. E1</strong>: distanza tra i fori: dimensione e1 del disegno.</li>
+<li><strong>Dim. E2</strong>: distanza tra i fori: dimensione e2 del disegno.</li>
+<li><strong>Dim. E3</strong>: distanza tra i fori: dimensione e3 del disegno.</li>
+<li><strong>Dim A</strong>: spessore dell’isolante necessario.</li>
+<li><strong>Tipo foratura</strong>: vedi disegno in alto</li>
+<li><strong>Nr. fori</strong>: nr. fori sulla barra. Il nr. dei fori è già implicito scegliendo una certa foratura, ma lo si riporta per chiarezza.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="misure-carpenteria"><a class="header" href="#misure-carpenteria">Misure carpenteria</a></h1>
+<h2 id="introduzione-37"><a class="header" href="#introduzione-37">Introduzione</a></h2>
+<p>Questa è una tabella misura/valore che permette di inserire, per ciascuna carpenteria, ciascun componente e ciascuna misura, il valore della misura stessa per ogni larghezza lamierino.
+Nello standard si copre il range di lamierini da 40 a 200, con un incremento di 5 mm.
+È ovviamente possibile inserire tutti i lamierini in uso, anche inferiori a 40 e/o superiori a 200. La possibilità di ordinare la tabella per qualsiasi colonna, (anche con selezioni multiple, tenendo premuto il tasto CTRL mentre si selezionano le varie colonne) rende facile l’inserimento e il controllo dei valori.
+In caso di aggiunta di un lamierino, occorre inserire valori per tutte le quote che identificano ogni componente della carpenteria interessata.
+In caso di necessità di modifica di valori esistenti, occorre individuare la zona della tabella, utilizzando il filtro in alto a sinistra e l’ordinamento (click sull’intestazione della colonna), quindi modificare direttamente i dati.
+Osservando la tabella e ordinandola per carpenteria + componente + lamierino sarà chiara a tutti la logica seguita.</p>
+<h3 id="campi-della-tabella-misure-carpenteria"><a class="header" href="#campi-della-tabella-misure-carpenteria">Campi della tabella (Misure carpenteria)</a></h3>
+<ul>
+<li><strong>Carpenteria</strong>: tipo di carpenteria. Valgono i tipi elencati nel menu a tendina della videata di ingresso dati sotto l’etichetta <em><strong>“Tipo carpenteria”.</strong></em></li>
+<li><strong>Elemento</strong>: codice del componente che fa parte di quella carpenteria. I codici sono assegnati durante l’implementazione di quella carpenteria nel software e <strong>non devono essere modificati.</strong></li>
+<li><strong>Misura</strong>: nome della misura alla quale si attribuirà valore in questa riga. 
+<em><strong>Esempio: L</strong></em> </li>
+<li><strong>Valore</strong>: valore che si desidera attribuire a quella misura. Occorre inserire un valore soltanto se è fisso, ossia dipende esclusivamente dalla larghezza del lamierino. Inserire 0 se un campo (ad esempio la larghezza di un profilo) dipende da parametri variabili a seconda del progetto. Sarà la regola di progetto che, durante il calcolo attribuirà il valore corretto a questo parametro.
+Larghezza lamierino:
+Larghezza del lamierino per cui è valido il valore attribuito.</li>
+<li><strong>Nr. fasi</strong>: numero delle fasi per cui è valido il valore attribuito.</li>
+<li><strong>L1</strong>: campo per usi futuri: inserire 0.</li>
+<li><strong>L2</strong>: campo per usi futuri: inserire 0.</li>
+<li><strong>Calcolato?</strong>: inserire <em><strong>“False”</strong></em> se è stato inserito un valore nel campo <strong>Valore.</strong>
+Inserire <em><strong>“True”</strong></em> se è stato inserito 0 nel campo <strong>Valore.</strong></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="scelta-tipo-uscite"><a class="header" href="#scelta-tipo-uscite">Scelta tipo uscite</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="air-gap-composition"><a class="header" href="#air-gap-composition">Air gap composition</a></h1>
+<h3 id="introduzione-38"><a class="header" href="#introduzione-38">Introduzione</a></h3>
+<p>In questa tabella si definisce il tipo di uscita che le applicazioni sceglieranno di automaticamente, in funzione dei seguenti parametri:</p>
+<ul>
+<li><strong>Tipo di conduttore</strong> </li>
+<li><strong>Correnti nominale</strong></li>
+<li><strong>Tensione nominale</strong></li>
+</ul>
+<h3 id="campi-della-tabella-scelta-tipo-uscite"><a class="header" href="#campi-della-tabella-scelta-tipo-uscite">Campi della tabella (Scelta tipo uscite)</a></h3>
+<ul>
+<li><strong>Tipo conduttore</strong>: inserire il tipo conduttore secondo il codice seguente:<br>
+1 = Conduttore piatto<br>
+2 = Nastro <br>
+3 = Filo <br>
+4 = Conduttore multi-filare <br>
+Nel caso in cui il tipo uscita è valido per più di un conduttore, inserire 1 codici in sequenza.<br>
+<em><strong>Esempio:
+Se il tipo di uscita è valido sia per filo sia per conduttore piatto inserire: 13.</strong></em></li>
+<li><strong>Corrente massima A</strong>:
+Corrente nominale massima per la quale si può utilizzare quel tipo di uscita.</li>
+<li><strong>Tensione massima V</strong>:
+Tensione nominale massima per la quale si può utilizzare quel tipo di uscita.</li>
+<li><strong>Tipo uscita</strong>: codice del tipo di uscita: <br>
+1 = Morsetti in liste <br>
+2 = Morsetti su binario <br>
+3 = Capicorda <br>
+4 = Barrette esterne (si utilizzano quando l’avvolgimento è in conduttore piatto ma la corrente non permette
+L’uso di capicorda). Sono barre fissate a una piastra o a un isolatore alle quali vengono saldati i conduttori
+piatti che escono dalla bobina. </li>
+<li><strong>Descrizione</strong>: descrizione del tipo di uscita. Inserita nella tabella per chiarezza.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="composizione-traferri"><a class="header" href="#composizione-traferri">Composizione traferri</a></h1>
+<h2 id="introduzione-39"><a class="header" href="#introduzione-39">Introduzione</a></h2>
+<p>Generalmente, al traferro definito in fase di calcolo, non corrisponde quasi mai il traferro realizzabile con i materiali isolanti a disposizione.
+In questa tabella si definiscono i traferri possibili in base ai materiali standard a disposizione. Le applicazioni, definito un traferro ottimale, leggono questa tabella, scelgono il traferro più prossimo e lo utilizzano, effettuando altre correzioni (traferro di testa,  traferri interni ecc.) se necessario, in modo da ottenere comunque un traferro totale preciso.
+Questo sistema evita che i dati relativi al traferro, presenti nella documentazione tecnica, debbano essere corretti manualmente. Così facendo inoltre, i materiali in questione saranno presenti nella distinta base nelle quantità necessarie. 
+Limiti: le composizioni previste permettono l’abbinamento di <strong>massimo due materiali isolanti differenti,</strong> ciascuno con <strong>massimo tre fogli o lastre in parallelo</strong>.
+A seconda della vostra disponibilità potete modificare questa tabella, inserendo altri materiali ed eliminando o inserendo altre righe.</p>
+<h3 id="campi-della-tabella-composizione-traferri"><a class="header" href="#campi-della-tabella-composizione-traferri">Campi della tabella (Composizione traferri)</a></h3>
+<ul>
+<li><strong>Spessore totale</strong>: spessore del traferro ottenuto con la composizione presente sulla riga.</li>
+<li><strong>Materiale 1</strong>: materiale relativo al primo isolante.<br>Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Numero fogli 1</strong>: numero delle carte o delle lastre sovrapposte.</li>
+<li><strong>Spessore 1</strong>: spessore del singolo isolante.</li>
+<li><strong>Materiale 2</strong>: materiale relativo al secondo isolante.<br>
+Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
+<li><strong>Numero fogli 2</strong>: numero delle carte o delle lastre sovrapposte.</li>
+<li><strong>Spessore 2</strong>: spessore del singolo isolante.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="isolamento-interstrato"><a class="header" href="#isolamento-interstrato">Isolamento interstrato</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="material-costs"><a class="header" href="#material-costs">Material costs</a></h1>
+<h2 id="introduzione-40"><a class="header" href="#introduzione-40">Introduzione</a></h2>
+<p>Questa tabella viene utilizzata unicamente nelle applicazioni Clever Small-T e Clever Small-I per scegliere automaticamente lo spessore degli isolanti interstrato e tra avvolgimenti.
+Gli spessore scelti, all’interno di un progetto, possono essere modificati manualmente.</p>
+<p>### Campi della tabella (Isolamento interstrato)</p>
+<ul>
+<li><strong>Classe temperatura</strong>: classe di temperatura dell’elemento (A-E-B-F-H).</li>
+<li><strong>Materiale conduttore</strong>: materiale del conduttore.</li>
+<li><strong>Tipo conduttore</strong>: inserire il tipo conduttore secondo il codice seguente: <br>
+1 = Conduttore piatto <br>
+2 = Nastro<br>
+3 = Filo<br>
+4 = Conduttore multi-filare<br></li>
+<li><strong>Nr. conduttori // radiale</strong>: numero dei conduttori in parallelo radiale. A parità di spessore, lo spessore dell’isolante generalmente deve essere aumentato se ci sono più conduttori in // radiale.</li>
+<li><strong>Spess. conduttore</strong>: spessore del singolo conduttore. </li>
+<li><strong>Spess. isolante</strong>: spessore dell’isolante idoneo. Non si fanno distinzioni tra i vari materiali isolanti perché il problema prevalentemente meccanico.</li>
+<li><strong>Indice</strong>: valore necessario al software.
+Qualora si debba aggiungere una riga procedere come segue:
+<ul>
+<li><strong>Ordinare la tabella per indice per scoprire l’ultimo numero</strong></li>
+<li><strong>Inserire come indice il numero successivo</strong></li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="costo-unitario-materiali"><a class="header" href="#costo-unitario-materiali">Costo unitario materiali</a></h1>
+<h2 id="introduzione-41"><a class="header" href="#introduzione-41">Introduzione:</a></h2>
+<p>In questa tabella, trovate una serie di <strong>materiali “generici”</strong> che le applicazioni utilizzano quando non trovano il <strong>materiale specifico,</strong> per determinare il costo unitario di quel componente.
+Avete inoltre la possibilità di importare tutte le informazioni relative a tutti i vostri <strong>articoli specifici,</strong> presenti nel vostro <strong>sistema gestionale.</strong><br>
+Notate che i materiali generici hanno un numero d’articolo che inizia con la lettera Z e sono contraddistinti dal colore <strong>blu.</strong><br>
+La lista dei materiali generici comprende tutte le famiglie dei materiali che vengono utilizzati dalle applicazioni. Ovviamente, dal punto di vista dimensionale non possono che contenere prezzi associati a range di dimensioni con limiti piuttosto grossolani, perché altrimenti la lista sarebbe molto lunga e difficile da tenere aggiornata. D’altro canto, lo scopo, come si diceva, è quello di permettere alle applicazioni di calcolare il costo dei materiali di un elemento in modo “sensato”, anche se i materiali utilizzati non fanno parte del magazzino articoli dell’azienda. Ecco quindi che occorre, prima di tutto, <strong>inserire il costo unitario per ogni riga,</strong> conformemente all’unità di misura indicata. </p>
+<h3 id="particolarità-relative-ai-conduttori"><a class="header" href="#particolarità-relative-ai-conduttori">Particolarità relative ai conduttori:</a></h3>
+<p>Il costo dei conduttori può essere diviso in costo base e costo trasformazione. Infatti, troverete nella tabella queste due voci:</p>
+<ul>
+<li><strong>Conduttore base AL</strong></li>
+<li><strong>Conduttore base CU</strong></li>
+</ul>
+<p>Troverete inoltre, per ciascun tipo di conduttore, un’altra voce :
+<em><strong>Esempio:<br>
+Conduttore Filo AL &lt;= 2.5<br>
+Oppure <br>
+Conduttore Nastro CU</strong></em><br>
+Dove potete inserire il costo cosiddetto di <strong>trasformazione.</strong>
+Se inserite un costo di <strong>base</strong> le applicazioni lo prenderanno come costo base del conduttore e, nel calcolo del costo materiali lo sommeranno al costo di <strong>trasformazione.</strong> Se non volete spezzare il costo dei conduttori in 
+<strong>Base + trasformazione</strong>, vi basterà inserire 0 come base per entrambi i materiali.</p>
+<h3 id="campi-della-tabella-costo-materiali"><a class="header" href="#campi-della-tabella-costo-materiali">Campi della tabella (costo materiali):</a></h3>
+<ul>
+<li><strong>Descrizione</strong>: è la descrizione assegnata a quel materiale (campo in sola lettura)</li>
+<li><strong>Unità di misura</strong>: è l’unità di misura di riferimento per il valore del costo unitario. (campo in sola lettura)</li>
+<li><strong>Costo unitario</strong>: inserire il costo unitario conformemente all’unità di misura</li>
+<li><strong>Articolo</strong>: articolo assegnato (campo in sola lettura)<br></li>
+</ul>
+<p>Eventuali aggiunte di materiali generici sono conseguenti alla personalizzazione delle applicazioni, non possono essere aggiunti dall’utente.</p>
+<h3 id="modalità-di-gestione-della-tabella"><a class="header" href="#modalità-di-gestione-della-tabella">Modalità di gestione della tabella:</a></h3>
+<p>Oltre all’inserimento dei costi generici, è possibile importare l’intera lista dei materiali presenti nel vostro sistema gestionale. Ecco come procedere:</p>
+<h4 id="gestione-della-prima-esportazione-dei-dati-dei-materiali-lato-sistema-gestionale"><a class="header" href="#gestione-della-prima-esportazione-dei-dati-dei-materiali-lato-sistema-gestionale">Gestione della prima esportazione dei dati dei materiali lato sistema gestionale:</a></h4>
+<p>Estrarre un file che salverete con estensione <strong>.csv</strong> (leggibile con Excel) con le seguenti caratteristiche:</p>
+<ul>
+<li>Colonna 1 = ARTICOLO</li>
+<li>Colonna 2 = DESCRIZIONE</li>
+<li>Colonna 3 = UNITÀ DI MISURA</li>
+<li>Colonna 4 = Costo</li>
+</ul>
+<p>Il carattere di separazione tra le colonne deve essere <strong>“;”</strong></p>
+<p>Potete chiedere ai vostri tecnici informatici, che si occupano del sistema gestionale, di fare questo e salvarlo in una cartella a voi accessibile.
+È possibile estrarre l'intero elenco dei materiali (non solo quelli utilizzati nei progetti) in quanto le applicazioni utilizzeranno solo gli articoli presenti nelle tabelle tecniche dei materiali.
+Ovviamente nell’organizzazione iniziale di questo lavoro, occorre decidere quale colonna prezzo utilizzare per esportazione (Prezzo medio, ultimo prezzo ecc.). Questa è una vostra decisione.</p>
+<h4 id="importazione-nelle-applicazioni-clever-dati-dei-materiali"><a class="header" href="#importazione-nelle-applicazioni-clever-dati-dei-materiali">Importazione nelle applicazioni Clever dati dei materiali:</a></h4>
+<ul>
+<li>Premere il bottone “Import” che si trova in alto a destra in questa tabella</li>
+<li>Scegliere dalla finestra di dialogo che apparirà il file esportato dal sistema gestionale**</li>
+<li>Sempre dalla finestra di dialogo aperta fare click su Open (in basso a destra)**</li>
+<li>In questo modo il file verrà automaticamente importato.**</li>
+</ul>
+<p>Potete definire all’interno del vostro dipartimento tecnico, una procedura che indica il momento specifico durante il quale importare il file dei costi aggiornati (ogni mattina oppure ogni lunedì mattina o altro).</p>
+<h4 id="gestione-delle-importazioni-periodiche-dei-dati-dei-materiali"><a class="header" href="#gestione-delle-importazioni-periodiche-dei-dati-dei-materiali">Gestione delle importazioni periodiche dei dati dei materiali:</a></h4>
+<p>Per l’aggiornamento periodico del costo dei materiali generici, è possibile procedere in due modi:</p>
+<ul>
+<li>
+<p>Il dipartimento tecnico si prende carico di aggiornare il costo direttamente in questa tabella, come è stato fatto la prima volta. In questo caso dal sistema gestionale vengono importati solo gli articoli specifici.</p>
+</li>
+<li>
+<p>Si caricano nel sistema gestionale anche i materiali generici, che dovranno essere gestiti come <strong>articoli virtuali</strong> (senza ubicazione fisica e a quantità = 0). In questo l’aggiornamento dei costi dei materiali generici sarà a carico del dipartimento gestionale e il file d’importazione dei materiali comprenderà anche i generici.</p>
+</li>
+</ul>
+<p>Qualsiasi sia la scelta, è auspicabile creare una <strong>procedura</strong> lato gestionale, che faccia questa esportazione automaticamente, in una cartella definita e leggibile dal dipartimento tecnico, ad esempio ogni settimana o addirittura ogni giorno. In questo modo ci sono le giuste premesse perché dal lato tecnico si possano importare i costi aggiornati, in qualsiasi momento con la sicurezza di importare costi aggiornati.</p>
+<h4 id="facilitazioni-di-lettura-della-tabella"><a class="header" href="#facilitazioni-di-lettura-della-tabella">Facilitazioni di lettura della tabella:</a></h4>
+<ul>
+<li>Come in ogni altra tabella potete utilizzare il <strong>filtro</strong> in alto a sinistra per la ricerca di famiglia di materiali o di un materiale specifico, oppure modificare l’ordinamento delle colonne.</li>
+<li>Se il costo dei materiali è = 0 viene contraddistinto dal colore <strong>rosso</strong>.</li>
+<li>Se nelle tabelle specifiche che avete compilato in precedenze vedete un articolo colorato in <strong>rosso</strong> significa che  in questa tabella non c’è l’articolo corrispondente.</li>
+</ul>
 
                     </main>
 

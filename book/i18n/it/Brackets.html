@@ -145,6 +145,69 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="staffe-di-serraggio"><a class="header" href="#staffe-di-serraggio">Staffe di serraggio</a></h1>
+<h2 id="introduzione"><a class="header" href="#introduzione">Introduzione</a></h2>
+<p>I morsetti si utilizzano nelle applicazioni Clever Transfo e Clever Le staffe di serraggio inserite in questa tabella si utilizzano per assiemare gli elementi su lamierino stampato. 
+Nel disegno sopra è rappresentata una staffa a L a titolo. In realtà in questa tabella è possibile inserire qualsiasi forma di staffa. Il codice sarà il discriminante. L’obiettivo di questa tabella è fornire le sporgenze delle staffe dall’elemento per poter calcolare correttamente le dimensioni d’ingombro dell’elemento stesso.</p>
+<img src="img/StaffeDi Serraggio.png" height="150px">
+<h3 id="campi-della-tabella-staffe"><a class="header" href="#campi-della-tabella-staffe">Campi della tabella (Staffe)</a></h3>
+<ul>
+<li>
+<p><strong>Lamierino</strong>: tipo di lamierino compatibile.<br>
+<em><strong>Esempi: 
+EI oppure EIT (trifase) o UI (per elementi a due colonne).</strong></em></p>
+</li>
+<li>
+<p><strong>Lunghezza</strong>: lunghezza del lamierino relativa alla specifica staffa.<br>
+<em><strong>Esempio: 
+Se si tratta di un EI120 qui si inserirà 120.</strong></em></p>
+</li>
+<li>
+<p><strong>Descrizione</strong>: descrizione della staffa che può essere di aiuto per il riconoscimento della stessa.</p>
+</li>
+<li>
+<p><strong>Codice</strong>: codice identificativo della staffa. Qui di seguito l’elenco dei codici normalmente utilizzati:<br>
+ANG = Staffa a L<br>
+PMP = Piatto portamorsetti<br>
+PM = Piatto<br>
+TEL = Telaio con foro passante<br>
+TELF = Telaio con foro filettato<br>
+Per ulteriori forme occorre contattarci per scegliere i codici corretti.</p>
+</li>
+<li>
+<p><strong>Materiale</strong>: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</p>
+</li>
+<li>
+<p><strong>Sporgenza_A</strong>: sporgenza della staffa rispetto alla larghezza dell’elemento.</p>
+</li>
+<li>
+<p><strong>Sporgenza_B</strong>: sporgenza della staffa rispetto alla profondità dell’elemento.</p>
+</li>
+<li>
+<p><strong>Sporgenza_H</strong>: sporgenza della staffa rispetto all’altezza dell’elemento.</p>
+</li>
+<li>
+<p><strong>Fissaggio_L</strong>: quota di fissaggio dell’elemento nel senso della larghezza.</p>
+</li>
+<li>
+<p><strong>Fissaggio_B</strong>: quota di fissaggio dell’elemento nel senso della profondità da imputare a una singola staffa. Serve per calcolare la quota di fissaggio dell’elemento in profondità.<br>
+<em><strong>Esempio:<br>
+Fissaggio_B = 15 <br>
+Spessore nucleo = 70<br>
+Quota di fissaggio elemento in profondità = 2x15 + 70 = 100.</strong></em></p>
+</li>
+<li>
+<p><strong>Asola_L</strong>: dimensione L dell’asola ospitata dalla staffa (nel senso della larghezza).</p>
+</li>
+<li>
+<p><strong>Asola_B</strong>: dimensione L dell’asola ospitata dalla staffa (nel senso della profondità).</p>
+</li>
+<li>
+<p><strong>Peso kg</strong>: valore normalmente dato dal fornitore. Altrimenti calcolare con volume x 7.65 (peso specifico dell’acciaio).</p>
+</li>
+<li>
+<p><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</p>
+</li>
+</ul>
 
                     </main>
 

@@ -13,7 +13,7 @@ Esistono svariati tipi di morsetto e la tabella consente di distinguerli tramite
 - **Larghezza**: spessore del singolo morsetto (Dimensione B nel disegno)
 - **Altezza**: altezza del morsetto (Dimensione H nel disegno)
 - **Lunghezza**: lunghezza massima del morsetto (Dimensione L nel disegno)
-- **Diametro esterno foro**: diametro del foro d’entrata dei conduttori.
+- **Diametro foro**: diametro del foro d’entrata dei conduttori.
 - **Codice**: sigla con la quale viene identificato la tipologia di morsetto.
 ***Esempio: Binario = Morsetto su binario Omega***. <br>
 Se in fase di personalizzazione occorre utilizzare altri tipi di morsetto, vi preghiamo di contattarci per la scelta del codice.

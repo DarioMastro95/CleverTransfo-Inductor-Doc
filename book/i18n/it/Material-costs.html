@@ -144,7 +144,73 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="material-costs"><a class="header" href="#material-costs">Material costs</a></h1>
+                        <h1 id="costo-unitario-materiali"><a class="header" href="#costo-unitario-materiali">Costo unitario materiali</a></h1>
+<h2 id="introduzione"><a class="header" href="#introduzione">Introduzione:</a></h2>
+<p>In questa tabella, trovate una serie di <strong>materiali “generici”</strong> che le applicazioni utilizzano quando non trovano il <strong>materiale specifico,</strong> per determinare il costo unitario di quel componente.
+Avete inoltre la possibilità di importare tutte le informazioni relative a tutti i vostri <strong>articoli specifici,</strong> presenti nel vostro <strong>sistema gestionale.</strong><br>
+Notate che i materiali generici hanno un numero d’articolo che inizia con la lettera Z e sono contraddistinti dal colore <strong>blu.</strong><br>
+La lista dei materiali generici comprende tutte le famiglie dei materiali che vengono utilizzati dalle applicazioni. Ovviamente, dal punto di vista dimensionale non possono che contenere prezzi associati a range di dimensioni con limiti piuttosto grossolani, perché altrimenti la lista sarebbe molto lunga e difficile da tenere aggiornata. D’altro canto, lo scopo, come si diceva, è quello di permettere alle applicazioni di calcolare il costo dei materiali di un elemento in modo “sensato”, anche se i materiali utilizzati non fanno parte del magazzino articoli dell’azienda. Ecco quindi che occorre, prima di tutto, <strong>inserire il costo unitario per ogni riga,</strong> conformemente all’unità di misura indicata. </p>
+<h3 id="particolarità-relative-ai-conduttori"><a class="header" href="#particolarità-relative-ai-conduttori">Particolarità relative ai conduttori:</a></h3>
+<p>Il costo dei conduttori può essere diviso in costo base e costo trasformazione. Infatti, troverete nella tabella queste due voci:</p>
+<ul>
+<li><strong>Conduttore base AL</strong></li>
+<li><strong>Conduttore base CU</strong></li>
+</ul>
+<p>Troverete inoltre, per ciascun tipo di conduttore, un’altra voce :
+<em><strong>Esempio:<br>
+Conduttore Filo AL &lt;= 2.5<br>
+Oppure <br>
+Conduttore Nastro CU</strong></em><br>
+Dove potete inserire il costo cosiddetto di <strong>trasformazione.</strong>
+Se inserite un costo di <strong>base</strong> le applicazioni lo prenderanno come costo base del conduttore e, nel calcolo del costo materiali lo sommeranno al costo di <strong>trasformazione.</strong> Se non volete spezzare il costo dei conduttori in 
+<strong>Base + trasformazione</strong>, vi basterà inserire 0 come base per entrambi i materiali.</p>
+<h3 id="campi-della-tabella-costo-materiali"><a class="header" href="#campi-della-tabella-costo-materiali">Campi della tabella (costo materiali):</a></h3>
+<ul>
+<li><strong>Descrizione</strong>: è la descrizione assegnata a quel materiale (campo in sola lettura)</li>
+<li><strong>Unità di misura</strong>: è l’unità di misura di riferimento per il valore del costo unitario. (campo in sola lettura)</li>
+<li><strong>Costo unitario</strong>: inserire il costo unitario conformemente all’unità di misura</li>
+<li><strong>Articolo</strong>: articolo assegnato (campo in sola lettura)<br></li>
+</ul>
+<p>Eventuali aggiunte di materiali generici sono conseguenti alla personalizzazione delle applicazioni, non possono essere aggiunti dall’utente.</p>
+<h3 id="modalità-di-gestione-della-tabella"><a class="header" href="#modalità-di-gestione-della-tabella">Modalità di gestione della tabella:</a></h3>
+<p>Oltre all’inserimento dei costi generici, è possibile importare l’intera lista dei materiali presenti nel vostro sistema gestionale. Ecco come procedere:</p>
+<h4 id="gestione-della-prima-esportazione-dei-dati-dei-materiali-lato-sistema-gestionale"><a class="header" href="#gestione-della-prima-esportazione-dei-dati-dei-materiali-lato-sistema-gestionale">Gestione della prima esportazione dei dati dei materiali lato sistema gestionale:</a></h4>
+<p>Estrarre un file che salverete con estensione <strong>.csv</strong> (leggibile con Excel) con le seguenti caratteristiche:</p>
+<ul>
+<li>Colonna 1 = ARTICOLO</li>
+<li>Colonna 2 = DESCRIZIONE</li>
+<li>Colonna 3 = UNITÀ DI MISURA</li>
+<li>Colonna 4 = Costo</li>
+</ul>
+<p>Il carattere di separazione tra le colonne deve essere <strong>“;”</strong></p>
+<p>Potete chiedere ai vostri tecnici informatici, che si occupano del sistema gestionale, di fare questo e salvarlo in una cartella a voi accessibile.
+È possibile estrarre l'intero elenco dei materiali (non solo quelli utilizzati nei progetti) in quanto le applicazioni utilizzeranno solo gli articoli presenti nelle tabelle tecniche dei materiali.
+Ovviamente nell’organizzazione iniziale di questo lavoro, occorre decidere quale colonna prezzo utilizzare per esportazione (Prezzo medio, ultimo prezzo ecc.). Questa è una vostra decisione.</p>
+<h4 id="importazione-nelle-applicazioni-clever-dati-dei-materiali"><a class="header" href="#importazione-nelle-applicazioni-clever-dati-dei-materiali">Importazione nelle applicazioni Clever dati dei materiali:</a></h4>
+<ul>
+<li>Premere il bottone “Import” che si trova in alto a destra in questa tabella</li>
+<li>Scegliere dalla finestra di dialogo che apparirà il file esportato dal sistema gestionale**</li>
+<li>Sempre dalla finestra di dialogo aperta fare click su Open (in basso a destra)**</li>
+<li>In questo modo il file verrà automaticamente importato.**</li>
+</ul>
+<p>Potete definire all’interno del vostro dipartimento tecnico, una procedura che indica il momento specifico durante il quale importare il file dei costi aggiornati (ogni mattina oppure ogni lunedì mattina o altro).</p>
+<h4 id="gestione-delle-importazioni-periodiche-dei-dati-dei-materiali"><a class="header" href="#gestione-delle-importazioni-periodiche-dei-dati-dei-materiali">Gestione delle importazioni periodiche dei dati dei materiali:</a></h4>
+<p>Per l’aggiornamento periodico del costo dei materiali generici, è possibile procedere in due modi:</p>
+<ul>
+<li>
+<p>Il dipartimento tecnico si prende carico di aggiornare il costo direttamente in questa tabella, come è stato fatto la prima volta. In questo caso dal sistema gestionale vengono importati solo gli articoli specifici.</p>
+</li>
+<li>
+<p>Si caricano nel sistema gestionale anche i materiali generici, che dovranno essere gestiti come <strong>articoli virtuali</strong> (senza ubicazione fisica e a quantità = 0). In questo l’aggiornamento dei costi dei materiali generici sarà a carico del dipartimento gestionale e il file d’importazione dei materiali comprenderà anche i generici.</p>
+</li>
+</ul>
+<p>Qualsiasi sia la scelta, è auspicabile creare una <strong>procedura</strong> lato gestionale, che faccia questa esportazione automaticamente, in una cartella definita e leggibile dal dipartimento tecnico, ad esempio ogni settimana o addirittura ogni giorno. In questo modo ci sono le giuste premesse perché dal lato tecnico si possano importare i costi aggiornati, in qualsiasi momento con la sicurezza di importare costi aggiornati.</p>
+<h4 id="facilitazioni-di-lettura-della-tabella"><a class="header" href="#facilitazioni-di-lettura-della-tabella">Facilitazioni di lettura della tabella:</a></h4>
+<ul>
+<li>Come in ogni altra tabella potete utilizzare il <strong>filtro</strong> in alto a sinistra per la ricerca di famiglia di materiali o di un materiale specifico, oppure modificare l’ordinamento delle colonne.</li>
+<li>Se il costo dei materiali è = 0 viene contraddistinto dal colore <strong>rosso</strong>.</li>
+<li>Se nelle tabelle specifiche che avete compilato in precedenze vedete un articolo colorato in <strong>rosso</strong> significa che  in questa tabella non c’è l’articolo corrispondente.</li>
+</ul>
 
                     </main>
 
