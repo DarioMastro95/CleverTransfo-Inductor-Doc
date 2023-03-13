@@ -6,7 +6,7 @@ Percorso per salvataggio documenti:<br>
 Durante l’utilizzo delle applicazioni, premendo il bottone **esporta**, tutti i documenti prodotti dall’applicazione stessa vengono salvati in una cartella ben definita.<br>
 Percorso per il salvataggio dei documenti = Percorso della cartella di partenza. 
 L’applicazione, a partire da questa cartella di base, definisce la cartella in cui verranno salvati i documenti in questo modo:<br>
-*Cartella di partenza\Tipo applicazione\Codice prodotto\Versione*
+**Cartella di partenza\Tipo applicazione\Codice prodotto\Versione**
 
 
 ## Esempio

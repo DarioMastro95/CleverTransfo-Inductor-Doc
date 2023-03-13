@@ -146,15 +146,148 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="users"><a class="header" href="#users">Users</a></h1>
+<h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
+<p>This table allows you to input all the users who will use the applications. 
+The number of users does not necessarily have to coincide with the number of licenses.<br />
+The number of licenses only limits the number of simultaneous accesses to Clever Suite.</p>
+<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<p><em>A company that has purchased three licenses can install Clever Suite on more than three computers and the number of users can be greater than three, as long as no more than three designers are working simultaneously at any time.</em></p>
+<h2 id="campi-tabella"><a class="header" href="#campi-tabella">Campi Tabella</a></h2>
+<ul>
+<li><strong>UserName</strong>: it is an abbreviation of the user’s full name and may include a maximum of two characters in capital letters. </li>
+<li><strong>Name</strong>: it is the first name of the user. The first letter is capitalised.</li>
+<li><strong>Surname</strong>: it is the user's surname. The first letter is capitalised.</li>
+<li><strong>Role</strong>: designs’ roles within the application can either be <strong>admin or user.</strong> In a company, there must only be one admin. All other operators must be user. Only the <strong>admin</strong> can access and modify the configuration options and he is the person responsible for the configuration of Clever Suite.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="general-settings"><a class="header" href="#general-settings">General settings</a></h1>
+<h2 id="introduction-1"><a class="header" href="#introduction-1">Introduction</a></h2>
+<p>The general characteristics of applications are outlined here.<br>
+Path for saving documents:<br>
+When using applications, pressing the <strong>export</strong> button saves all documents onto a predefined folder.
+The path of the source folder must be selected in this field. 
+The application, starting from this base folder, defines the folder in which documents will be saved using this sequence:
+<strong>Starting folder\Application type\Product code\Version</strong></p>
+<p>Path for saving documents
+When using applications, pressing the export button saves all documents onto a predefined folder.
+The path of the source folder must be selected in this field. 
+The application, starting from this base folder, defines the folder in which documents will be saved using this sequence:</p>
+<h2 id="example-1"><a class="header" href="#example-1">Example</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td>Application</td><td>Clever Inductor</td></tr>
+<tr><td>Start folder</td><td>C:\Design</td></tr>
+<tr><td>Product name</td><td>000111</td></tr>
+<tr><td>Version</td><td>2</td></tr>
+<tr><td>Document storage folder</td><td>C:\Design\Clever Inductor\000111\2</td></tr>
+</tbody></table>
+</div>
+<p>It is would be advisable to archive documents on the network.	</p>
+<h2 id="description"><a class="header" href="#description">Description</a></h2>
+<ul>
+<li><strong>Logo</strong>: here you can insert your company logo, which must have a maximum resolution of 300 x 300 pixels. Pressing the button next to the logo opens a dialogue box that allows you to upload the desired design. If the design does not appear, it means that its resolution is too high and must be reduced.</li>
+<li><strong>Currency</strong>: you can select the desired currency  in the box below.</li>
+<li><strong>Deletion Password Corporate Archive</strong>: as the deletion of designs from the Company Archive is a critical operation, a password must be entered to proceed with this operation. For security reasons, the following field requires confirmation of the said password.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="electrical-parameters"><a class="header" href="#electrical-parameters">Electrical parameters</a></h1>
+<h2 id="introduction-2"><a class="header" href="#introduction-2">Introduction</a></h2>
+<p>Here you can define some parameters that are involved in the electrical calculation or mechanical design, specific to each company.</p>
+<h3 id="insulator-overhang-at-the-side-of-the-coils-mm"><a class="header" href="#insulator-overhang-at-the-side-of-the-coils-mm">Insulator overhang at the side of the coils (mm)</a></h3>
+<p>Enter the insulator overhang between the coil in the case of foil winding. This value will then be set automatically in the designs. It only applies to foil conductors as the set overhang for strip and wire conductors is always 0.<br>
+For all conductor types, it is possible to change the set value throughout the project.</p>
+<h3 id="flat-wire-insulation-thickness-mm"><a class="header" href="#flat-wire-insulation-thickness-mm">Flat wire insulation thickness (mm)</a></h3>
+<p>The flat wire can be enamelled or Nomex insulated. Depending on the type of insulation, the thickness of the insulation changes.
+Enter the chosen thickness here.</p>
+<h3 id="conductor-waste-factor"><a class="header" href="#conductor-waste-factor">Conductor waste factor</a></h3>
+<p>The winding weight can be increased by entering the multiplication factor here. In the technical specification and winding weight calculation, the exact theoretical weight will still be given.</p>
+<h4 id="example-2"><a class="header" href="#example-2">Example</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td>Theoretical conductor weight</td><td>10.00 kg</td></tr>
+<tr><td>Waste factor</td><td>1.03</td></tr>
+<tr><td>Weight in the bill of materials and cost</td><td>10.30 kg</td></tr>
+</tbody></table>
+</div>
+<h3 id="core-waste-factor"><a class="header" href="#core-waste-factor">Core waste factor</a></h3>
+<p>The same principle applies to core weight, as above.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="bulging-of-the-windings"><a class="header" href="#bulging-of-the-windings">Bulging of the windings</a></h1>
+<h2 id="introduction-3"><a class="header" href="#introduction-3">Introduction</a></h2>
+<p>The bulging of the winding is the multiplicative factor applied to the theoretical winding thickness to reach the actual winding thickness required.
+This parameter depends on the type of winding machines available in the company and how they work. Generally, in order to determine the bulging coefficient under various conditions, a series of sample windings must be defined. This includes measuring their real thickness and calculating the ratio between the real thickness and that which was theoretically calculated. 
+Establishing the real winding thickness is particularly important as it leads to determining accuracy in the calculation of:</p>
+<ul>
+<li>Short-circuit voltage</li>
+<li>
+<ul>
+<li>Load voltage</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Losses in the conductors and consequently overtemperature in the various winding sections</li>
+</ul>
+</li>
+</ul>
+<p>Within the table, you can define the bulging coefficient depending on the type, material and thickness of the conductor.<br>
+<strong>Using the &quot;+&quot; or &quot;-&quot; buttons in the navigator at the top right, you can insert rows to achieve greater granularity or delete rows if required fewer details.</strong></p>
+<h3 id="table-fields-bulging-of-the-windings"><a class="header" href="#table-fields-bulging-of-the-windings">Table Fields (Bulging of the windings)</a></h3>
+<ul>
+<li>
+<p><strong>Coil shape</strong>: the code that identifies the shape of the coil can be either rectangular <strong>R</strong> or cylindrical <strong>C</strong>.
+The current applications are not yet designed for cylindrical coils so the content of this field must always be R. Coil diversification will be included in future versions of the applications.</p>
+</li>
+<li>
+<p><strong>Material</strong>: select the material of the winding - <strong>AL</strong> or <strong>CU.</strong></p>
+</li>
+<li>
+<p><strong>Code</strong>: select the type of winding by entering one of the following codes: <strong>F</strong> = wire <strong>P</strong> = flat wire <strong>B</strong> = foil </p>
+</li>
+<li>
+<p><strong>MAX. thickness</strong>: the maximum radial thickness of the conductor
+If the chosen coefficient of use is applicable for any thickness enter <strong>0.</strong> If there is a thickness limitation, enter the <strong>thickness limit.</strong> In this latter case, enter an additional line for type and/or conductor material without set limitation, i.e. with Thickness MAX. = 0 and enter the correct coefficient.</p>
+</li>
+<li>
+<p><strong>Coefficient</strong>: multiplication factor to be applied to the theoretical thickness to obtain the actual thickness.</p>
+</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="construction-parameters"><a class="header" href="#construction-parameters">Construction parameters</a></h1>
+<h2 id="introduction-4"><a class="header" href="#introduction-4">Introduction</a></h2>
+<p>Under construction parameters, you will find all the tables that define the various design parameters. They can be used to design each type of element in an optimised way.<br>
+<strong>The PROFESSIONAL version of Clever Suite includes tables with standard values that may be quite different from the proportions you use in your company. Optimisation varies according to financial, geographical, and time-based conditions within which each company operates.</strong>
+Therefore, it is paramount to compare the data supplied with your internal optimisation and carefully evaluate the values to be entered into the applications in order to obtain the best design at the lowest cost for all the various element types and relevant power.<br>
+For each type of element and each power, it is a matter of defining which geometric parameters lead to the greatest advantage in financial terms.<br>
+Clever applications will automatically adapt your established geometric parameters and allow you to design elements as optimised as possible straightaway.<br></p>
+<p>For large elements, there are two tables: one for elements built with the non-oriented grain (<strong>NO</strong>) magnetic sheet and one for oriented grain (<strong>GO</strong>) magnetic sheet. This is because in these two cases, the proportioning is generally quite different.
+<strong>Other tables, to define different parameters for special constructions, can be inserted on request.</strong> <br>
+All dimensions in the tables are expressed in mm. unless explicitly stated.</p>
+<h3 id="table-fields--no-core-and-go-core"><a class="header" href="#table-fields--no-core-and-go-core">Table Fields ( NO core and GO core)</a></h3>
+<ul>
+<li><strong>Description</strong>: free descriptions of the type of element being designed are not included in the applications, so you can write descriptions as you see fit.</li>
+<li><strong>Power VA</strong>: dimensioning power of the element in VA.</li>
+<li><strong>Prim. wdg partwindings</strong>: the number of partwindings of the primary winding. In the case of inductors, this will be the total number of partwindings as there is only one winding.</li>
+<li><strong>Prim. wdg channel</strong>: the thickness of the front channel between the partwindings of the first winding.</li>
+<li><strong>Sec. wdg partwindings</strong>: No. of partwindings of the secondary winding. </li>
+<li><strong>Sec. wdg channel</strong>: the thickness of the front channel between the partwindings of the secondary winding. This channel is also used between the primary and the secondary channel. If there were more than one secondary winding, the applications would copy the data of the first secondary winding.</li>
+<li><strong>Winding H</strong>: net height of the windings 
+(all windings are set to the same height).</li>
+<li><strong>Core section cm2</strong>: section of the core (column) which is calculated as follows: <strong>sheet width x Core thickness x 0.97</strong>. <br>
+<strong>0.97</strong> gives the actual cross-section, after deducting the spaces occupied by the insulation of the individual laminations.</li>
+<li><strong>Core Width</strong>: the width of the core sheet of the column (The core thickness is calculated automatically by the application, starting from the core section, taking into account the formula above).</li>
+<li><strong>Front ch. core/coil</strong>: the front channel between the core and winding.</li>
+<li><strong>Side ch. core/coil</strong>: the lateral channel between core and winding. The inclusion of frontal and lateral values is especially important for inductors. If there is no side channel, enter 0.</li>
+<li><strong>Window width</strong>: the window width is the space between the columns.</li>
+<li><strong>Window height</strong>: window height is the space between the two yokes.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="no-core"><a class="header" href="#no-core">NO core</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="go-core"><a class="header" href="#go-core">GO core</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="generic-elements"><a class="header" href="#generic-elements">Generic elements</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ul-elements"><a class="header" href="#ul-elements">UL elements</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="material-tables"><a class="header" href="#material-tables">Material tables</a></h1>
+<h2 id="introduction-5"><a class="header" href="#introduction-5">Introduction</a></h2>
+<p>The sub-menu tables contain all the materials that are used in the construction of the designed elements. There is one table for each group.<br>
+Each table must contain a list of the items that are used. 
+As you will see later, you must enter the electrical and/or dimensional data required to fully define the component under consideration.<br>
+If there are different sub-families within a table, these are identified by a code. When choosing the code, please follow the instructions in the help section of each table.
+Finally, you must enter the article code that you use in your management system.<br>
+Consider that, as illustrated in the figure below, the list of materials in your warehouse is imported into Clever Suite and this article will allow applications to retrieve your official description and the cost of the material once the component is found on this list.
+In the first installation, the tables have already been filled with materials that we consider standard. This will shorten your data entry work and provide an example of how to enter data. You of course have the freedom to edit, delete and add rows as required. It is important to take care of this configuration phase because it determines the quality of your future work.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="threated-rod"><a class="header" href="#threated-rod">Threated rod</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="insulating-bushes"><a class="header" href="#insulating-bushes">Insulating bushes</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="lugs"><a class="header" href="#lugs">Lugs</a></h1>
