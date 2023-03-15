@@ -7,7 +7,7 @@ They can be made of bent steel or UNP (as shown in the drawing above). They esse
 
 
 
-<img src="img/ProfiliU.png" height="150px">
+<img src="img/ProfiliU.png" height="200px">
 
 ### Table fields (U-profiles)
 - **Code**: the code defines the shape of the profile, normally = UG. Different profile shapes can be defined during customisation and different codes will be defined accordingly.

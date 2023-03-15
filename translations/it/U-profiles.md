@@ -5,7 +5,7 @@ I profili a U possono essere utilizzati per il serraggio verticale degli element
 Possono essere in acciaio piegato o UNP (come da disegno)  Si differenziano tra di loro essenzialmente per il tipo di materiale. La scelta dipende essenzialmente dall’ambiente d’installazione. Sono prodotti semilavorati.
 
 
-<img src="img/ProfiliU.png" height="150px">
+<img src="img/ProfiliU.png" height="200px">
 
 ### Campi della tabella (Profili a U)
 - **Codice**: il codice definisce la forma del semilavorato, normalmente = UG. Durante la personalizzazione è possibile definire profili di forme differenti e di conseguenza si definiranno codici diversi.

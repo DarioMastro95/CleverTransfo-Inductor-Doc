@@ -1,4 +1,4 @@
-# Distanziatori
+# Steel Ducts
 
 ## Introduction
 Steel ducts are used for the formation of **front or side** cooling channels in transformer or inductor windings. They are not suitable for channels along the entire perimeter of the coil. The shape is generally C-shaped as shown in the figure above and there are C-shaped variants with rounded edges.

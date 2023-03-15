@@ -5,9 +5,9 @@ This table shows the standard drillings of the output bars, customer-side, accor
 The upper figure shows the drilling patterns (a total of six types) while the lower figure shows the dimensions visible in the table, which are also repeated in drilling patterns 5 - 6 .
 At the design phase, you can choose the type of hole pattern and the applications will calculate the dimensions accordingly. You can add other types of holes or modify existing ones but you will no longer be in line with DIN standards.
 
-<img src="img/ForaturaBarre1.png" height="100px">
+<img src="img/BarDrilling.png" height="180px">
 <br>
-<img src="img/ForaturaBarre2.png" height="124px">
+<img src="img/ForaturaBarre2.png" height="204px">
 
 ### Table fields (bar drilling)
 

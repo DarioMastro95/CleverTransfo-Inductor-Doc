@@ -10,7 +10,7 @@
     - [Generic elements](./Generic-elements.md)
     - [UL elements](./UL-elements.md)
 - [Material tables](./Material-tables.md)
-    - [Threated rod](./Threated-rod.md)
+    - [Threated rods](./Threated-rods.md)
     - [Insulating bushes](./Insulating-bushes.md)
     - [Lugs](./Lugs.md)
     - [Multi wire cables](./Multi-wire-cables.md)

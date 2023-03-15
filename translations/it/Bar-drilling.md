@@ -5,9 +5,9 @@ Questa tabella presenta le forature standard delle barre d’uscita, lato attacc
 La figura in alto mostra i tipi di foratura che sono complessivamente 6, mentre la figura più in basso mostra le quote che vedrete in tabella, che si ripetono anche nelle forature 5 – 6 . In fase di esecuzione del progetto, è possibile scegliere il tipo di foratura e le applicazioni considereranno le quote secondo la questa tabella.
 Potete aggiungere altre forature speciali o modificare quelle esistenti. Resta il fatto che non sarete più in linea con le Norme DIN.
 
-<img src="img/ForaturaBarre1.png" height="100px">
+<img src="img/ForaturaBarre1.png" height="180px">
 <br>
-<img src="img/ForaturaBarre2.png" height="124px">
+<img src="img/ForaturaBarre2.png" height="204px">
 
 ### Campi della tabella (Foratura barre)
 

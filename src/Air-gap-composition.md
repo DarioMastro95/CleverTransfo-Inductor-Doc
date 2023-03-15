@@ -5,14 +5,14 @@ Generally, the air gap defined in the calculation phase seldom corresponds to th
 Limits: the envisaged compositions allow the combination of up to two different insulating materials, each with up to **three sheets or plate in parallel.**
 Depending on your availability, you can modify this table by inserting other materials and deleting or inserting other lines.
 
-### Table fields (Air gaps composition)
+### Table fields (Air gap composition)
 
-- **Total thickness**: the thickness of the air gap obtained with the composition present on the row.
+- **Tot. Thick**: the thickness of the air gap obtained with the composition present on the row.
 - **Material 1**: material related to the first insulation.
 By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.
-- **Number of sheets 1**: the number of sheets or plates superimposed on the first insulation.
+- **Nr sheets 1**: the number of sheets or plates superimposed on the first insulation.
 - **Thickness 1**: the thickness of the first insulation.
 - **Material 2**: material related to the second insulation.
 By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.
-- **Number of sheets 2**: number of sheets or plates superimposed on the second insulation
+- **Nr sheets 2**: number of sheets or plates superimposed on the second insulation
 - **Thickness 2**: the thickness of the second insulation.

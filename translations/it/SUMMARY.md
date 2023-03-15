@@ -10,7 +10,7 @@
     - [Elementi generici](./Generic-elements.md)
     - [Elementi UL](./UL-elements.md)
 - [Tabelle dei materiali](./Material-tables.md)
-    - [Aste filettate](./Threated-rod.md)
+    - [Aste filettate](./Threated-rods.md)
     - [Bussole isolanti](./Insulating-bushes.md)
     - [Capicorda](./Lugs.md)
     - [Cavetti multifilari](./Multi-wire-cables.md)

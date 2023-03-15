@@ -6,8 +6,8 @@ Thermo shrink ribbons are used for the external wrapping of coils. During vacuum
 
 ### Table fields (thermo shrink ribbons)
 
-- **Weight gr/m**: Weight grams per meter. Data are retrievable from the supplier.
-- **Code**: The code defines the type of ribbon, normally = NAT. Different ribbons can be defined during customisation and different codes will be defined accordingly.
+- **Weight gr/m**: weight grams per meter. Data are retrievable from the supplier.
+- **Code**: the code defines the type of ribbon, normally = NAT. Different ribbons can be defined during customisation and different codes will be defined accordingly.
 - **Material**: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.
 - **Thickness**: the thickness of the ribbon.
 - **Width**: the width of the ribbon.

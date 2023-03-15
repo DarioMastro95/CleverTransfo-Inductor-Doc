@@ -7,7 +7,7 @@ This table defines the type of output terminal that the applications will choose
 - **Rating voltage**
 
 
-### Table fields (Select output term. type)
+### Table fields (Selecting output terminal type)
 
 - **Conductor type**: enter the conductor type according to the following code:<br>
 1 = Flat wire <br>
@@ -21,7 +21,7 @@ If the output type is valid for both wire and flat wire enter: 13
 .***
 - **Max current A**: maximum rated current for which that type of output can be used.
 - **Max voltage V**: maximum rated voltage for which that type of output can be used.
-- **Output terminal type**: output terminal type code: <br>
+- **Selecting output terminal type**: output terminal type code: <br>
 1 = Terminal blocks in lists <br>
 2 = minal blocks on rail <br>
 3 = Lugs <br>
