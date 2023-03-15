@@ -6,7 +6,6 @@ Nuts are used for the horizontal and vertical tightening of elements, for the gr
 <img src="img/Dadi.jpg" height="150px">
 
 ### Table fields (Nuts)
-
 - **Code**: Acronym by which the shape of the nut is identified. 
 The abbreviations still in use are:
 <br>

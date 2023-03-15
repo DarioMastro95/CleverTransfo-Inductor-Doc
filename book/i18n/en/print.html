@@ -148,11 +148,11 @@
                         <h1 id="users"><a class="header" href="#users">Users</a></h1>
 <h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
 <p>This table allows you to input all the users who will use the applications. 
-The number of users does not necessarily have to coincide with the number of licenses.<br />
-The number of licenses only limits the number of simultaneous accesses to Clever Suite.</p>
+The <strong>number of users</strong> does not necessarily have to coincide with the number of licenses.<br />
+The <strong>number of licenses</strong> only limits the number of simultaneous accesses to Clever Suite.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <p><em>A company that has purchased three licenses can install Clever Suite on more than three computers and the number of users can be greater than three, as long as no more than three designers are working simultaneously at any time.</em></p>
-<h2 id="campi-tabella"><a class="header" href="#campi-tabella">Campi Tabella</a></h2>
+<h2 id="table-fields"><a class="header" href="#table-fields">Table fields</a></h2>
 <ul>
 <li><strong>UserName</strong>: it is an abbreviation of the user’s full name and may include a maximum of two characters in capital letters. </li>
 <li><strong>Name</strong>: it is the first name of the user. The first letter is capitalised.</li>
@@ -177,7 +177,7 @@ The application, starting from this base folder, defines the folder in which doc
 <tr><td>Start folder</td><td>C:\Design</td></tr>
 <tr><td>Product name</td><td>000111</td></tr>
 <tr><td>Version</td><td>2</td></tr>
-<tr><td>Document storage folder</td><td>C:\Design\Clever Inductor\000111\2</td></tr>
+<tr><td>Document path</td><td>C:\Design\Clever Inductor\000111\2</td></tr>
 </tbody></table>
 </div>
 <p>It is would be advisable to archive documents on the network.	</p>
@@ -249,6 +249,7 @@ Clever applications will automatically adapt your established geometric paramete
 <p>For large elements, there are two tables: one for elements built with the non-oriented grain (<strong>NO</strong>) magnetic sheet and one for oriented grain (<strong>GO</strong>) magnetic sheet. This is because in these two cases, the proportioning is generally quite different.
 <strong>Other tables, to define different parameters for special constructions, can be inserted on request.</strong> <br>
 All dimensions in the tables are expressed in mm. unless explicitly stated.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="no-core"><a class="header" href="#no-core">NO core</a></h1>
 <h3 id="table-fields--no-core-and-go-core"><a class="header" href="#table-fields--no-core-and-go-core">Table Fields ( NO core and GO core)</a></h3>
 <ul>
 <li><strong>Description</strong>: free descriptions of the type of element being designed are not included in the applications, so you can write descriptions as you see fit.</li>
@@ -267,8 +268,25 @@ All dimensions in the tables are expressed in mm. unless explicitly stated.</p>
 <li><strong>Window width</strong>: the window width is the space between the columns.</li>
 <li><strong>Window height</strong>: window height is the space between the two yokes.</li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="no-core"><a class="header" href="#no-core">NO core</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="go-core"><a class="header" href="#go-core">GO core</a></h1>
+<h3 id="table-fields--no-core-and-go-core-1"><a class="header" href="#table-fields--no-core-and-go-core-1">Table Fields ( NO core and GO core)</a></h3>
+<ul>
+<li><strong>Description</strong>: free descriptions of the type of element being designed are not included in the applications, so you can write descriptions as you see fit.</li>
+<li><strong>Power VA</strong>: dimensioning power of the element in VA.</li>
+<li><strong>Prim. wdg partwindings</strong>: the number of partwindings of the primary winding. In the case of inductors, this will be the total number of partwindings as there is only one winding.</li>
+<li><strong>Prim. wdg channel</strong>: the thickness of the front channel between the partwindings of the first winding.</li>
+<li><strong>Sec. wdg partwindings</strong>: No. of partwindings of the secondary winding. </li>
+<li><strong>Sec. wdg channel</strong>: the thickness of the front channel between the partwindings of the secondary winding. This channel is also used between the primary and the secondary channel. If there were more than one secondary winding, the applications would copy the data of the first secondary winding.</li>
+<li><strong>Winding H</strong>: net height of the windings 
+(all windings are set to the same height).</li>
+<li><strong>Core section cm2</strong>: section of the core (column) which is calculated as follows: <strong>sheet width x Core thickness x 0.97</strong>. <br>
+<strong>0.97</strong> gives the actual cross-section, after deducting the spaces occupied by the insulation of the individual laminations.</li>
+<li><strong>Core Width</strong>: the width of the core sheet of the column (The core thickness is calculated automatically by the application, starting from the core section, taking into account the formula above).</li>
+<li><strong>Front ch. core/coil</strong>: the front channel between the core and winding.</li>
+<li><strong>Side ch. core/coil</strong>: the lateral channel between core and winding. The inclusion of frontal and lateral values is especially important for inductors. If there is no side channel, enter 0.</li>
+<li><strong>Window width</strong>: the window width is the space between the columns.</li>
+<li><strong>Window height</strong>: window height is the space between the two yokes.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="generic-elements"><a class="header" href="#generic-elements">Generic elements</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ul-elements"><a class="header" href="#ul-elements">UL elements</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="material-tables"><a class="header" href="#material-tables">Material tables</a></h1>
@@ -296,7 +314,7 @@ In the first installation, the tables have already been filled with materials th
 <div style="break-before: page; page-break-before: always;"></div><h1 id="insulating-bushes"><a class="header" href="#insulating-bushes">Insulating bushes</a></h1>
 <h2 id="introduction-7"><a class="header" href="#introduction-7">Introduction</a></h2>
 <p>Insulating bushes are used in Clever Small-T and Clever Small-I applications for insulating screws in horizontal clamping. They can be replaced by insulating tubes if required. Several fields included in the table are currently not operational. Hence, must have a value of 0. </p>
-<img src="img/BussoleIsolanti.png" height="180px">
+<img src="img/BussoleIsolanti.png" height="240px">
 <h3 id="table-fields-insulating-sleeves"><a class="header" href="#table-fields-insulating-sleeves">Table fields (insulating sleeves)</a></h3>
 <ul>
 <li><strong>External diameter</strong>: dimension B of the drawing above. This value is not used enter 0 (dimension B of the drawing).</li>
@@ -429,7 +447,7 @@ They can be made of Ac Zn for transformer core/coil channels. In all other cases
 <div style="break-before: page; page-break-before: always;"></div><h1 id="eyebolts"><a class="header" href="#eyebolts">Eyebolts</a></h1>
 <h2 id="introduction-13"><a class="header" href="#introduction-13">Introduction</a></h2>
 <p>Eyebolts or lifting hooks are mounted on the top of elements to facilitate lifting.  They are available with either an internal or externally threaded hole.</p>
-<img src="img/Golfari.png" height="120px">
+<img src="img/Golfari.png" height="180px">
 <h3 id="table-ranges-eyebolts"><a class="header" href="#table-ranges-eyebolts">Table Ranges (Eyebolts)</a></h3>
 <ul>
 <li><strong>Dimension B</strong>: internal hole diameter. See drawing above.</li>
@@ -470,7 +488,7 @@ UL = valid only for UL standards, GSI = valid for general elements class B, LSI 
 <div style="break-before: page; page-break-before: always;"></div><h1 id="insulating-sheets"><a class="header" href="#insulating-sheets">Insulating sheets</a></h1>
 <h2 id="introduction-15"><a class="header" href="#introduction-15">Introduction</a></h2>
 <p>Insulating sheets differ from each other in the type of material they are made of. The choice depends on the temperature class and, in some cases, on the standard to which the element is subjected.</p>
-<h3 id="table-fields-insulating-foils"><a class="header" href="#table-fields-insulating-foils">Table fields (Insulating foils)</a></h3>
+<h3 id="table-fields-insulating-sheets"><a class="header" href="#table-fields-insulating-sheets">Table fields (Insulating sheets)</a></h3>
 <ul>
 <li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the <em><strong>Material field</strong></em>, you see a list of all available materials and can choose the correct abbreviation.</li>
 <li><strong>Thickness</strong>: enter the thickness of the insulation sheet.</li>
@@ -482,7 +500,7 @@ UL = valid only for UL standards, GSI = valid for general elements class B, LSI 
 <h2 id="introduction-16"><a class="header" href="#introduction-16">Introduction</a></h2>
 <p>Insulators are used to isolate and fix output terminals to the element.
 They are generally used where the insulation voltage or operating voltage exceeds 4 KV, or when the low number of outputs makes it more economical to use them instead of a plate for fixing lugs or bars. There are many different types of insulators. A standard insulators has been included here. However, it is possible to insert tables of insulators that differ quite significantly from those.</p>
-<img src="img/Isolatori.jpg" height="170px">
+<img src="img/Isolatori.jpg" height="270px">
 <h3 id="table-fields-insulators"><a class="header" href="#table-fields-insulators">Table fields (Insulators)</a></h3>
 <ul>
 <li><strong>Code</strong>: code identifying the type of insulators. The standard insulators shown in the drawing above corresponds to IS.<br />
@@ -517,7 +535,7 @@ Other types of insulators will have different codes, agreed with us.</li>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="insulating-slabs"><a class="header" href="#insulating-slabs">Insulating slabs</a></h1>
 <h2 id="introduction-18"><a class="header" href="#introduction-18">Introduction</a></h2>
 <p>Insulating plates are mainly used in the formation of air gaps or as clamping plates for inductor column or to fix output terminals. They differ from each other mainly in the type of material from which they are made. The choice depends on the temperature class and, in some cases, on the standard to which the element is subjected.</p>
-<h3 id="table-fields-insulating-sheets"><a class="header" href="#table-fields-insulating-sheets">Table fields (Insulating sheets)</a></h3>
+<h3 id="table-fields-insulating-slabs"><a class="header" href="#table-fields-insulating-slabs">Table fields (Insulating slabs)</a></h3>
 <ul>
 <li><strong>Width</strong>: enter the width of the semi-finished plate.</li>
 <li><strong>Length</strong>: here you can enter either the length of the semi-finished product (if you buy by the meter in STD dimensions and cut to size at the factory) or all standardized widths (if you buy already cut to size). The applications check if the exact size exists. If it does not exist, they use a semi-finished product.</li>
@@ -580,7 +598,7 @@ They can be made of bent steel or UNP (as shown in the drawing above). They esse
 <h2 id="introduction-22"><a class="header" href="#introduction-22">Introduction</a></h2>
 <p>Flat profiles can be used for the horizontal clamping of elements.<br />
 They are steel plates (as shown in the drawing above).  They differ from each other mainly in the type of material. The choice depends essentially on the installation environment. They are semi-finished products.</p>
-<img src="img/ProfiliPiatti.png" height="150px">
+<img src="img/ProfiliPiatti.png" height="200px">
 <h3 id="table-fields-flat-profiles"><a class="header" href="#table-fields-flat-profiles">Table fields (Flat profiles)</a></h3>
 <ul>
 <li><strong>Code</strong>: the code defines the shape of the profile, normally = PGP. Different profile shapes can be defined during customisation and different codes will be defined accordingly.</li>
@@ -606,7 +624,7 @@ During customisation, it is possible to define other codes combined with other d
 <h2 id="introduction-24"><a class="header" href="#introduction-24">Introduction</a></h2>
 <p>Washers are used in horizontal and vertical clamping, in ground-screw clamping and clamping of output terminals (lugs or bars) on plates or insulators.</p>
 <img src="img/Rondelle.jpg" height="150px">
-<h3 id="campi-della-tabella-rondelle"><a class="header" href="#campi-della-tabella-rondelle">Campi della tabella (Rondelle)</a></h3>
+<h3 id="table-fields-washers"><a class="header" href="#table-fields-washers">Table fields (Washers)</a></h3>
 <ul>
 <li><strong>Code</strong>: these are acronyms by which the shape of the washer is identified. The current abbreviations are:
 RGR = Grower washer <br>
@@ -644,26 +662,26 @@ A distinction is made between bars constituting a customer connection, which are
 <p>Corner dog bones are used to make the core/coil channels when channels feature around the entire perimeter of the column. They are placed on the four corners of the core.</p>
 <h3 id="table-fields-corner-dog-bone"><a class="header" href="#table-fields-corner-dog-bone">Table fields (Corner dog bone)</a></h3>
 <ul>
-<li><strong>Width</strong>: in normalised form, the width corresponds to the thickness of the channel. Insert this dimension may be particularly useful in the case of a special corner dog bone.</li>
-<li><strong>Weight kg / m</strong>: enter the value taken from the supplier's table.</li>
 <li><strong>Code</strong>: it is the code by which the type of corner dog bone is identified. Current code = STT.
 Other shapes may be defined when applications are customised.</li>
 <li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Width</strong>: in normalised form, the width corresponds to the thickness of the channel. Insert this dimension may be particularly useful in the case of a special corner dog bone.</li>
 <li><strong>Thickness</strong>: it corresponds to the thickness of the channel.</li>
+<li><strong>Weight kg / m</strong>: enter the value taken from the supplier's table.</li>
 <li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="dog-bones"><a class="header" href="#dog-bones">Dog bones</a></h1>
 <h2 id="introduction-27"><a class="header" href="#introduction-27">Introduction</a></h2>
 <p>The dog bones are used to make ventilation channels when windings are present around the entire perimeter of the coil. They are also sometimes used as additional reinforcement in the case of front-only or side-only channels made from steel ducts.
 ali o solo laterali realizzati mediante distanziatori in acciaio.</p>
-<img src="img/SteccheTriglass.png" height="200px">
+<img src="img/SteccheTriglass.png" height="270px">
 <h3 id="table-fields-dog-bones"><a class="header" href="#table-fields-dog-bones">Table fields (Dog bones)</a></h3>
 <ul>
 <li><strong>Code</strong>: it is the code by which the type of dog bone is identified. Current abbreviation = STTR.
 Other shapes may be defined when applications are customised.</li>
 <li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the <em><strong>Material field</strong></em>, you see a list of all available materials and can choose the correct abbreviation.</li>
-<li><strong>Thickness</strong>: the thickness of the dog bone. Corresponds to the thickness of the channel (Dimension B in the drawing above).</li>
 <li><strong>Width</strong>: width of the dog bone (Dimension H in the drawing above).</li>
+<li><strong>Thickness</strong>: the thickness of the dog bone. Corresponds to the thickness of the channel (Dimension B in the drawing above).</li>
 <li><strong>R</strong>: corresponds to the outer radius and may be omitted.</li>
 <li><strong>R1</strong>: corresponds to the inner radius and can be omitted.</li>
 <li><strong>Weight kg / m</strong>: enter the value retrieved from the supplier's table.</li>
