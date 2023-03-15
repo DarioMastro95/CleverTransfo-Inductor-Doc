@@ -3,7 +3,7 @@
 ## Introduzione
 Le stecche in triglass, dette “dog bone” nel  gergo corrente, si utilizzano per realizzare i canali di ventilazione negli avvolgimenti, quando questi ultimi sono stati previsti lungo tutto il perimetro della bobina. Vengono utilizzate anche come rinforzo supplementare nei canali solo frontali o solo laterali realizzati mediante distanziatori in acciaio.
 
-<img src="img/SteccheTriglass.png" height="200px">
+<img src="img/SteccheTriglass.png" height="270px">
 
 ### Campi della tabella (Stecche in triglass)
 

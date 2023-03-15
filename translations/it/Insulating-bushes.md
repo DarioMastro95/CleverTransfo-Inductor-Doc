@@ -3,7 +3,7 @@
 ## Introduzione
 Le bussole isolanti si utilizzano nelle applicazioni Clever Small-T e Clever Small-I per l’isolamento delle viti nel serraggio orizzontale. Possono essere sostituite da tubetti isolanti se richiesto. Nella tabella sono stati inseriti alcuni campi che, attualmente, non vengono utilizzati e quindi devono avere valore 0. 
 
-<img src="img/BussoleIsolanti.png" height="180px">
+<img src="img/BussoleIsolanti.png" height="240px">
 
 ### Campi della tabella (Bussole)
 - **Diametro esterno**: dimensione B del disegno. Questo valore non viene utilizzato inserire 0 (dimensione B del disegno).

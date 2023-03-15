@@ -3,7 +3,7 @@
 ## Introduction
 Insulating sheets differ from each other in the type of material they are made of. The choice depends on the temperature class and, in some cases, on the standard to which the element is subjected.
 
-### Table fields (Insulating foils)
+### Table fields (Insulating sheets)
 
 - **Material**: material abbreviation. By opening the drop-down menu of the ***Material field***, you see a list of all available materials and can choose the correct abbreviation.
 - **Thickness**: enter the thickness of the insulation sheet.

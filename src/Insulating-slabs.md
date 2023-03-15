@@ -4,7 +4,7 @@
 Insulating plates are mainly used in the formation of air gaps or as clamping plates for inductor column or to fix output terminals. They differ from each other mainly in the type of material from which they are made. The choice depends on the temperature class and, in some cases, on the standard to which the element is subjected.
 
 
-### Table fields (Insulating sheets)
+### Table fields (Insulating slabs)
 
 - **Width**: enter the width of the semi-finished plate.
 - **Length**: here you can enter either the length of the semi-finished product (if you buy by the meter in STD dimensions and cut to size at the factory) or all standardized widths (if you buy already cut to size). The applications check if the exact size exists. If it does not exist, they use a semi-finished product.

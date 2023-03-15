@@ -5,7 +5,7 @@ Gli isolatori, si utilizzano per isolare e fissare all’elemento i terminali d�
 Generalmente vengono impiegati in presenza di tensioni di isolamento o di esercizio che superano 4 KV, oppure quando il basso numero di uscite rende più economico utilizzarli al posto di una piastra per fissare capicorda o sbarrette. Esistono molti tipi di isolatori, molto differenti tra di loro. Qui è stato inserito un isolatore standard. In fase di personalizzazione è possibile inserire tabelle di isolatori anche molto differenti da questi.
 
 
-<img src="img/Isolatori.jpg" height="170px">
+<img src="img/Isolatori.jpg" height="270px">
 
 ### Campi della tabella (Isolatori)
 

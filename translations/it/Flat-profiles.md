@@ -6,7 +6,7 @@ Sono piastre in acciaio (come da disegno).  Si differenziano tra di loro essenzi
 
 
 
-<img src="img/ProfiliPiatti.png" height="150px">
+<img src="img/ProfiliPiatti.png" height="200px">
 
 ### Campi della tabella (Profili piatti)
 - **Codice**: il codice definisce la forma del semilavorato, normalmente = PGP. Durante la personalizzazione è possibile definire profili di forme differenti e di conseguenza si definiranno codici diversi.

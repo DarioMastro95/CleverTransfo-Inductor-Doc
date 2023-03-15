@@ -5,7 +5,7 @@ Insulators are used to isolate and fix output terminals to the element.
 They are generally used where the insulation voltage or operating voltage exceeds 4 KV, or when the low number of outputs makes it more economical to use them instead of a plate for fixing lugs or bars. There are many different types of insulators. A standard insulators has been included here. However, it is possible to insert tables of insulators that differ quite significantly from those.
 
 
-<img src="img/Isolatori.jpg" height="170px">
+<img src="img/Isolatori.jpg" height="270px">
 
 ### Table fields (Insulators)
 

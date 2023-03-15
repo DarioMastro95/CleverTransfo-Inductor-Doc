@@ -3,7 +3,7 @@
 ## Introduction
 Eyebolts or lifting hooks are mounted on the top of elements to facilitate lifting.  They are available with either an internal or externally threaded hole.
 
-<img src="img/Golfari.png" height="120px">
+<img src="img/Golfari.png" height="180px">
 
 ### Table Ranges (Eyebolts)
 

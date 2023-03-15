@@ -3,7 +3,7 @@
 ## Introduzione
 I golfari o ganci di sollevamento vengono montati sulla parte superiore degli elementi per agevolarne il sollevamento.  Esistono in forme: con foro filettato interno e con foro filettato esterno.
 
-<img src="img/Golfari.png" height="120px">
+<img src="img/Golfari.png" height="180px">
 
 ### Campi della tabella (Golfari)
 

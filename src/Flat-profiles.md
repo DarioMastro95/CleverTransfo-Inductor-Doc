@@ -4,7 +4,7 @@
 Flat profiles can be used for the horizontal clamping of elements.  
 They are steel plates (as shown in the drawing above).  They differ from each other mainly in the type of material. The choice depends essentially on the installation environment. They are semi-finished products.
 
-<img src="img/ProfiliPiatti.png" height="150px">
+<img src="img/ProfiliPiatti.png" height="200px">
 
 ### Table fields (Flat profiles)
 - **Code**: the code defines the shape of the profile, normally = PGP. Different profile shapes can be defined during customisation and different codes will be defined accordingly.
