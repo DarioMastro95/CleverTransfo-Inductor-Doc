@@ -22,7 +22,7 @@ The application, starting from this base folder, defines the folder in which doc
 | Start folder              | C:\Design                          |
 | Product name                   | 000111                                    |
 | Version                          | 2                                         |
-| Document storage folder  | C:\Design\Clever Inductor\000111\2 |
+| Document path | C:\Design\Clever Inductor\000111\2 |
 
 It is would be advisable to archive documents on the network.	
 

@@ -6,7 +6,7 @@ Washers are used in horizontal and vertical clamping, in ground-screw clamping a
 
 <img src="img/Rondelle.jpg" height="150px">
 
-### Campi della tabella (Rondelle)
+### Table fields (Washers)
 
 - **Code**: these are acronyms by which the shape of the washer is identified. The current abbreviations are:
 RGR = Grower washer <br>
