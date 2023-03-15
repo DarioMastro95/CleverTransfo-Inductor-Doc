@@ -3,7 +3,11 @@
 In questa tabella, trovate una serie di **materiali “generici”** che le applicazioni utilizzano quando non trovano il **materiale specifico,** per determinare il costo unitario di quel componente.
 Avete inoltre la possibilità di importare tutte le informazioni relative a tutti i vostri **articoli specifici,** presenti nel vostro **sistema gestionale.**<br>
 Notate che i materiali generici hanno un numero d’articolo che inizia con la lettera Z e sono contraddistinti dal colore **blu.**<br>
-La lista dei materiali generici comprende tutte le famiglie dei materiali che vengono utilizzati dalle applicazioni. Ovviamente, dal punto di vista dimensionale non possono che contenere prezzi associati a range di dimensioni con limiti piuttosto grossolani, perché altrimenti la lista sarebbe molto lunga e difficile da tenere aggiornata. D’altro canto, lo scopo, come si diceva, è quello di permettere alle applicazioni di calcolare il costo dei materiali di un elemento in modo “sensato”, anche se i materiali utilizzati non fanno parte del magazzino articoli dell’azienda. Ecco quindi che occorre, prima di tutto, **inserire il costo unitario per ogni riga,** conformemente all’unità di misura indicata. 
+La lista dei materiali generici comprende tutte le famiglie dei materiali che vengono utilizzati dalle applicazioni. Ovviamente, dal punto di vista dimensionale non possono che contenere prezzi associati a range di dimensioni con limiti piuttosto grossolani, perché altrimenti la lista sarebbe molto lunga e difficile da tenere aggiornata. D’altro canto, lo scopo, come si diceva, è quello di permettere alle applicazioni di calcolare il costo dei materiali di un elemento in modo “sensato”, anche se i materiali utilizzati non fanno parte del magazzino articoli dell’azienda. Ecco quindi che occorre, prima di tutto, **inserire il costo unitario per ogni riga,** conformemente all’unità di misura indicata.
+Quindi:
+1.	Il vostro primo lavoro sarà quindi quello di inserire il costo unitario per ogni riga, conformemente all’unità di misura indicata. 
+2.	Il vostro secondo compito consisterà nell'importare l'elenco dei materiali disponibili nel vostro magazzino ed elencati nel vostro sistema di gestione.
+
 
 ### Particolarità relative ai conduttori:
 Il costo dei conduttori può essere diviso in costo base e costo trasformazione. Infatti, troverete nella tabella queste due voci:

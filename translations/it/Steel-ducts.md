@@ -8,7 +8,7 @@ Possono essere in Ac Zn per i canali nucleo/bobina dei trasformatori. In tutti g
 
 ### Campi della tabella (Distanziatori)
 
-- **Materiale:
+- **Materiale**:
 Sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.
 - **Numero**: numero dei distanziatori impiegati per un canale. È possibile infatti, per ragioni di standardizzazione, affiancare 2 o anche 3 distanziatori allo scopo di ottenere la larghezza del canale desiderata. Normalmente questo valore è 1.
 - **Largh. Lam**: larghezza del lamierino della colonna sulla quale viene eseguito l’avvolgimento.

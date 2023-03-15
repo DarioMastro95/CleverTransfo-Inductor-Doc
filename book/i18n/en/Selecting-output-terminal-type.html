@@ -145,6 +145,37 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="selecting-output-terminal-type"><a class="header" href="#selecting-output-terminal-type">Selecting output terminal type</a></h1>
+<h3 id="introduction"><a class="header" href="#introduction">Introduction</a></h3>
+<p>This table defines the type of output terminal that the applications will choose automatically, according to the following parameters:</p>
+<ul>
+<li><strong>Type of conductor</strong> </li>
+<li><strong>Rating current</strong></li>
+<li><strong>Rating voltage</strong></li>
+</ul>
+<h3 id="table-fields-select-output-term-type"><a class="header" href="#table-fields-select-output-term-type">Table fields (Select output term. type)</a></h3>
+<ul>
+<li><strong>Conductor type</strong>: enter the conductor type according to the following code:<br>
+1 = Flat wire <br>
+2 = Foil<br>
+3 = Wire <br>
+4 = Multi wire<br>
+In case the output type is valid for more than one conductor, enter 1 code in sequence.<br>
+<em><strong>Esempio:
+Example:
+If the output type is valid for both wire and flat wire enter: 13
+.</strong></em></li>
+<li><strong>Max current A</strong>: maximum rated current for which that type of output can be used.</li>
+<li><strong>Max voltage V</strong>: maximum rated voltage for which that type of output can be used.</li>
+<li><strong>Output terminal type</strong>: output terminal type code: <br>
+1 = Terminal blocks in lists <br>
+2 = minal blocks on rail <br>
+3 = Lugs <br>
+4 = External bars (used when the winding is in flat wire, but the current does not allow for
+the use of lugs). 
+They are bars fixed to a plate or an insulator to which the flat wire, coming off the coil, is welded.<br>
+5 = Bars inside the foil winding.</li>
+<li><strong>Description</strong>: the description of the type of output is inserted in the table for clarity.</li>
+</ul>
 
                     </main>
 

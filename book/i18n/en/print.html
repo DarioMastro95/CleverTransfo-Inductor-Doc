@@ -214,16 +214,8 @@ This parameter depends on the type of winding machines available in the company 
 Establishing the real winding thickness is particularly important as it leads to determining accuracy in the calculation of:</p>
 <ul>
 <li>Short-circuit voltage</li>
-<li>
-<ul>
 <li>Load voltage</li>
-</ul>
-</li>
-<li>
-<ul>
 <li>Losses in the conductors and consequently overtemperature in the various winding sections</li>
-</ul>
-</li>
 </ul>
 <p>Within the table, you can define the bulging coefficient depending on the type, material and thickness of the conductor.<br>
 <strong>Using the &quot;+&quot; or &quot;-&quot; buttons in the navigator at the top right, you can insert rows to achieve greater granularity or delete rows if required fewer details.</strong></p>
@@ -289,42 +281,717 @@ Finally, you must enter the article code that you use in your management system.
 Consider that, as illustrated in the figure below, the list of materials in your warehouse is imported into Clever Suite and this article will allow applications to retrieve your official description and the cost of the material once the component is found on this list.
 In the first installation, the tables have already been filled with materials that we consider standard. This will shorten your data entry work and provide an example of how to enter data. You of course have the freedom to edit, delete and add rows as required. It is important to take care of this configuration phase because it determines the quality of your future work.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="threated-rod"><a class="header" href="#threated-rod">Threated rod</a></h1>
+<h2 id="introduction-6"><a class="header" href="#introduction-6">Introduction</a></h2>
+<p>Threaded rods are used in Clever Transfo and Clever Inductor applications for horizontal and vertical clamping of elements. The material is, generally, galvanized steel.</p>
+<img src="img/AsteFilettate.jpg" height="120px">
+<h3 id="table-fields-threaded-rods"><a class="header" href="#table-fields-threaded-rods">Table fields (Threaded rods)</a></h3>
+<ul>
+<li><strong>Length</strong>: it is the length of the semi-finished product. You can enter 0 as this value is currently not available.</li>
+<li><strong>Weight kg/m</strong>: this value is generally taken from the supplier's specifications and is mandatory .</li>
+<li><strong>Code</strong>: this code is useful for possible sub-families. Currently, the code AS0 must be used for all threaded rods (the last character is a zero).</li>
+<li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Dimension M</strong>: enter here the M value corresponding to dimension 'd' in the drawing above.</li>
+<li><strong>Articolo</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table <em><strong>Material Unit Cost</strong></em> by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="insulating-bushes"><a class="header" href="#insulating-bushes">Insulating bushes</a></h1>
+<h2 id="introduction-7"><a class="header" href="#introduction-7">Introduction</a></h2>
+<p>Insulating bushes are used in Clever Small-T and Clever Small-I applications for insulating screws in horizontal clamping. They can be replaced by insulating tubes if required. Several fields included in the table are currently not operational. Hence, must have a value of 0. </p>
+<img src="img/BussoleIsolanti.png" height="180px">
+<h3 id="table-fields-insulating-sleeves"><a class="header" href="#table-fields-insulating-sleeves">Table fields (insulating sleeves)</a></h3>
+<ul>
+<li><strong>External diameter</strong>: dimension B of the drawing above. This value is not used enter 0 (dimension B of the drawing).</li>
+<li><strong>Collar diameter</strong>: dimension C of the drawing above. This value is not used, enter 0.</li>
+<li><strong>Thickness</strong>: dimension D of the drawing above. This value is not used enter 0.</li>
+<li><strong>Length</strong>: dimension E of the drawing. This value is not used, enter 0.</li>
+<li><strong>Dimension M</strong>: dimension A of the drawing above. Enter the value M here.</li>
+<li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the <em><strong>Material field</strong></em>, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Code</strong>: this code is useful for possible sub-families. At present, the BUI code must be used for all types of bushes.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table <em><strong>Material Unit Cost</strong></em> by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="lugs"><a class="header" href="#lugs">Lugs</a></h1>
+<h2 id="introduction-8"><a class="header" href="#introduction-8">Introduction</a></h2>
+<p>Non-insulated cable lugs are used in Clever Transfo and Clever Inductor applications as output terminals when current or other parameters do not permit the use of terminal blocks. They can be fixed to insulators or a plate.</p>
+<img src="img/Capicorda.png" height="120px">
+<h3 id="table-fields-lugs"><a class="header" href="#table-fields-lugs">Table fields (Lugs)</a></h3>
+<ul>
+<li><strong>Material</strong>: here we do not refer to the material abbreviation list, but enter AL in the case of aluminium or CU in the case of copper.</li>
+<li><strong>The section in mm2</strong>: usable section. It refers to the maximum section of the conductor to be inserted.</li>
+<li><strong>Type</strong>: abbreviation by which the lug is identified (can be the supplier's abbreviation).</li>
+<li><strong>Rating current A</strong>: maximum supported current.</li>
+<li><strong>Hole diameter</strong>: diameter of the hole into which the conductor will be inserted ( Ø i) as per drawing.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="multi-wire-cables"><a class="header" href="#multi-wire-cables">Multi wire cables</a></h1>
+<h2 id="introduction-9"><a class="header" href="#introduction-9">Introduction</a></h2>
+<p>Cables are either class B or F or H insulated multi-wire conductors that can be used as the output terminals of a shield (in which case they will be yellow/green). They may also used in small wire coils, welded to the conductors to connect the terminal blocks. In the latter case, the external insulation will be made of different materials depending on the temperature class and may have different colours to comply with the colour codes defined by the company.</p>
+<h3 id="table-fields-multi-wire-cables"><a class="header" href="#table-fields-multi-wire-cables">Table fields (multi wire cables)</a></h3>
+<ul>
+<li><strong>Rating current A</strong>: it is the maximum current allowed.</li>
+<li><strong>External diameter</strong>: external diameter - usually available from suppliers' tables. This is not mandatory, it can also be omitted.</li>
+<li><strong>Insulating voltage KV</strong>: maximum insulation voltage admitted for the cable. The applications compare this value with the insulation voltage of the element.</li>
+<li><strong>Code</strong>: this coding is used to distinguish the type of insulation. LSIL = Silicone is the standard. For other materials, additional codes must be defined but must be recognised by the design rule that selects the cable and enters it in the bill of materials. Hence, we require the definition of other codes in the customisation phase of the application.</li>
+<li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the Material field you see the list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Section mm2</strong>: conductor section. This information is mandatory.</li>
+<li><strong>Colour</strong>: colour of the insulating sheath.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="conductors"><a class="header" href="#conductors">Conductors</a></h1>
+<h2 id="introduction-10"><a class="header" href="#introduction-10">Introduction</a></h2>
+<p>This table lists all conductor types (wire, flat conductor, tape) in the two materials AL and CU.</p>
+<h3 id="table-fields-conductors"><a class="header" href="#table-fields-conductors">Table fields (Conductors)</a></h3>
+<ul>
+<li>
+<p><strong>Axial dim</strong>: for wire, enter the bare diameter, for flat wire or foil enter the axial dimension.</p>
+</li>
+<li>
+<p><strong>Radial dim</strong>: for wire, enter the insulated diameter, for flat wire or foil enter the radial dimension.</p>
+</li>
+<li>
+<p><strong>Section mm2</strong>: enter the net section, ideally from the supplier's table. If this is not possible, for flat wire, the net section is calculated as follows: </p>
+<ol>
+<li>Case radial thickness &lt;= 2.24  <br>Section = (axial dimension x radial dimension) - 0.363</li>
+<li>Case radial thickness case &gt; 2.24 <br>
+Section = (Axial dimension x Radial dimension) - 0.55</li>
+</ol>
+<p>However, for wire and foil, the precise area is calculated.</p>
+</li>
+<li>
+<p><strong>Kg/meter</strong>: we recommend taking this parameter from the supplier's tables. Otherwise, it should be calculated from the section and specific weight (CU = 8.90 kg/dm3 AL = 2.70 kg/dm3).</p>
+</li>
+<li>
+<p><strong>R/meter Ohm</strong>: we recommend obtaining this parameter from the supplier's tables. Otherwise, it should be calculated from the section and specific resistance (CU = 0,00175  Ω/m  AL = 0 ,0028  Ω/m).</p>
+</li>
+<li>
+<p><strong>Code</strong>: this code defines both type and material of the conductor.<br>Enter:</p>
+</li>
+</ul>
+<div class="table-wrapper"><table><thead><tr><th>Code</th><th>Material</th></tr></thead><tbody>
+<tr><td>B3</td><td>AL foil</td></tr>
+<tr><td>B4</td><td>CU foil</td></tr>
+<tr><td>P3</td><td>AL flat wire</td></tr>
+<tr><td>P4</td><td>CU flat wire</td></tr>
+<tr><td>F3</td><td>AL wire</td></tr>
+<tr><td>F4</td><td>CU wire</td></tr>
+</tbody></table>
+</div>
+<ul>
+<li><strong>Article</strong>: To select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table <em><strong>Material Unit Cost</strong></em> by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="nuts"><a class="header" href="#nuts">Nuts</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="steel-ducts"><a class="header" href="#steel-ducts">Steel ducts</a></h1>
+<h2 id="introduction-11"><a class="header" href="#introduction-11">Introduction</a></h2>
+<p>Nuts are used for the horizontal and vertical tightening of elements, for the ground screw and for fixing output terminals (cable lugs or bars) on plates or insulators.</p>
+<img src="img/Dadi.jpg" height="150px">
+<h3 id="table-fields-nuts"><a class="header" href="#table-fields-nuts">Table fields (Nuts)</a></h3>
+<ul>
+<li>
+<p><strong>Code</strong>: Acronym by which the shape of the nut is identified. 
+The abbreviations still in use are:
+<br>
+DE = Hexagonal nut (standard) <br>
+DA = high hexagonal nut <br>
+other shapes could be defined when customizing applications.</p>
+</li>
+<li>
+<p><strong>Dimension M</strong>: M of the internally threaded hole (dimension D in the drawing above).</p>
+</li>
+<li>
+<p><strong>Dim. max</strong>: corresponds to dimension E in the drawing above and may be omitted.</p>
+</li>
+<li>
+<p><strong>Key width</strong>: corresponds to dimension SW in the drawing above and may be omitted.</p>
+</li>
+<li>
+<p><strong>Thickness</strong>: corresponds to the H dimension of the drawing above and may be omitted.</p>
+</li>
+<li>
+<p><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</p>
+</li>
+<li>
+<p><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</p>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="distanziatori"><a class="header" href="#distanziatori">Distanziatori</a></h1>
+<h2 id="introduction-12"><a class="header" href="#introduction-12">Introduction</a></h2>
+<p>Steel ducts are used for the formation of <strong>front or side</strong> cooling channels in transformer or inductor windings. They are not suitable for channels along the entire perimeter of the coil. The shape is generally C-shaped as shown in the figure above and there are C-shaped variants with rounded edges.
+They can be made of Ac Zn for transformer core/coil channels. In all other cases, the recommended material is AC 18/10 stainless steel. </p>
+<img src="img/Distanziatori.jpg" height="120px">
+<h3 id="table-fields-steel-ducts"><a class="header" href="#table-fields-steel-ducts">Table fields (steel ducts)</a></h3>
+<ul>
+<li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Number</strong>: the number of steel ducts used for a channel. For standardisation reasons, it is possible to place 2 or even 3 steel ducts side by side in order to achieve the desired channel width. Normally this value is 1.</li>
+<li><strong>Core width</strong>: width of the core column on which the winding is made.</li>
+<li><strong>Width</strong>: width of the steel duct.</li>
+<li><strong>Length</strong>: length of the steel duct. If the steel duct is made from a sheet of metal with a length &gt; the height of the windings. This measurement can be omitted.</li>
+<li><strong>Thickness</strong>: the thickness of the steel sheet from which the steel ducts is cut.</li>
+<li><strong>Channel</strong>: the thickness of the cooling channel that the steel duct produces.</li>
+<li><strong>Article</strong>: To select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table <em><strong>Material Unit Cost</strong></em> by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="eyebolts"><a class="header" href="#eyebolts">Eyebolts</a></h1>
+<h2 id="introduction-13"><a class="header" href="#introduction-13">Introduction</a></h2>
+<p>Eyebolts or lifting hooks are mounted on the top of elements to facilitate lifting.  They are available with either an internal or externally threaded hole.</p>
+<img src="img/Golfari.png" height="120px">
+<h3 id="table-ranges-eyebolts"><a class="header" href="#table-ranges-eyebolts">Table Ranges (Eyebolts)</a></h3>
+<ul>
+<li><strong>Dimension B</strong>: internal hole diameter. See drawing above.</li>
+<li><strong>Dimension C</strong>: external diameter. See drawing above.</li>
+<li><strong>Thickness</strong>: ring height. See drawing.</li>
+<li><strong>Code</strong>: it is the code that identifies the type of eyebolt. The standard eyebolt shown in the drawing above corresponds to GF. The one with a threaded hole on the outside corresponds to GM.</li>
+<li><strong>Dimension M</strong>: diameter of the threaded hole. See drawing above.</li>
+<li><strong>Materiale</strong>: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="sheaths"><a class="header" href="#sheaths">Sheaths</a></h1>
+<h2 id="introduction-14"><a class="header" href="#introduction-14">Introduction</a></h2>
+<p>Sheaths are used to insulate the section of the conductor coming out of the winding to the output terminal (terminal block or lug).<br>
+They are tubes that exist in various colours which the company can associate with precise codes. They are usually semi-finished products.
+The type of material from which they are made mainly depends on the temperature class and insulation voltage of the element.</p>
+<h3 id="table-fields-sheaths"><a class="header" href="#table-fields-sheaths">Table fields (Sheaths)</a></h3>
+<ul>
+<li>
+<p><strong>Insulation voltage KV</strong>: maximum insulation voltage that the sheath can withstand.</p>
+</li>
+<li>
+<p><strong>Code</strong>: code identifying the sheath. Generally, expresses the use of the sheath itself:
+UL = valid only for UL standards, GSI = valid for general elements class B, LSI = conduit all elements class F - H.</p>
+</li>
+<li>
+<p><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</p>
+</li>
+<li>
+<p><strong>Internal diameter</strong>: the inner diameter of the sheat.</p>
+</li>
+<li>
+<p><strong>Colour</strong>: write the colour in full and in capital letters.</p>
+</li>
+<li>
+<p><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</p>
+</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="insulating-sheets"><a class="header" href="#insulating-sheets">Insulating sheets</a></h1>
+<h2 id="introduction-15"><a class="header" href="#introduction-15">Introduction</a></h2>
+<p>Insulating sheets differ from each other in the type of material they are made of. The choice depends on the temperature class and, in some cases, on the standard to which the element is subjected.</p>
+<h3 id="table-fields-insulating-foils"><a class="header" href="#table-fields-insulating-foils">Table fields (Insulating foils)</a></h3>
+<ul>
+<li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the <em><strong>Material field</strong></em>, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Thickness</strong>: enter the thickness of the insulation sheet.</li>
+<li><strong>Kg/m2</strong>: it is recommended to obtain this parameter from the supplier's tables. Otherwise, it must be calculated from the thickness and specific weight of the material.</li>
+<li><strong>Width</strong>: here you can enter both the width of the semi-finished product (if you purchase rolls in STD dimensions and cut in ) and all widths corresponding to the various heights (if you purchase already-cut-to-standard sizes). The applications check if the exact size exists. If it does not exist, they look for a semi-finished product.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="insulators"><a class="header" href="#insulators">Insulators</a></h1>
+<h2 id="introduction-16"><a class="header" href="#introduction-16">Introduction</a></h2>
+<p>Insulators are used to isolate and fix output terminals to the element.
+They are generally used where the insulation voltage or operating voltage exceeds 4 KV, or when the low number of outputs makes it more economical to use them instead of a plate for fixing lugs or bars. There are many different types of insulators. A standard insulators has been included here. However, it is possible to insert tables of insulators that differ quite significantly from those.</p>
+<img src="img/Isolatori.jpg" height="170px">
+<h3 id="table-fields-insulators"><a class="header" href="#table-fields-insulators">Table fields (Insulators)</a></h3>
+<ul>
+<li><strong>Code</strong>: code identifying the type of insulators. The standard insulators shown in the drawing above corresponds to IS.<br />
+Other types of insulators will have different codes, agreed with us.</li>
+<li><strong>Rating voltage V</strong>: maximum-rating voltage supported.</li>
+<li><strong>Hole diameter</strong>: hole diameter <strong>D</strong>. See drawing above.</li>
+<li><strong>Height</strong>: insulator height <strong>H</strong>. See drawing above.</li>
+<li><strong>Type</strong>: name of the insulator. Generally, the name is given to it by the supplier.</li>
+<li><strong>Width</strong>: width in the key of the insulator <strong>Ch</strong>. See drawing above.</li>
+<li><strong>Lower thread depth</strong>: thread depth <strong>F</strong>. See drawing above.</li>
+<li><strong>Force Nm</strong>: the field for future use. Do not fill in.</li>
+<li><strong>M upper screw</strong>: <strong>M</strong> size of the lower internal thread. See drawing above.</li>
+<li><strong>Upper thread depth</strong>: depth of the upper thread. The upper hole may not exist, depending on the insulator model.</li>
+<li><strong>Standard</strong>: enter YES if the dimensions are standard, i.e., part of a supplier's STD series.</li>
+<li><strong>Lower screw M</strong>: <strong>M</strong> size of the lover internal thread. The top hole may not exist, depending on the insulator model.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="magnetic-steel"><a class="header" href="#magnetic-steel">Magnetic steel</a></h1>
+<h2 id="introduction-17"><a class="header" href="#introduction-17">Introduction</a></h2>
+<p>This table lists the available magnetic steels. It is possible to indicate the dimensions of both the sheet supplied in coil form and the sheet supplied already cut to standardised lengths. The number of holes must be entered for the sheet already cut to distinguish its use in yokes or columns. The type could be deduced from the material but has been entered for immediate information.</p>
+<h3 id="table-fields-magnetic-steel"><a class="header" href="#table-fields-magnetic-steel">Table fields (magnetic steel)</a></h3>
+<ul>
+<li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Thickness</strong>: enter the thickness of the magnetic steel.</li>
+<li><strong>Type</strong>: taken from the material, you enter the abbreviation currently used to identify that magnetic steel.
+<em><strong>Example: NOM270</strong></em>.</li>
+<li><strong>Width</strong>: width of the magnetic steel that corresponds to the width of the column in which it is used.</li>
+<li><strong>Length</strong>: here you can enter either the length of the semi-finished product (if you purchase in rolls in STD dimensions and cut at the factory) or all available lengths if you purchase already cut to size. The applications check if the exact size exists. If it does not exist they search for the semi-finished product.</li>
+<li><strong>Nr. holes</strong>: the number of holes for the passage of tie rods. Only for magnet steel cut to length and used for yokes.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="insulating-slabs"><a class="header" href="#insulating-slabs">Insulating slabs</a></h1>
+<h2 id="introduction-18"><a class="header" href="#introduction-18">Introduction</a></h2>
+<p>Insulating plates are mainly used in the formation of air gaps or as clamping plates for inductor column or to fix output terminals. They differ from each other mainly in the type of material from which they are made. The choice depends on the temperature class and, in some cases, on the standard to which the element is subjected.</p>
+<h3 id="table-fields-insulating-sheets"><a class="header" href="#table-fields-insulating-sheets">Table fields (Insulating sheets)</a></h3>
+<ul>
+<li><strong>Width</strong>: enter the width of the semi-finished plate.</li>
+<li><strong>Length</strong>: here you can enter either the length of the semi-finished product (if you buy by the meter in STD dimensions and cut to size at the factory) or all standardized widths (if you buy already cut to size). The applications check if the exact size exists. If it does not exist, they use a semi-finished product.</li>
+<li><strong>Code</strong>: the code defines the shape of the plate, normally = LI. During customisation, plates of different shapes can be defined and different codes will be defined accordingly.</li>
+<li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Thickness</strong>: enter the thickness of the insulation plate.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="terminal-blocks"><a class="header" href="#terminal-blocks">Terminal blocks</a></h1>
+<h2 id="introduction-19"><a class="header" href="#introduction-19">Introduction</a></h2>
+<p>Terminal blocks are used in Clever Transfo and Clever Inductor applications as output terminals when current and other parameters allow their use. Note that this table is not suitable for Clever Small-T and Clever Small-I applications, which use the “terminal blocks ST” table.
+The terminal blocks can be attached directly to the clamping profiles (terminal blocks in lists) or on a rail, which in turn will be attached to the profile, as in the drawing above.
+There are various types of terminal blocks and you can distinguish among them by the field Code.</p>
+<img src="img/Morsetti.png" height="130px">
+<h3 id="table-fields-terminal-blocks"><a class="header" href="#table-fields-terminal-blocks">Table fields (Terminal blocks)</a></h3>
+<ul>
+<li><strong>Section in mm2</strong>: usable section. Refers to the maximum section of the conductor that will be inserted into it.</li>
+<li><strong>Width</strong>: the thickness of the individual terminal block (Dimension B in the drawing above).</li>
+<li><strong>Height</strong>: height of the terminal block (Dimension H in the drawing above).</li>
+<li><strong>Length</strong>: the maximum length of the terminal block  (Dimension L in the drawing above).</li>
+<li><strong>Hole diameter</strong>: conductor entry hole diameter.</li>
+<li><strong>Code</strong>: acronym by which the type of terminal block is identified.
+<em><strong>Example:
+Binary = Terminal block on Omega rail</strong></em><br>
+If other terminal block types are to be used during customisation, please contact us for the choice of the code.</li>
+<li><strong>Rating current A</strong>: maximum supported current.</li>
+<li><strong>Type</strong>: abbreviation by which the terminal is identified (can be the supplier's abbreviation).</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table <em><strong>Material Unit Cost</strong></em> by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="thermo-shrink-ribbons"><a class="header" href="#thermo-shrink-ribbons">Thermo shrink ribbons</a></h1>
+<h2 id="introduction-20"><a class="header" href="#introduction-20">Introduction</a></h2>
+<p>Thermo shrink ribbons are used for the external wrapping of coils. During vacuum-impregnation of the coil, they shrink due to the effect of heating, thus contributing to the compactness of the coil. They differ from one other mainly in the type of material. The choice depends on the temperature class and, in some cases, also on the environment in which they are installed. </p>
+<h3 id="table-fields-thermo-shrink-ribbons"><a class="header" href="#table-fields-thermo-shrink-ribbons">Table fields (thermo shrink ribbons)</a></h3>
+<ul>
+<li><strong>Weight gr/m</strong>: Weight grams per meter. Data are retrievable from the supplier.</li>
+<li><strong>Code</strong>: The code defines the type of ribbon, normally = NAT. Different ribbons can be defined during customisation and different codes will be defined accordingly.</li>
+<li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Thickness</strong>: the thickness of the ribbon.</li>
+<li><strong>Width</strong>: the width of the ribbon.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="u-profiles"><a class="header" href="#u-profiles">U profiles</a></h1>
+<h2 id="introduction-21"><a class="header" href="#introduction-21">Introduction</a></h2>
+<p>U-profiles can be used for the vertical clamping of elements or as a base profile.<br />
+They can be made of bent steel or UNP (as shown in the drawing above). They essentially differ in the type of material. The choice depends essentially on the installation environment. They are semi-finished products.</p>
+<img src="img/ProfiliU.png" height="150px">
+<h3 id="table-fields-u-profiles"><a class="header" href="#table-fields-u-profiles">Table fields (U-profiles)</a></h3>
+<ul>
+<li><strong>Code</strong>: the code defines the shape of the profile, normally = UG. Different profile shapes can be defined during customisation and different codes will be defined accordingly.</li>
+<li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Width</strong>: width of the semi-finished product (Dimension H of the drawing above).</li>
+<li><strong>Height</strong>: height of the semi-finished product (Dimension B of the drawing above).</li>
+<li><strong>Thickness  1</strong>: thickness 1 of the profile (Dimension S of the drawing above).</li>
+<li><strong>Thickness  2</strong>: thickness 2 of the profile (Dimension T of the drawing above).</li>
+<li><strong>Weight kg/m</strong>: weight per meter. Value to be retrieved from supplier's table.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="l-profiles"><a class="header" href="#l-profiles">L profiles</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="flat-profiles"><a class="header" href="#flat-profiles">Flat profiles</a></h1>
+<h2 id="introduction-22"><a class="header" href="#introduction-22">Introduction</a></h2>
+<p>Flat profiles can be used for the horizontal clamping of elements.<br />
+They are steel plates (as shown in the drawing above).  They differ from each other mainly in the type of material. The choice depends essentially on the installation environment. They are semi-finished products.</p>
+<img src="img/ProfiliPiatti.png" height="150px">
+<h3 id="table-fields-flat-profiles"><a class="header" href="#table-fields-flat-profiles">Table fields (Flat profiles)</a></h3>
+<ul>
+<li><strong>Code</strong>: the code defines the shape of the profile, normally = PGP. Different profile shapes can be defined during customisation and different codes will be defined accordingly.</li>
+<li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Width</strong>: the width of the profile (Dimension H of the drawing above).</li>
+<li><strong>Thickness</strong>: the thickness of the profile (Dimension S of the drawing above).</li>
+<li><strong>Weight kg/m</strong>: weight per meter. Value to be retrieved from supplier's table.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="resins-and-varnishes"><a class="header" href="#resins-and-varnishes">Resins and varnishes</a></h1>
+<h2 id="introduction-23"><a class="header" href="#introduction-23">Introduction</a></h2>
+<p>All impregnation resins and varnishes used can be entered in this table.
+The design rules choose the product to be used in the design according to the code.</p>
+<h3 id="table-fields-resins-and-varnishes"><a class="header" href="#table-fields-resins-and-varnishes">Table fields (Resins and Varnishes)</a></h3>
+<ul>
+<li><strong>Material</strong>: in this case, the material is not required to be entered. This field has been inserted for future use.</li>
+<li><strong>Description</strong>: the extended name of the resin or paint.</li>
+<li><strong>Code</strong>: the code defines the type of impregnation resin or varnish. The standard impregnation resin is identified with the code = LIX.<br>
+During customisation, it is possible to define other codes combined with other design rules.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="washers"><a class="header" href="#washers">Washers</a></h1>
+<h2 id="introduction-24"><a class="header" href="#introduction-24">Introduction</a></h2>
+<p>Washers are used in horizontal and vertical clamping, in ground-screw clamping and clamping of output terminals (lugs or bars) on plates or insulators.</p>
+<img src="img/Rondelle.jpg" height="150px">
+<h3 id="campi-della-tabella-rondelle"><a class="header" href="#campi-della-tabella-rondelle">Campi della tabella (Rondelle)</a></h3>
+<ul>
+<li><strong>Code</strong>: these are acronyms by which the shape of the washer is identified. The current abbreviations are:
+RGR = Grower washer <br>
+RPN = Flat washer <br>
+RPNL = Wide flat washer. <br>
+Other shapes could be defined when customising applications.</li>
+<li><strong>Dimension M</strong>: M of the screw or threaded rod with which the washer can be used.</li>
+<li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Internal diameter</strong>: corresponds to dimension d in the drawing above.</li>
+<li><strong>External diameter</strong>: corresponds to dimension d2 of the drawing above.</li>
+<li><strong>Thickness</strong>: corresponds to dimension s in the drawing above.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="bars"><a class="header" href="#bars">Bars</a></h1>
+<h2 id="introduction-25"><a class="header" href="#introduction-25">Introduction</a></h2>
+<p>Aluminium or copper bars are used as winding output terminals and can be welded directly onto the conductor foil or be welded externally to the coil in the case of a flat wire or wire. In the latter two cases, their function will be similar to the lug or clamp. The bars are semi-finished products which will be cut to size and/or shaped as required.
+The output and connection bars are dimensioned following the <strong>thermal current</strong> flowing through them, in accordance with the DIN limits.
+The table shows the correlation between the <strong>maximum admitted current</strong> and the <strong>type of bar.</strong>
+A distinction is made between bars constituting a customer connection, which are dimensioned using the values given in the column <strong>&quot;maximum current client side&quot;</strong> as maximum current, the bars internal to the coil - whose maximum current corresponds to <strong>&quot;maximum current winding side&quot;</strong> - and those connecting bars whose maximum current corresponds to <strong>&quot;maximum connection current&quot;.</strong></p>
+<h3 id="table-fields-bars"><a class="header" href="#table-fields-bars">Table fields (Bars)</a></h3>
+<ul>
+<li><strong>Material</strong>: material abbreviation.By opening the drop-down menu of the <em><strong>Material field</strong></em>, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Width</strong>: width of the bar.</li>
+<li><strong>Thickness</strong>: the thickness of the bar.</li>
+<li><strong>Section mm2</strong>: section of bar Width x Thickness (bars are sharp-edged).</li>
+<li><strong>I max winding side</strong>: maximum admitted current for winding output bars that are not used directly as a customer connection. 
+<strong>Example</strong>: output bar of a single-phase element with a parallel connection. </li>
+<li><strong>I max connection side</strong>: Maximum permissible current for connection bars which are not used directly as a customer connection.
+<strong>Example</strong>: connection bar of a three-phase element with a triangle connection.</li>
+<li><strong>I max client side</strong>: maximum admitted current for bars that are used directly as a customer connection.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table <em><strong>Material Unit Cost</strong></em> by importing the list of materials available in your warehouse. </li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="corner-dog-bones"><a class="header" href="#corner-dog-bones">Corner dog bones</a></h1>
+<h2 id="introduction-26"><a class="header" href="#introduction-26">Introduction</a></h2>
+<p>Corner dog bones are used to make the core/coil channels when channels feature around the entire perimeter of the column. They are placed on the four corners of the core.</p>
+<h3 id="table-fields-corner-dog-bone"><a class="header" href="#table-fields-corner-dog-bone">Table fields (Corner dog bone)</a></h3>
+<ul>
+<li><strong>Width</strong>: in normalised form, the width corresponds to the thickness of the channel. Insert this dimension may be particularly useful in the case of a special corner dog bone.</li>
+<li><strong>Weight kg / m</strong>: enter the value taken from the supplier's table.</li>
+<li><strong>Code</strong>: it is the code by which the type of corner dog bone is identified. Current code = STT.
+Other shapes may be defined when applications are customised.</li>
+<li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Thickness</strong>: it corresponds to the thickness of the channel.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="dog-bones"><a class="header" href="#dog-bones">Dog bones</a></h1>
+<h2 id="introduction-27"><a class="header" href="#introduction-27">Introduction</a></h2>
+<p>The dog bones are used to make ventilation channels when windings are present around the entire perimeter of the coil. They are also sometimes used as additional reinforcement in the case of front-only or side-only channels made from steel ducts.
+ali o solo laterali realizzati mediante distanziatori in acciaio.</p>
+<img src="img/SteccheTriglass.png" height="200px">
+<h3 id="table-fields-dog-bones"><a class="header" href="#table-fields-dog-bones">Table fields (Dog bones)</a></h3>
+<ul>
+<li><strong>Code</strong>: it is the code by which the type of dog bone is identified. Current abbreviation = STTR.
+Other shapes may be defined when applications are customised.</li>
+<li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the <em><strong>Material field</strong></em>, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Thickness</strong>: the thickness of the dog bone. Corresponds to the thickness of the channel (Dimension B in the drawing above).</li>
+<li><strong>Width</strong>: width of the dog bone (Dimension H in the drawing above).</li>
+<li><strong>R</strong>: corresponds to the outer radius and may be omitted.</li>
+<li><strong>R1</strong>: corresponds to the inner radius and can be omitted.</li>
+<li><strong>Weight kg / m</strong>: enter the value retrieved from the supplier's table.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="insulating-tubes"><a class="header" href="#insulating-tubes">Insulating tubes</a></h1>
+<h2 id="introduction-28"><a class="header" href="#introduction-28">Introduction</a></h2>
+<p>Insulating tubes are used for the insulation of tie rods in horizontal clamping or for the insulation of clamping screws in small elements, where bushes cannot be used.</p>
+<h3 id="table-fields-insulating-tubes"><a class="header" href="#table-fields-insulating-tubes">Table fields (Insulating tubes)</a></h3>
+<ul>
+<li><strong>Code</strong>: this code is useful for possible sub-families. The TUI code should currently be used for the standard tubes.</li>
+<li><strong>Thickness</strong>: material thickness (value to be retrieved from supplier's tables). This value can be omitted.</li>
+<li><strong>External diameter</strong>: it is the external diameter of the tube.</li>
+<li><strong>Internal diameter</strong>: it is the internal diameter of the tube.</li>
+<li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Dimension M</strong>: M dimension of the tie rod that can fit there.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="screws"><a class="header" href="#screws">Screws</a></h1>
+<h2 id="introduction-29"><a class="header" href="#introduction-29">Introduction</a></h2>
+<p>Screws have many uses: horizontal clamping, ground screws, fixing output terminals, fixing plates or insulators etc.</p>
+<img src="img/Viti.jpg" height="120px">
+<h3 id="table-fields-screws"><a class="header" href="#table-fields-screws">Table fields (Screws)</a></h3>
+<ul>
+<li><strong>Code</strong>: this code is particularly useful for possible sub-families. The used codes are as follows:<br>
+TE = Hexagon head screw<br>
+TC = Hexagon head screw<br></li>
+<li><strong>Dimension M</strong>: dimension d in the drawing above.</li>
+<li><strong>Screw length</strong>: dimension l in the drawing above.</li>
+<li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="bobbins"><a class="header" href="#bobbins">Bobbins</a></h1>
+<h2 id="introduction-30"><a class="header" href="#introduction-30">Introduction</a></h2>
+<p>The table of bobbins is used by applications for generic elements and there is a separate table for elements that must comply with UL standards. </p>
+<img src="img/Rocchetti.png" height="150px">
+<h3 id="table-fields-bobbins"><a class="header" href="#table-fields-bobbins">Table fields (Bobbins)</a></h3>
+<ul>
+<li><strong>Code</strong>: they are the acronyms by which the type of printed magnetic steel that can mount the bobbin is identified.</li>
+<li><strong>Type</strong>: bobbins definition: A x B (see drawing above)</li>
+<li><strong>Core width</strong>: the width of the core column on which the bobbins are mounted (Dimension A in the drawing above).</li>
+<li><strong>Core thickness</strong>: it is the thickness available for the core (Dimension B in the drawing above).</li>
+<li><strong>Winding height</strong>: it is the height available for winding (Dimension F in the drawing above).</li>
+<li><strong>Winding thick</strong>: space available for winding.</li>
+<li><strong>Frontal thick</strong>: it is the space available for the output side.</li>
+<li><strong>Weight gr</strong>: enter the value taken from the supplier's table.</li>
+<li><strong>Thickness</strong>: bobbin thickness. (Dimension s in the drawing above).</li>
+<li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the <em><strong>Material field</strong></em>, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ul-bobbins"><a class="header" href="#ul-bobbins">UL bobbins</a></h1>
+<h2 id="introduction-31"><a class="header" href="#introduction-31">Introduction</a></h2>
+<p>This table is used by applications for elements that must comply with <em><strong>UL standards</strong></em>. By selecting the UL category in the first screen of CLEVER SMALL-T and CLEVER SMALL-I you can engage this feature.</p>
+<img src="img/RocchettiUL.png" height="150px">
+<h3 id="table-fields-bobbins-ul"><a class="header" href="#table-fields-bobbins-ul">Table fields (Bobbins UL)</a></h3>
+<ul>
+<li><strong>Code</strong>: they are the acronyms by which the type of printed magnetic steel that can mount the bobbin is identified.</li>
+<li><strong>Type</strong>: bobbins definition: A x B (see drawing above)</li>
+<li><strong>Core width</strong>: width of the core column on which the bobbins are mounted (Dimension A in the drawing above).</li>
+<li><strong>Core thickness</strong>: available core thickness (Dimension B in the drawing above).</li>
+<li><strong>Winding height</strong>: it is the height available for winding (Dimension F in the drawing above).</li>
+<li><strong>Winding thick</strong>: space available for winding.</li>
+<li><strong>Frontal thick</strong>: it is the space available on the output side.</li>
+<li><strong>Weight gr</strong>: enter the value taken from the supplier's table.</li>
+<li><strong>Thickness</strong>: bobbin thickness. (Dimension s in the drawing above).</li>
+<li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the <em><strong>Material field</strong></em>, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table <em><strong>Material Unit Cost</strong></em> by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="printed-magnetic-steel"><a class="header" href="#printed-magnetic-steel">Printed magnetic steel</a></h1>
+<h2 id="introduzioneintroduction"><a class="header" href="#introduzioneintroduction">IntroduzioneIntroduction</a></h2>
+<p>This table lists the available printed magnetic steel. </p>
+<img src="img/LamieriniStampati.png" height="150px">
+<h3 id="table-fields-printed-magnetic-steel"><a class="header" href="#table-fields-printed-magnetic-steel">Table Fields (Printed magnetic steel)</a></h3>
+<ul>
+<li><strong>Magnetic steel</strong>: type of printed magnetic steel
+<em><strong>Example: EI</strong></em></li>
+<li><strong>Code</strong>: in this case, the quality code of the magnetic steel must be entered, making sure that it is spelt correctly, as per the material table.</li>
+<li><strong>A</strong>: enter the width of the magnetic steel (Dimension A of the drawing above).</li>
+<li><strong>B</strong>: enter the total height of the core (Dimension B of the drawing above).</li>
+<li><strong>C</strong>: enter the width of the centre column (Dimension C of the drawing above).</li>
+<li><strong>D</strong>: enter the width of the window (Dimension D of the drawing above).</li>
+<li><strong>E</strong>: enter the height of the window (Dimension E in the drawing above).</li>
+<li><strong>F</strong>: enter the width of the side column (Dimension F in the drawing above).</li>
+<li><strong>Hole diameter</strong>: enter the diameter of the holes for the passage of the tie rods.</li>
+<li><strong>Article</strong>: to select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table <em><strong>Material Unit Cost</strong></em> by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="brackets"><a class="header" href="#brackets">Brackets</a></h1>
+<h2 id="introduction-32"><a class="header" href="#introduction-32">Introduction</a></h2>
+<p>The brackets included in this table are used to assemble elements on printed magnetic steel. 
+In the drawing above, an L-bracket is shown. Any type of bracket can be inserted in this table. The <strong>code</strong> will be the discriminant. The purpose of this table is to provide the bracket overhang from the element so that the overall dimensions of the element can be calculated correctly.</p>
+<img src="img/StaffeDi Serraggio.png" height="150px">
+<h3 id="table-fields-brackets"><a class="header" href="#table-fields-brackets">Table fields (Brackets)</a></h3>
+<ul>
+<li><strong>Magnetic steel</strong>:
+Suitable type of printed magnetic steel<br>
+<em><strong>Examples:</strong></em><br> 
+EI or EIT (three-phase) or UI (for two-column elements)</li>
+<li><strong>Length</strong>:
+Printed magnetic steel length for which the bracket is usable<br>
+<em><strong>Examples:</strong></em><br> 
+If it is an EI120 here you would enter 120</li>
+<li><strong>Description</strong>:
+Extended description of the bracket, that can be of help in identifying it.</li>
+<li><strong>Code</strong>:
+Code identifying the bracket. Below is a list of the codes normally used:<br>
+ANG = L-bracket<br>
+PMP = Clamp plate<br>
+PM = Plate<br>
+TEL = Frame with through-hole<br>
+TELF = Frame with a threaded hole<br>
+For other shapes, please contact us to choose the correct codes.</li>
+<li><strong>Material</strong>:
+Material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Overhang_A</strong>:
+Bracket overhang in relation to the width of the element.</li>
+<li><strong>Overhang _B</strong>:
+Bracket overhang relative to the depth of the element.</li>
+<li><strong>Overhang _H</strong>:
+Bracket overhang relative to the height of the element.</li>
+<li><strong>Fixing_L</strong>:
+Fixing the dimension of the element in the direction of the width.</li>
+<li><strong>Fixing_B</strong>:
+Fixing the depth dimension of the element to the individual bracket. It is useful for calculating the fastening depth dimension of the element.<br>
+<em><strong>Example:</strong></em><br>
+Fixing_B = 15 <br>
+Core thickness = 70<br>
+Fixing dimension of element in depth = 2x15 + 70 = 100</li>
+<li><strong>Buttonhole L</strong>:
+Dimension L of the buttonhole accommodated by the bracket (in the sense of width).</li>
+<li><strong>Buttonhole B</strong>:
+L-dimension of the buttonhole accommodated by the bracket (in the sense of depth).</li>
+<li><strong>Weight kg</strong>:
+The value is normally given by the supplier. Otherwise, calculate with volume x 7.65 (specific weight of the steel)</li>
+<li><strong>Article</strong>:
+To select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="design-rules"><a class="header" href="#design-rules">Design rules</a></h1>
+<h2 id="introduction-33"><a class="header" href="#introduction-33">Introduction</a></h2>
+<p>In this section, you will find the design rules that have been set in the parameters. Specifically, tables where dimensional values are defined according to different electrical or mechanical parameters.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="winding-insulation"><a class="header" href="#winding-insulation">Winding insulation</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="bar-drilling"><a class="header" href="#bar-drilling">Bar drilling</a></h1>
+<h2 id="introduction-34"><a class="header" href="#introduction-34">Introduction</a></h2>
+<p>This table shows the standard drillings of the output bars, customer-side, according to DIN 43673.
+The upper figure shows the drilling patterns (a total of six types) while the lower figure shows the dimensions visible in the table, which are also repeated in drilling patterns 5 - 6 .
+At the design phase, you can choose the type of hole pattern and the applications will calculate the dimensions accordingly. You can add other types of holes or modify existing ones but you will no longer be in line with DIN standards.</p>
+<img src="img/ForaturaBarre1.png" height="100px">
+<br>
+<img src="img/ForaturaBarre2.png" height="124px">
+<h3 id="table-fields-bar-drilling"><a class="header" href="#table-fields-bar-drilling">Table fields (bar drilling)</a></h3>
+<ul>
+<li><strong>Bar width</strong>: dimension b of the drawing above.</li>
+<li><strong>Min. bar length</strong>: dimension L of the drawing above. This is the minimum length to needed for the customer's attachment.</li>
+<li><strong>Hole diameter</strong>: dimension d of the drawing. All holes are equal.</li>
+<li><strong>Dim. E1</strong>: distance between holes: Dimension e1 of the drawing above.</li>
+<li><strong>Dim. E2</strong>: distance between holes: dimension e2 of the design above.</li>
+<li><strong>Dim. E3</strong>: distance between holes: dimension e3 in the drawing above.</li>
+<li><strong>Dim. A</strong>: field for future use: Enter 0.</li>
+<li><strong>Drilling type</strong>: see drawing above</li>
+<li><strong>Nr. holes</strong>: no. of holes on the bar. The number of holes is already implied by choosing a certain hole pattern, but it is shown for clarity.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="carpentry-details"><a class="header" href="#carpentry-details">Carpentry details</a></h1>
+<h2 id="introduction-35"><a class="header" href="#introduction-35">Introduction</a></h2>
+<p>This is a measure/value table that allows you to enter, for a specified carpentry, each component, measure and the value of that measure for each magnetic steel width.
+Within the standard, the applications cover the range of magnetic steel width from 40 to 200, with an increase of 5 mm. It is possible to enter all the core widths available, as low as minus 40 and/or as high as above 200. 
+The option of sorting the table by any column, including multiple selections - by holding down the CTRL key while selecting the various columns - makes it easy to compile and check. If a core width is added, values must be entered for all the dimensions that identify each component of the carpentry involved. To modify existing values, it is necessary to identify the area of the table using the filter at the top left and the order by clicking on the column header. Sorting the table by carpentry + component + core width would make it extra clear.</p>
+<h3 id="table-fields-carpentry-measurements"><a class="header" href="#table-fields-carpentry-measurements">Table fields (Carpentry measurements)</a></h3>
+<ul>
+<li><strong>Carpentry detail</strong>: type of carpentry, chosen from the types listed in the drop-down menu of the data input screen under the &quot;carpentry&quot; label.</li>
+<li><strong>Element</strong>: code of the component that is part of that carpentry. The codes are assigned during the implementation of that carpentry and must not be changed.</li>
+<li><strong>Measure</strong>: in this row, establish the measure to which the value is assigned. 
+<em><strong>Example: L</strong></em></li>
+<li><strong>Value</strong>: a value only needs to be entered if it is fixed, i.e. it depends exclusively on the width of the sheet. Enter 0 if a field (for example the width of a profile) depends on parameters that vary according to the design. It will be the design rule that, during the calculation, will attribute the correct value to this parameter.</li>
+<li><strong>Core width</strong>: width of the magnetic steel for which the assigned value is valid.</li>
+<li><strong>Phases nr</strong>: the number of phases for which the assigned value is valid.</li>
+<li><strong>L1</strong>: the field for future use: enter 0.</li>
+<li><strong>L2</strong>: the field for future use: enter 0.</li>
+<li><strong>Calculated?</strong>: enter <strong>False</strong> if you entered a value in the Value field.<br>
+Enter <strong>True</strong> if you entered 0 in the Value field.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="selecting-output-terminal-type"><a class="header" href="#selecting-output-terminal-type">Selecting output terminal type</a></h1>
+<h3 id="introduction-36"><a class="header" href="#introduction-36">Introduction</a></h3>
+<p>This table defines the type of output terminal that the applications will choose automatically, according to the following parameters:</p>
+<ul>
+<li><strong>Type of conductor</strong> </li>
+<li><strong>Rating current</strong></li>
+<li><strong>Rating voltage</strong></li>
+</ul>
+<h3 id="table-fields-select-output-term-type"><a class="header" href="#table-fields-select-output-term-type">Table fields (Select output term. type)</a></h3>
+<ul>
+<li><strong>Conductor type</strong>: enter the conductor type according to the following code:<br>
+1 = Flat wire <br>
+2 = Foil<br>
+3 = Wire <br>
+4 = Multi wire<br>
+In case the output type is valid for more than one conductor, enter 1 code in sequence.<br>
+<em><strong>Esempio:
+Example:
+If the output type is valid for both wire and flat wire enter: 13
+.</strong></em></li>
+<li><strong>Max current A</strong>: maximum rated current for which that type of output can be used.</li>
+<li><strong>Max voltage V</strong>: maximum rated voltage for which that type of output can be used.</li>
+<li><strong>Output terminal type</strong>: output terminal type code: <br>
+1 = Terminal blocks in lists <br>
+2 = minal blocks on rail <br>
+3 = Lugs <br>
+4 = External bars (used when the winding is in flat wire, but the current does not allow for
+the use of lugs). 
+They are bars fixed to a plate or an insulator to which the flat wire, coming off the coil, is welded.<br>
+5 = Bars inside the foil winding.</li>
+<li><strong>Description</strong>: the description of the type of output is inserted in the table for clarity.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="air-gap-composition"><a class="header" href="#air-gap-composition">Air gap composition</a></h1>
+<h2 id="introduction-37"><a class="header" href="#introduction-37">Introduction</a></h2>
+<p>Generally, the air gap defined in the calculation phase seldom corresponds to the air gap that can be realistically achieved with the insulating materials available. This table defines the possible air gaps based on the standard materials available. Once an optimal air gap has been defined, the applications read this table, choose the closest air gap, and use it, making all the relevant corrections (head air gap, internal air gaps, etc.) so as to obtain an accurate total air gap. This system prevents the air gap data in the technical documentation from having to be corrected manually. In addition, the materials in question will be available in the necessary quantities in the bill of materials.
+Limits: the envisaged compositions allow the combination of up to two different insulating materials, each with up to <strong>three sheets or plate in parallel.</strong>
+Depending on your availability, you can modify this table by inserting other materials and deleting or inserting other lines.</p>
+<h3 id="table-fields-air-gaps-composition"><a class="header" href="#table-fields-air-gaps-composition">Table fields (Air gaps composition)</a></h3>
+<ul>
+<li><strong>Total thickness</strong>: the thickness of the air gap obtained with the composition present on the row.</li>
+<li><strong>Material 1</strong>: material related to the first insulation.
+By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Number of sheets 1</strong>: the number of sheets or plates superimposed on the first insulation.</li>
+<li><strong>Thickness 1</strong>: the thickness of the first insulation.</li>
+<li><strong>Material 2</strong>: material related to the second insulation.
+By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Number of sheets 2</strong>: number of sheets or plates superimposed on the second insulation</li>
+<li><strong>Thickness 2</strong>: the thickness of the second insulation.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="interlayer-insulation-thick"><a class="header" href="#interlayer-insulation-thick">Interlayer insulation thick</a></h1>
+<h2 id="introduction-38"><a class="header" href="#introduction-38">Introduction</a></h2>
+<p>This table is used only in Clever Small-T and Clever Small-I applications to choose automatically the thickness of the insulation between layers and between windings.
+The thicknesses automatically chosen by the applications, within a design, can be changed manually.</p>
+<h3 id="table-fields-interlayer-insulation"><a class="header" href="#table-fields-interlayer-insulation">Table fields (Interlayer insulation)</a></h3>
+<ul>
+<li><strong>Temperature class</strong>:
+Element temperature class (A-E-B-F-H).</li>
+<li><strong>Conductor material</strong>:
+Conductor material code.<br>
+0 = Aluminum<br>
+1 = Copper<br></li>
+<li><strong>Conductor type</strong>:
+Enter the conductor type according to the following code:<br>
+1 = Flat wire<br>
+2 = Foil<br>
+3 = Wire<br>
+4 = Multi-wire<br></li>
+<li><strong>Nr. of // radial conductors</strong>:
+Number of conductors in radial parallel. With the same thickness, the thickness of the insulation generally has to be increased if there are more conductors in // radial.</li>
+<li><strong>Conductor thickness</strong>:
+The thickness of the single conductor.</li>
+<li><strong>Insulation thickness</strong>:
+Suitable insulation thickness. No distinctions are made among the various insulating materials because the problem is mainly mechanical.</li>
+<li><strong>Index</strong>:
+Value needed by the software.
+If you need to add a line, proceed as follows:<br>
+<ul>
+<li>Sort the table by index to find out the latest number</li>
+<li>Enter the next number as per the index.</li>
+</ul>
+</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="material-costs"><a class="header" href="#material-costs">Material costs</a></h1>
+<h2 id="introduction-39"><a class="header" href="#introduction-39">Introduction:</a></h2>
+<p>This table is used by the applications to determine the description and the unit cost of the materials that will compose the bill of materials. A list of <strong>generic</strong> materials is available by default, You have also the possibility of importing all the information relating to all your <strong>specific items</strong> available in your <strong>management system.</strong><br>
+In fact, when they cannot find the specific material, the applications use the list of generic materials to determine the unit cost and the description of the component they are designing.
+Please note that the generic materials in the table are given an article number starting with the letter Z and are blue. The list of generic materials includes all groups of materials that are used by the applications. Obviously, from a dimensional point of view, they contain unit costs associated with size ranges with rather coarse limits; otherwise, the list would be too long and difficult to keep up to date. On the other hand, it is important to allow applications to calculate the material cost of an item accurately, including when you are designing special items that need materials unavailable in the company's stock. Hence:</p>
+<ol>
+<li>the first task is to enter the unit cost for each line, in accordance with the unit of measurement indicated. </li>
+<li>The second task will be  to import the liste of the material available in your warehouse and listed in your management system</li>
+</ol>
+<h3 id="conductor-related-details-for-generic-materials"><a class="header" href="#conductor-related-details-for-generic-materials">Conductor-related details for generic materials:</a></h3>
+<p>In general, the cost of conductors can be divided into basic cost and transformation cost. You will find in the table these two items:</p>
+<ul>
+<li><strong>Basic conductor AL</strong></li>
+<li><strong>Basic conductor CU</strong>
+For each type of conductor there is another item: the transformation cost:<br>
+<em><strong>Example: 
+Conductor wire AL &lt;= 2.5 
+or
+Conductor foil CU</strong></em><br>
+If you enter a basic cost, applications will take this as the basic conductor cost and add it to the transformation cost when calculating the material cost. If you want your conductor cost to consist of a basic cost and a transformation cost, enter the base and transformation costs as described. On the other hand, if you wish to manage a single cost, enter 0 in the basic cost and enter the entire cost in the <strong>transformation field.
+NB: If entered, the basic cost is added also to the cost of conductors with specific items.</strong></li>
+</ul>
+<h3 id="table-fields-material-costs"><a class="header" href="#table-fields-material-costs">Table fields (material costs):</a></h3>
+<ul>
+<li><strong>Description</strong>: this is the description assigned to that material (read-only field)</li>
+<li><strong>Unit of measure</strong>: this is the reference unit of measure for the unit cost value. (Read-only field)</li>
+<li><strong>Unit cost</strong>: here enter the unit cost in accordance with the unit of measurement</li>
+<li><strong>Article</strong>: assigned article (read-only field)</li>
+</ul>
+<p>Any additions of generic materials are a consequence of application customisation and cannot be added by the user.</p>
+<h3 id="entry-of-specific-materials"><a class="header" href="#entry-of-specific-materials">Entry of specific materials:</a></h3>
+<p>In addition to entering generic costs, as mentioned above,  you can import the entire list of materials that are available in your management system. Here is how to proceed:</p>
+<h4 id="export-the-material-data-on-the-management-system-side"><a class="header" href="#export-the-material-data-on-the-management-system-side">Export the material data on the management system side:</a></h4>
+<p>Extract from the management application a table with the following characteristics: </p>
+<ul>
+<li>Column 1 = ARTICLE</li>
+<li>Column 2 = DESCRIPTION</li>
+<li>Column 3 = UNIT OF MEASURE</li>
+<li>Column 4 = Cost</li>
+</ul>
+<p>and save it as a file with the extension .csv (readable with Excel).
+Check, by opening the file with an editor (Notepad for example) that the separator character between the columns is &quot;;&quot;. If not, define this rule at the export level.
+You can ask your IT department, in charge of the management system, to create this file and save it in a folder accessible to you.<br>
+<strong>Note:</strong>
+It is possible to extract the entire list of materials (not only those used in the design) as the applications will only use the items listed in the technical material tables.
+In the initial set-up stage, you must decide which price column to use to export (average price or last price or etc.). This is a decision that has a major impact on the result of the cost calculation.</p>
+<h4 id="importing-material-data-into-clever-applications"><a class="header" href="#importing-material-data-into-clever-applications">Importing material data into Clever applications:</a></h4>
+<p>Once you have obtained the .csv file:</p>
+<ul>
+<li>Press the 'Import' button at the top right of this table.</li>
+<li>Choose the file from the dialogue box that appears as a file exported from the management system.</li>
+<li>Again from the opened dialogue box, click on Open (bottom right)</li>
+<li>This will automatically import the file.</li>
+</ul>
+<h4 id="managing-the-periodic-update-of-the-cost-of-generic-materials"><a class="header" href="#managing-the-periodic-update-of-the-cost-of-generic-materials">Managing the periodic update of the cost of generic materials:</a></h4>
+<p>For the periodic update of the cost of generic materials, it is possible to proceed in two ways:</p>
+<ol>
+<li>The technical department takes charge of updating the cost directly in this table, as was done the first time. In this case, only the specific items are imported from the management system.</li>
+<li>Generic materials are also loaded into the management system, which must be managed as virtual articles (without physical location and with quantity = 0). In this case, the management department will be responsible for updating the costs of generic materials. The materials import file will also include the generics and you only have to regularly import the file from the management system.</li>
+</ol>
+<p>Whatever the choice, it is desirable to create a management-side procedure, which automatically exports to a defined folder readable by the technical department regularly (i.e. every week or even every day). In this way, there are the right prerequisites to be able to import up-to-date costs at any time.</p>
+<h4 id="table-reading-facilities"><a class="header" href="#table-reading-facilities">Table reading facilities:</a></h4>
+<ul>
+<li>As in any other table, you can use the <strong>filter</strong> in the top left-hand corner to search for a material family or a specific material or change the sorting of the columns.</li>
+<li>If the material cost is = 0, it is marked in <strong>red.</strong></li>
+<li>If you see an article coloured <strong>red</strong> in the specific tables you have previously filled in, it means that there is no corresponding article in “Material costs” table.</li>
+</ul>
 
                     </main>
 

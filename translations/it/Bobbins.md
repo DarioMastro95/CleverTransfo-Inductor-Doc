@@ -6,7 +6,7 @@ Questa tabella di rocchetti viene utilizzata dalle applicazioni per gli elementi
 <img src="img/Rocchetti.png" height="150px">
 
 ### Campi della tabella (Rocchetti)
-- **Codice:
+- **Codice**:
 Sigla con la quale viene identificato il tipo di lamierino stampato che può montare il rocchetto.
 - **Tipo**: definizione del rocchetto: A x B (vedi disegno)
 - **Larghezza lamierino**: larghezza della colonna del lamierino sulla quale il rocchetto viene montato (Dimensione B nel disegno).

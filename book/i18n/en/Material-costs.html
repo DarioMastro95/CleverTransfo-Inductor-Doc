@@ -145,6 +145,72 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="material-costs"><a class="header" href="#material-costs">Material costs</a></h1>
+<h2 id="introduction"><a class="header" href="#introduction">Introduction:</a></h2>
+<p>This table is used by the applications to determine the description and the unit cost of the materials that will compose the bill of materials. A list of <strong>generic</strong> materials is available by default, You have also the possibility of importing all the information relating to all your <strong>specific items</strong> available in your <strong>management system.</strong><br>
+In fact, when they cannot find the specific material, the applications use the list of generic materials to determine the unit cost and the description of the component they are designing.
+Please note that the generic materials in the table are given an article number starting with the letter Z and are blue. The list of generic materials includes all groups of materials that are used by the applications. Obviously, from a dimensional point of view, they contain unit costs associated with size ranges with rather coarse limits; otherwise, the list would be too long and difficult to keep up to date. On the other hand, it is important to allow applications to calculate the material cost of an item accurately, including when you are designing special items that need materials unavailable in the company's stock. Hence:</p>
+<ol>
+<li>the first task is to enter the unit cost for each line, in accordance with the unit of measurement indicated. </li>
+<li>The second task will be  to import the liste of the material available in your warehouse and listed in your management system</li>
+</ol>
+<h3 id="conductor-related-details-for-generic-materials"><a class="header" href="#conductor-related-details-for-generic-materials">Conductor-related details for generic materials:</a></h3>
+<p>In general, the cost of conductors can be divided into basic cost and transformation cost. You will find in the table these two items:</p>
+<ul>
+<li><strong>Basic conductor AL</strong></li>
+<li><strong>Basic conductor CU</strong>
+For each type of conductor there is another item: the transformation cost:<br>
+<em><strong>Example: 
+Conductor wire AL &lt;= 2.5 
+or
+Conductor foil CU</strong></em><br>
+If you enter a basic cost, applications will take this as the basic conductor cost and add it to the transformation cost when calculating the material cost. If you want your conductor cost to consist of a basic cost and a transformation cost, enter the base and transformation costs as described. On the other hand, if you wish to manage a single cost, enter 0 in the basic cost and enter the entire cost in the <strong>transformation field.
+NB: If entered, the basic cost is added also to the cost of conductors with specific items.</strong></li>
+</ul>
+<h3 id="table-fields-material-costs"><a class="header" href="#table-fields-material-costs">Table fields (material costs):</a></h3>
+<ul>
+<li><strong>Description</strong>: this is the description assigned to that material (read-only field)</li>
+<li><strong>Unit of measure</strong>: this is the reference unit of measure for the unit cost value. (Read-only field)</li>
+<li><strong>Unit cost</strong>: here enter the unit cost in accordance with the unit of measurement</li>
+<li><strong>Article</strong>: assigned article (read-only field)</li>
+</ul>
+<p>Any additions of generic materials are a consequence of application customisation and cannot be added by the user.</p>
+<h3 id="entry-of-specific-materials"><a class="header" href="#entry-of-specific-materials">Entry of specific materials:</a></h3>
+<p>In addition to entering generic costs, as mentioned above,  you can import the entire list of materials that are available in your management system. Here is how to proceed:</p>
+<h4 id="export-the-material-data-on-the-management-system-side"><a class="header" href="#export-the-material-data-on-the-management-system-side">Export the material data on the management system side:</a></h4>
+<p>Extract from the management application a table with the following characteristics: </p>
+<ul>
+<li>Column 1 = ARTICLE</li>
+<li>Column 2 = DESCRIPTION</li>
+<li>Column 3 = UNIT OF MEASURE</li>
+<li>Column 4 = Cost</li>
+</ul>
+<p>and save it as a file with the extension .csv (readable with Excel).
+Check, by opening the file with an editor (Notepad for example) that the separator character between the columns is &quot;;&quot;. If not, define this rule at the export level.
+You can ask your IT department, in charge of the management system, to create this file and save it in a folder accessible to you.<br>
+<strong>Note:</strong>
+It is possible to extract the entire list of materials (not only those used in the design) as the applications will only use the items listed in the technical material tables.
+In the initial set-up stage, you must decide which price column to use to export (average price or last price or etc.). This is a decision that has a major impact on the result of the cost calculation.</p>
+<h4 id="importing-material-data-into-clever-applications"><a class="header" href="#importing-material-data-into-clever-applications">Importing material data into Clever applications:</a></h4>
+<p>Once you have obtained the .csv file:</p>
+<ul>
+<li>Press the 'Import' button at the top right of this table.</li>
+<li>Choose the file from the dialogue box that appears as a file exported from the management system.</li>
+<li>Again from the opened dialogue box, click on Open (bottom right)</li>
+<li>This will automatically import the file.</li>
+</ul>
+<h4 id="managing-the-periodic-update-of-the-cost-of-generic-materials"><a class="header" href="#managing-the-periodic-update-of-the-cost-of-generic-materials">Managing the periodic update of the cost of generic materials:</a></h4>
+<p>For the periodic update of the cost of generic materials, it is possible to proceed in two ways:</p>
+<ol>
+<li>The technical department takes charge of updating the cost directly in this table, as was done the first time. In this case, only the specific items are imported from the management system.</li>
+<li>Generic materials are also loaded into the management system, which must be managed as virtual articles (without physical location and with quantity = 0). In this case, the management department will be responsible for updating the costs of generic materials. The materials import file will also include the generics and you only have to regularly import the file from the management system.</li>
+</ol>
+<p>Whatever the choice, it is desirable to create a management-side procedure, which automatically exports to a defined folder readable by the technical department regularly (i.e. every week or even every day). In this way, there are the right prerequisites to be able to import up-to-date costs at any time.</p>
+<h4 id="table-reading-facilities"><a class="header" href="#table-reading-facilities">Table reading facilities:</a></h4>
+<ul>
+<li>As in any other table, you can use the <strong>filter</strong> in the top left-hand corner to search for a material family or a specific material or change the sorting of the columns.</li>
+<li>If the material cost is = 0, it is marked in <strong>red.</strong></li>
+<li>If you see an article coloured <strong>red</strong> in the specific tables you have previously filled in, it means that there is no corresponding article in “Material costs” table.</li>
+</ul>
 
                     </main>
 

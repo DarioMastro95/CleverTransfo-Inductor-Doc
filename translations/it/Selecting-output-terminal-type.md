@@ -27,5 +27,6 @@ Tensione nominale massima per la quale si può utilizzare quel tipo di uscita.
 3 = Capicorda <br>
 4 = Barrette esterne (si utilizzano quando l’avvolgimento è in conduttore piatto ma la corrente non permette
       L’uso di capicorda). Sono barre fissate a una piastra o a un isolatore alle quali vengono saldati i conduttori
-      piatti che escono dalla bobina. 
+      piatti che escono dalla bobina. <br>
+5 = Barre interne all’avvolgimento in nastro.
 - **Descrizione**: descrizione del tipo di uscita. Inserita nella tabella per chiarezza.

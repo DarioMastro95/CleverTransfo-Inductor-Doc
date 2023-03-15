@@ -145,6 +145,47 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="conductors"><a class="header" href="#conductors">Conductors</a></h1>
+<h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
+<p>This table lists all conductor types (wire, flat conductor, tape) in the two materials AL and CU.</p>
+<h3 id="table-fields-conductors"><a class="header" href="#table-fields-conductors">Table fields (Conductors)</a></h3>
+<ul>
+<li>
+<p><strong>Axial dim</strong>: for wire, enter the bare diameter, for flat wire or foil enter the axial dimension.</p>
+</li>
+<li>
+<p><strong>Radial dim</strong>: for wire, enter the insulated diameter, for flat wire or foil enter the radial dimension.</p>
+</li>
+<li>
+<p><strong>Section mm2</strong>: enter the net section, ideally from the supplier's table. If this is not possible, for flat wire, the net section is calculated as follows: </p>
+<ol>
+<li>Case radial thickness &lt;= 2.24  <br>Section = (axial dimension x radial dimension) - 0.363</li>
+<li>Case radial thickness case &gt; 2.24 <br>
+Section = (Axial dimension x Radial dimension) - 0.55</li>
+</ol>
+<p>However, for wire and foil, the precise area is calculated.</p>
+</li>
+<li>
+<p><strong>Kg/meter</strong>: we recommend taking this parameter from the supplier's tables. Otherwise, it should be calculated from the section and specific weight (CU = 8.90 kg/dm3 AL = 2.70 kg/dm3).</p>
+</li>
+<li>
+<p><strong>R/meter Ohm</strong>: we recommend obtaining this parameter from the supplier's tables. Otherwise, it should be calculated from the section and specific resistance (CU = 0,00175  Ω/m  AL = 0 ,0028  Ω/m).</p>
+</li>
+<li>
+<p><strong>Code</strong>: this code defines both type and material of the conductor.<br>Enter:</p>
+</li>
+</ul>
+<div class="table-wrapper"><table><thead><tr><th>Code</th><th>Material</th></tr></thead><tbody>
+<tr><td>B3</td><td>AL foil</td></tr>
+<tr><td>B4</td><td>CU foil</td></tr>
+<tr><td>P3</td><td>AL flat wire</td></tr>
+<tr><td>P4</td><td>CU flat wire</td></tr>
+<tr><td>F3</td><td>AL wire</td></tr>
+<tr><td>F4</td><td>CU wire</td></tr>
+</tbody></table>
+</div>
+<ul>
+<li><strong>Article</strong>: To select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table <em><strong>Material Unit Cost</strong></em> by importing the list of materials available in your warehouse.</li>
+</ul>
 
                     </main>
 

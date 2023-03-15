@@ -13,9 +13,9 @@ Viene fatta distinzione tra barre che costituiscono un attacco per il cliente, c
 - **Spessore**: spessore della barra.
 - **Sezione mm2**: sezione della barra Larghezza x Spessore (le barre sono a spigolo vivo). 
 - **I massima uscita avv**: corrente massima ammessa per le barre d’uscita avvolgimento che non vengono utilizzate direttamente come attacco cliente. 
-- **Esempio**: barra uscita di un elemento monofase con collegamento parallelo
+**Esempio**: barra uscita di un elemento monofase con collegamento parallelo.
 - **I massima connessione**: corrente massima ammessa per le barre di connessione che non vengono utilizzate direttamente come attacco cliente.
-- **Esempio**: barra connessione di un elemento trifase con collegamento a triangolo 
+**Esempio**: barra connessione di un elemento trifase con collegamento a triangolo. 
 - **I massima cliente**: corrente massima ammessa per le barre che vengono utilizzate direttamente come attacco cliente.
 - **Articolo**: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.
 

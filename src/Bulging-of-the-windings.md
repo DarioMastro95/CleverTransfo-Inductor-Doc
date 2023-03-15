@@ -6,8 +6,8 @@ This parameter depends on the type of winding machines available in the company 
 Establishing the real winding thickness is particularly important as it leads to determining accuracy in the calculation of:
 
 - Short-circuit voltage
-- -	Load voltage
-- -	Losses in the conductors and consequently overtemperature in the various winding sections
+- Load voltage
+- Losses in the conductors and consequently overtemperature in the various winding sections
   
 Within the table, you can define the bulging coefficient depending on the type, material and thickness of the conductor.<br>
 **Using the "+" or "-" buttons in the navigator at the top right, you can insert rows to achieve greater granularity or delete rows if required fewer details.**

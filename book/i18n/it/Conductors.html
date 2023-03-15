@@ -149,27 +149,38 @@
 <p>In questa tabella sono stati inseriti tutti i tipi di conduttore (filo, conduttore piatto, nastro) nei due materiali AL e CU.</p>
 <h3 id="campi-della-tabella-bussole"><a class="header" href="#campi-della-tabella-bussole">Campi della tabella (Bussole)</a></h3>
 <ul>
-<li><strong>Dim. Assiale</strong>: in caso di filo inserire il diametro nudo, in caso di conduttore piatto o nastro inserire la dimensione assiale.</li>
-<li><strong>Dim. Radiale</strong>: in caso di filo inserire il diametro isolato, in caso di conduttore piatto o nastro inserire la dimensione radiale.</li>
-<li><strong>Sezione mm2</strong>: inserire la sezione netta, possibilmente ricavata dalla tabella del fornitore. Se non fosse possibile, nel caso del conduttore piatto la sezione netta si calcola nel modo seguente:
+<li>
+<p><strong>Dim. Assiale</strong>: in caso di filo inserire il diametro nudo, in caso di conduttore piatto o nastro inserire la dimensione assiale.</p>
+</li>
+<li>
+<p><strong>Dim. Radiale</strong>: in caso di filo inserire il diametro isolato, in caso di conduttore piatto o nastro inserire la dimensione radiale.</p>
+</li>
+<li>
+<p><strong>Sezione mm2</strong>: inserire la sezione netta, possibilmente ricavata dalla tabella del fornitore. Se non fosse possibile, nel caso del conduttore piatto la sezione netta si calcola nel modo seguente:</p>
 <ol>
 <li>Caso spessore radiale &lt;= 2.24 <br>Sezione = Dim. Assiale x Dim. Radiale – 0.363</li>
 <li>Caso spessore radiale &gt; 2.24 <br>
 Sezione = Dim. Assiale x Dim. Radiale – 0.55</li>
 </ol>
-</li>
-</ul>
 <p>Per filo e Nastro invece si calcola l’area precisa.</p>
-<ul>
-<li><strong>Peso/metro</strong>: si consiglia di ricavare questo parametro dalle tabelle del fornitore. Altrimenti occorre calcolarlo a partire dalla sezione e dal peso specifico (CU = 8,90 kg/dm3  AL = 2,70 kg/dm3).</li>
-<li><strong>R/metro Ohm</strong>: si consiglia di ricavare questo parametro dalle tabelle del fornitore. Altrimenti occorre calcolarlo a partire dalla sezione e dalla resistenza specifica (CU = 0,00175  Ω/m  AL = 0 ,0028  Ω/m).</li>
-<li><strong>Codice</strong>: questo codice definisce completamente il conduttore sia come tipo che come materiale.<br>Inserire:</li>
+</li>
+<li>
+<p><strong>Peso/metro</strong>: si consiglia di ricavare questo parametro dalle tabelle del fornitore. Altrimenti occorre calcolarlo a partire dalla sezione e dal peso specifico (CU = 8,90 kg/dm3  AL = 2,70 kg/dm3).</p>
+</li>
+<li>
+<p><strong>R/metro Ohm</strong>: si consiglia di ricavare questo parametro dalle tabelle del fornitore. Altrimenti occorre calcolarlo a partire dalla sezione e dalla resistenza specifica (CU = 0,00175  Ω/m  AL = 0 ,0028  Ω/m).</p>
+</li>
+<li>
+<p><strong>Codice</strong>: questo codice definisce completamente il conduttore sia come tipo che come materiale.<br>Inserire:</p>
+</li>
 </ul>
 <div class="table-wrapper"><table><thead><tr><th>Codice</th><th>Materiale</th></tr></thead><tbody>
 <tr><td>B3</td><td>Nastro AL</td></tr>
-<tr><td>B4</td><td>Filo CU</td></tr>
+<tr><td>B4</td><td>Nastro CU</td></tr>
 <tr><td>P3</td><td>Conduttore piatto AL</td></tr>
 <tr><td>P4</td><td>Conduttore piatto CU</td></tr>
+<tr><td>F3</td><td>Filo AL</td></tr>
+<tr><td>F4</td><td>Filo CU</td></tr>
 </tbody></table>
 </div>
 <ul>

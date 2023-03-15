@@ -144,7 +144,25 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="go-core"><a class="header" href="#go-core">GO core</a></h1>
+                        <h1 id="lamierino-go"><a class="header" href="#lamierino-go">Lamierino GO</a></h1>
+<h3 id="campi-della-tabella-lamierino-no-e-lamierino-go"><a class="header" href="#campi-della-tabella-lamierino-no-e-lamierino-go">Campi della tabella (Lamierino NO e Lamierino GO)</a></h3>
+<ul>
+<li><strong>Descrizione</strong>: descrizione libera del tipo di elemento. Non viene utilizzata all’interno delle applicazioni e quindi potete scrivere ciò che preferite.</li>
+<li><strong>Potenza VA</strong>: potenza di dimensionamento dell' elemento in VA.</li>
+<li><strong>Tratti Avv.Prim</strong>: numero tratti dell’avvolgimento primario (nel caso di induttori sarà il numero dei tratti totale poiché c’è solo un avvolgimento).</li>
+<li><strong>Canale Avv. Prim</strong>: spessore del canale frontale tra i tratti del primo avvolgimento.</li>
+<li><strong>Tratti Avv.Sec</strong>: numero tratti dell’avvolgimento secondario.</li>
+<li><strong>Canale Avv. Sec</strong>: spessore del canale frontale tra i tratti dell’avvolgimento secondario. Questo canale viene utilizzato anche tra il primario e il secondario. Se ci fossero più secondari prenderebbero i dati del primo secondario.</li>
+<li><strong>H Avv</strong>: Altezza netta degli avvolgimenti (tutti gli avvolgimenti vengono impostati a uguale altezza).</li>
+<li><strong>Sez. Nucleo cm2</strong>: sezione del nucleo (colonna) che si calcola in questo modo: <strong>Larghezza Lamierino x Spessore Nucleo x 0.97</strong>. <br>
+<strong>0.97</strong> permette di ottenere la sezione reale, dedotti gli spazi occupati dall’isolante dei singoli lamierini.</li>
+<li><strong>Largh. Lam</strong>: la larghezza del lamierino della colonna (Lo spessore del nucleo viene calcolato automaticamente dall’applicazione, partendo dalla sezione del nucleo, tenuto conto della formula sopra riportata).</li>
+<li><strong>Canale Front. N/B</strong>: canale frontale tra nucleo e avvolgimento.</li>
+<li><strong>Canale Lat. N/B</strong>: canale Laterale tra nucleo e avvolgimento (l’inserimento dei due valori, frontale e laterale, è interessante 
+soprattutto per gli induttori). Se non esiste canale laterale introdurre 0.</li>
+<li><strong>L Finestra</strong>: larghezza della finestra. Per larghezza finestra s’intende lo spazio tra le colonne.</li>
+<li><strong>H Finestra</strong>: altezza finestra. Per altezza finestra s’intende lo spazio tra i due gioghi.</li>
+</ul>
 
                     </main>
 
