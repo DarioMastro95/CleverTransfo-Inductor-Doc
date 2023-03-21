@@ -5,7 +5,7 @@ I morsetti si utilizzano nelle applicazioni Clever Transfo e Clever Le staffe di
 Nel disegno sopra è rappresentata una staffa a L a titolo. In realtà in questa tabella è possibile inserire qualsiasi forma di staffa. Il codice sarà il discriminante. L’obiettivo di questa tabella è fornire le sporgenze delle staffe dall’elemento per poter calcolare correttamente le dimensioni d’ingombro dell’elemento stesso.
 
 
-<img src="img/StaffeDi Serraggio.png" height="150px">
+<img src="img/StaffeDi Serraggio.png" height="250px">
 
 ### Campi della tabella (Staffe)
 - **Lamierino**: tipo di lamierino compatibile.<br>

@@ -1,11 +1,11 @@
-# Tabelle dei materiali
+# Tabelle Materiali
 
 
 ## Introduzione
 
-Le tabelle del sotto-menu contengono tutti i materiali che vengono utilizzati per la costruzione degli elementi progettati. Esiste una tabella per ciascun gruppo.
-Ciascuna tabella deve contenere l’elenco degli articoli che vengono da voi utilizzati. 
+Le tabelle del sotto-menu contengono tutti i materiali che vengono utilizzati per la costruzione degli elementi progettati. Esiste una tabella per ciascun gruppo.<br>
+Come vedrete in seguito, occorre inserire i dati elettrici e/o dimensionali necessari alla definizione completa del componente preso in considerazione.
 Se, all’interno di una tabella esistono sotto-famiglie differenti, queste sono identificate tramite un codice. Nella scelta del codice seguire le indicazioni presenti nell’help della tabella specifica.
-A seconda del tipo di materiale vengono inseriti dati i dati elettrici e/o dimensionali necessari alla definizione completa dello stesso e, da ultimo, si inserisce il codice articolo che utilizzate nel vostro sistema gestionale. 
-Tenuto conto che, come vedete nella figura sottostante, in Clever Suite viene importata la lista dei materiali del vostro magazzino, questo codice permetterà alle applicazioni, una volta scelto il materiale su questa tabella, di recuperare la vostra descrizione ufficiale e il costo del materiale.
-La **figura seguente** illustra meglio la modalità di gestione dei dati relativi ai materiali delle applicazioni Clever.
+Da ultimo, occorre inserire il codice articolo che utilizzate nel vostro sistema gestionale.
+Considerate che, come illustrato nella figura sottostante, in Clever Suite viene importata la lista dei materiali del vostro magazzino e questo articolo permetterà alle applicazioni, una volta ritrovato il componente su questa lista, di recuperare la vostra descrizione ufficiale e il costo del materiale.
+Nella prima installazione le tabelle sono già state riempite di materiali considerati da noi standard. Questo abbrevierà il vostro lavoro di inserimento dati e costituirà un esempio di come si inseriscono i dati. Avete ovviamente la libertà di modificare, cancellare e aggiungere righe, a seconda delle vostre necessità. È importante curare questa fase di configurazione perché determina la qualità del vostro lavoro futuro.

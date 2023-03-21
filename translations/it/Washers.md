@@ -9,11 +9,11 @@ Le rondelle si utilizzano nei serraggi orizzontale e verticale, nel serraggio de
 ### Campi della tabella (Rondelle)
 
 - **Codice**: sigla con la quale viene identificata la forma della rondella. Le sigle correnti sono:<br>
-RGR = Rondella Grower<br>
-RPN = Rondella piana<br> 
-RPNL = Rondella piana larga.<br>
+**RGR** = Rondella Grower<br>
+**RPN** = Rondella piana<br> 
+**RPNL** = Rondella piana larga.<br>
 Altre forme potrebbero essere definite in fase di personalizzazione delle applicazioni.
-- **Dimensione M**: M del foro filettato interno (quota D nel disegno).
+- **Dimensione M**: M della vite o asta filettata con la quale la rondella può essere utilizzata.
 - **Materiale**: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.
 - **Diametro interno**: corrisponde alla quota D del disegno.
 - **Diametro esterno**: corrisponde alla quota D2 del disegno.

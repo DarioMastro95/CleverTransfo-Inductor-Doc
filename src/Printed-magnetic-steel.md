@@ -5,7 +5,7 @@
 
 This table lists the available printed magnetic steel. 
  
-<img src="img/LamieriniStampati.png" height="150px">
+<img src="img/LamieriniStampati.png" height="250px">
 
 ### Table Fields (Printed magnetic steel)
 

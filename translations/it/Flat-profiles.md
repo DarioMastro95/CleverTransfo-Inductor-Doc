@@ -9,7 +9,7 @@ Sono piastre in acciaio (come da disegno).  Si differenziano tra di loro essenzi
 <img src="img/ProfiliPiatti.png" height="200px">
 
 ### Campi della tabella (Profili piatti)
-- **Codice**: il codice definisce la forma del semilavorato, normalmente = PGP. Durante la personalizzazione è possibile definire profili di forme differenti e di conseguenza si definiranno codici diversi.
+- **Codice**: il codice definisce la forma del semilavorato, normalmente = **PGP**.
 - **Materiale**: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.
 - **Larghezza**: larghezza del semilavorato (Dimensione H del disegno).
 - **Spessore**: spessore del semilavorato (Dimensione S del disegno).

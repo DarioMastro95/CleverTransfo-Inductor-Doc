@@ -11,8 +11,7 @@ Infatti, il numero di licenze limita solo il numero di accessi contemporanei a C
 
 
 ## Campi Tabella
-- **UserName**: è lo username che è costituito da due caratteri in lettera maiuscola. Massimo 2 caratteri alfabetici in lettera maiuscola. 
-Regole: Max 2 caratteri alfabetici in lettera maiuscola. 
+- **UserName**: è la sigla dell’utente ed è costituita da massimo due caratteri in lettera maiuscola. 
 - **Nome**: è il nome di battesimo dell’utente. Prima lettera maiuscola.
 - **Cognome**: è il cognome dell’utente. Prima lettera maiuscola.
-- **Ruolo**: ruolo dell’utente all’interno dell’applicazione In un’azienda ci può essere un solo “**admin**” tutti gli altri utenti devono essere “**user**”. Solo l’utente “**admin**” può accedere alle opzioni e modificarle. In un gruppo di lavoro deve essere definito il responsabile della configurazione di Clever Suite.
+- **Ruolo**: ruolo dell’utente all’interno dell’applicazione In un’azienda ci può essere un solo “**admin**” tutti gli altri utenti devono essere “**user**”. Solo l’utente “**admin**” può accedere alle opzioni e modificarle. In un gruppo di lavoro occorre quindi definire il responsabile della configurazione di Clever Suite.

@@ -3,7 +3,7 @@
 ## Introduzione
 Questa tabella di rocchetti viene utilizzata dalle applicazioni per gli elementi generici, mentre per gli elementi che devono sottostare alle norme UL esiste una tabella apposita. 
 
-<img src="img/Rocchetti.png" height="150px">
+<img src="img/Rocchetti.png" height="250px">
 
 ### Campi della tabella (Rocchetti)
 - **Codice**:

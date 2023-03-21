@@ -12,6 +12,6 @@ In questa tabella si inseriscono i lamierini magnetici a disposizione. È possib
 - **Tipo lam**: a partire dal materiale si inserisce la sigla correntemente utilizzata per individuare quel lamierino.
 ***Esempio: NOM270***
 - **Larghezza**: larghezza del lamierino che corrisponde alla larghezza della colonna nella quale è impiegato
-- **Lunghezza**: qui è possibile inserire sia la lunghezza del semilavorato (se si acquista in rotoli nelle dimensioni STD e si procede al taglio in fabbrica) oppure tutte le lunghezze disponibili se si acquista già tagliato a misura. Le applicazioni controllano se esiste la misura esatta. Se non esiste cercano il semilavorato.
+- **Lunghezza**: qui è possibile inserire sia la lunghezza del semilavorato (se si acquista in rotoli nelle dimensioni STD e si procede al taglio in fabbrica) oppure tutte le lunghezze disponibili se si acquista già tagliato a misura. Le applicazioni controllano se esiste la misura esatta. Se non esiste utilizzano il semilavorato.
 - **Numero fori**: numero dei fori per il passaggio dei tiranti di serraggio. Solo per lamierini tagliati a misura e utilizzati per i gioghi.
 - **Articolo**: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.

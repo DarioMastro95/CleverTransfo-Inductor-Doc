@@ -7,13 +7,13 @@ I dadi si utilizzano per il serraggio orizzontale e verticale degli elementi, pe
 
 ### Campi della tabella (Dadi)
 
-- **Codice**: sigla con la quale viene identificata la forma del dado. LE SIGLE TUTTORA IN USO SONO:<br>
-DE = Dado esagonale è il dado (standard)<br>
-DA = Dado esagonale alto<br>
+- **Codice**: sigla con la quale viene identificata la forma del dado. **Le sigle tuttora utilizzate sono:**<br>
+**DE** = Dado esagonale è il dado (standard)<br>
+**DA** = Dado esagonale alto<br>
 altre forme potrebbero essere definite in fase di personalizzazione delle applicazioni.
 
 - **Dimensione M**:
-M del foro filettato interno (quota D nel disegno).
+**M** del foro filettato interno (quota D nel disegno).
 - **Dim. max**: corrisponde alla quota E del disegno e può essere omessa.
 - **Larghezza in chiave**: corrisponde alla quota SW del disegno e può essere omessa.
 - **Spessore**: corrisponde alla quota H del disegno e può essere omesso.

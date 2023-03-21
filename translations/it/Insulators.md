@@ -9,8 +9,8 @@ Generalmente vengono impiegati in presenza di tensioni di isolamento o di eserci
 
 ### Campi della tabella (Isolatori)
 
-- **Codice**: codice che identifica il tipo di golfare. Il golfare standard rappresentato nel disegno corrisponde a GF. 
-Quello con foro filettato all’esterno corrisponde a GM.
+- **Codice**: codice che identifica il tipo di isolatore. L’isolatore standard rappresentato nel disegno corrisponde a IS. 
+Altri tipi di isolatori avranno codici differenti, concordati con noi.
 - **Tensione esercizio V**: tensione nominale massina supportata.
 - **Diametro esterno**: diametro esterno **D**. Vedi disegno.
 - **Altezza**: altezza isolatore **H**. Vedi disegno.

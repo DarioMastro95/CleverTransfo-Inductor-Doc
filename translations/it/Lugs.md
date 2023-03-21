@@ -1,7 +1,7 @@
 # Capicorda
 
 ## Introduzione
-I capicorda non isolati si utilizzano nelle applicazioni Clever Small-T e Clever Small-I come terminali d’uscita quando la corrente o altri parametri non permettono l’uso dei morsetti. Possono essere fissate a degli isolatori o a una piastra. 
+I capicorda non isolati si utilizzano nelle applicazioni Clever Transfo e Clever Inductor come terminali d’uscita quando la corrente o altri parametri non permettono l’uso dei morsetti. Possono essere fissate a isolatori o a una piastra. 
 
 <img src="img/Capicorda.png" height="120px">
 

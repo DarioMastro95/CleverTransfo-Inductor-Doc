@@ -1,4 +1,4 @@
-# Threated rod
+# Threaded rods
 ## Introduction
 Threaded rods are used in Clever Transfo and Clever Inductor applications for horizontal and vertical clamping of elements. The material is, generally, galvanized steel.
 

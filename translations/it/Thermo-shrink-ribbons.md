@@ -7,7 +7,7 @@ I nastri termorestringenti si utilizzano come fasciatura esterna delle bobine. D
 ### Campi della tabella (Nastri termorestringenti)
 
 - **Peso gr/m**: peso grammi al metro. Dato recuperabile dal fornitore.
-- **Codice**: il codice definisce il tipo di mastro, normalmente = NAT.<br> Durante la personalizzazione è possibile definire nastri differenti e di conseguenza si definiranno codici diversi.
+- **Codice**: il codice definisce il tipo di nastro, normalmente = **NAT**.<br> Durante la personalizzazione è possibile definire nastri differenti e di conseguenza si definiranno codici diversi.
 - **Materiale**: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.
 - **Spessore**: spessore del nastro.
 - **Larghezza**: larghezza del nastro.

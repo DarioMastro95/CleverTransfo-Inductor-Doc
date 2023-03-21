@@ -6,7 +6,7 @@ In the drawing above, an L-bracket is shown. Any type of bracket can be inserted
 
 
 
-<img src="img/StaffeDi Serraggio.png" height="150px">
+<img src="img/StaffeDi Serraggio.png" height="250px">
 
 ### Table fields (Brackets)
 - **Magnetic steel**:

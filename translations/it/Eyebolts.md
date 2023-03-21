@@ -1,7 +1,7 @@
 # Golfari
 
 ## Introduzione
-I golfari o ganci di sollevamento vengono montati sulla parte superiore degli elementi per agevolarne il sollevamento.  Esistono in forme: con foro filettato interno e con foro filettato esterno.
+I golfari o ganci di sollevamento vengono montati sulla parte superiore degli elementi per agevolarne il sollevamento. Si differenziano in: golfari con foro filettato interno e golfari con foro filettato esterno.
 
 <img src="img/Golfari.png" height="180px">
 
@@ -9,7 +9,7 @@ I golfari o ganci di sollevamento vengono montati sulla parte superiore degli el
 
 - **Dimensione B**: diametro foro interno. Vedi disegno.
 - **Dimensione C**: diametro esterno. Vedi disegno.
-- **Dimensione F**: altezza anello. Vedi disegno.
+- **Spessore**: altezza anello. Vedi disegno.
 - **Codice**: codice che identifica il tipo di golfare. Il golfare standard, rappresentato nel disegno corrisponde a GF. 
 Quello con foro filettato all’esterno corrisponde a GM.
 - **Dimensione M**: diametro del foro filettato. Vedi disegno.

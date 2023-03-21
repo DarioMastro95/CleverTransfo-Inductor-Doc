@@ -2,15 +2,17 @@
 
 ## Introduzione
 Le guaine servono a isolare quel tratto di conduttore che esce dall’avvolgimento per arrivare al terminale d’uscita (morsetto o capicorda).<br>
-Sono dei tubetti che esistono in vari colori che l’azienda può associare a un codice preciso. Solitamente sono un semilavorato 
+Sono dei tubetti che esistono in vari colori e che l’azienda può associare a un codice preciso. Solitamente sono un semilavorato 
 Il tipo di materiale di cui sono costituite dipende principalmente dalla classe di temperatura e dalla tensione d’isolamento dell’elemento.
 
 ### Campi della tabella (Guaine)
 
 - **Tensione isol KV**: tensione d’isolamento massima che la guaina può sopportare.
-- **Codice**: codice che identifica la guaina. Generalmente esprime l’impiego della guaina stessa:
-UL  = valida solo per norme UL, GSI = valida per elementi generici classe B, LSI = Guaina tutti gli elementi classe F - H
+- **Codice**: codice che identifica la guaina. Generalmente esprime l’impiego della guaina stessa:<br>
+UL  = valida per elementi sottoposti a norma UL<br>
+GSI = valida per elementi generici classe B<br>
+LSI = Guaina tutti gli elementi classe F - H
 - **Materiale**: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.
-- **Diametro int**: diametro interno della guaina.
+- **Diametro interno**: diametro interno della guaina.
 - **Colore**: scrivere il colore per esteso in lettere maiuscole.
 - **Articolo**: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.

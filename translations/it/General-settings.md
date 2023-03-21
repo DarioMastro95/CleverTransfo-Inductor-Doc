@@ -1,8 +1,9 @@
 # Impostazioni generali
 
 ## Introduzione
-Qui si definiscono le caratteristiche generali delle applicazioni qui sotto riportate.<br>
-Percorso per salvataggio documenti:<br>
+ Qui si definiscono le caratteristiche generali delle applicazioni.<br>
+### Descrizione
+Percorso per salvataggio documenti<br>
 Durante l’utilizzo delle applicazioni, premendo il bottone **esporta**, tutti i documenti prodotti dall’applicazione stessa vengono salvati in una cartella ben definita.<br>
 Percorso per il salvataggio dei documenti = Percorso della cartella di partenza. 
 L’applicazione, a partire da questa cartella di base, definisce la cartella in cui verranno salvati i documenti in questo modo:<br>
@@ -22,7 +23,6 @@ L’applicazione, a partire da questa cartella di base, definisce la cartella in
 
 ## Descrizione
 
-- **Logo**: si può inserire il proprio logo aziendale che deve avere una risoluzione massima in pixel di 300 x 300.
-Premendo il bottone a lato del logo (…) si aprirà una finestra di dialogo che permetterà di caricare il disegno voluto.<br>Ridurre le dimensioni se non è possibile inserirlo.
+- **Logo**: qui è possibile inserire il proprio logo aziendale che deve avere una risoluzione massima di 300 x 300 pixel. Premendo il bottone a lato del logo si apre una finestra di dialogo che permette di caricare il disegno desiderato. Se il disegno non viene inserito significa che ha una risoluzione troppo alta e quindi occorre ridurlo.
 - **Moneta**: scegliendo nel box sottostante è possibile selezionare la moneta desiderata.
 - **Password eliminazione Archivio Aziendale**: poiché l’eliminazione di progetti dall’Archivio Aziendale è un’operazione critica, occorre introdurre una password per procedere in quest’operazione. Per sicurezza il campo successivo chiede conferma.

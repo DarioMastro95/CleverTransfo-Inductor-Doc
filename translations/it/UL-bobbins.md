@@ -3,7 +3,7 @@
 ## Introduzione
 Questa tabella di rocchetti viene utilizzata dalle applicazioni per gli elementi che devono sottostare alle norme UL. La scelta della categoria UL nella prima videata di ingresso dati di CLEVER SMALL-T e CLEVER SMALL-I ne determina l’utilizzo.
 
-<img src="img/RocchettiUL.png" height="150px">
+<img src="img/RocchettiUL.png" height="250px">
 
 ### Campi della tabella (Rocchetti UL)
 - **Codice**: sigla con la quale viene identificato il tipo di lamierino stampato che può montare il rocchetto.

@@ -7,5 +7,6 @@ Sotto parametri costruttivi si trovano tutte le tabelle che definiscono i parame
 In sostanza, si tratta di definire, per ogni tipo di elemento e per ogni potenza, quali sono i parametri geometrici che vi portano il maggior vantaggio in termini economici.<br>
 L’inserimento dei parametri geometrici corrispondenti a questa ottimizzazione, poiché verranno adottati automaticamente dalle applicazioni Clever, vi permetteranno di progettare immediatamente elementi il più possibile ottimizzati.<br>
 Per i grandi elementi esistono due tabelle: una per elementi costruiti con il lamierino magnetico a grani non orientati **(NO)** e uno per lamierino magnetico a grani orientati **(GO)**. Questo perché nei due casi il proporzionamento generalmente è differente.
+Anche per **i piccoli elementi su lamierino stampato** esistono due tabelle: **Elementi generici e elementi UL** (che devono rispettare le norme UL).
 **È possibile inserire altre tabelle, su richiesta, per definire parametri differenti per costruzioni speciali (ad esempio elementi per trazione).** <br>
 Tutte le dimensioni riportate nelle tabelle sono in mm. salvo esplicita indicazione.
