@@ -1,12 +1,14 @@
 # Costo unitario materiali
 ## Introduzione:
-In questa tabella, trovate una serie di **materiali “generici”** che le applicazioni utilizzano quando non trovano il **materiale specifico,** per determinare il costo unitario di quel componente.
-Avete inoltre la possibilità di importare tutte le informazioni relative a tutti i vostri **articoli specifici,** presenti nel vostro **sistema gestionale.**<br>
-Notate che i materiali generici hanno un numero d’articolo che inizia con la lettera Z e sono contraddistinti dal colore **blu.**<br>
-La lista dei materiali generici comprende tutte le famiglie dei materiali che vengono utilizzati dalle applicazioni. Ovviamente, dal punto di vista dimensionale non possono che contenere prezzi associati a range di dimensioni con limiti piuttosto grossolani, perché altrimenti la lista sarebbe molto lunga e difficile da tenere aggiornata. D’altro canto, lo scopo, come si diceva, è quello di permettere alle applicazioni di calcolare il costo dei materiali di un elemento in modo “sensato”, anche se i materiali utilizzati non fanno parte del magazzino articoli dell’azienda. Ecco quindi che occorre, prima di tutto, **inserire il costo unitario per ogni riga,** conformemente all’unità di misura indicata.
+Questa tabella viene utilizzata dalle applicazioni per determinare la descrizione e il costo unitario dei materiali che comporranno la distinta base.<br>
+La prima volta che la visionate, trovate già una serie di **materiali “generici”** e avete inoltre la possibilità (come vedremo più aventi) di importare tutte le informazioni relative a tutti i vostri **articoli specifici**, presenti nel vostro **sistema gestionale**. <br>
+Infatti le applicazioni utilizzano la lista dei materiali generici quando non trovano il materiale specifico, allo scopo di poter sempre determinare il costo unitario e la descrizione del componente che stanno in quel momento progettando.
+Notate che, nella tabella, i materiali generici hanno un numero d’articolo che inizia con la lettera **Z** e sono contraddistinti dal colore blu.
+La lista dei materiali generici comprende tutte le famiglie dei materiali che vengono utilizzati dalle applicazioni. Ovviamente, dal punto di vista dimensionale contengono costi unitari associati a range di dimensioni con limiti piuttosto grossolani, perché altrimenti la lista sarebbe molto lunga e difficile da tenere aggiornata. D’altro canto, lo scopo, come si diceva, è quello di permettere alle applicazioni di calcolare il costo dei materiali di un elemento in modo sufficientemente preciso, anche se si tratta di un elemento speciale che utilizza materiali che non fanno parte del magazzino articoli dell’azienda. 
+
 Quindi:
-1.	Il vostro primo lavoro sarà quindi quello di inserire il costo unitario per ogni riga, conformemente all’unità di misura indicata. 
-2.	Il vostro secondo compito consisterà nell'importare l'elenco dei materiali disponibili nel vostro magazzino ed elencati nel vostro sistema di gestione.
+1. Il vostro primo lavoro sarà quindi quello di **inserire il costo unitario per ogni riga**, conformemente all’unità di misura indicata. 
+2. Il vostro secondo compito consisterà nell'importare l'elenco dei materiali disponibili nel vostro magazzino ed elencati nel vostro sistema di gestione.
 
 
 ### Particolarità relative ai conduttori:
@@ -27,14 +29,14 @@ Se inserite un costo di **base** le applicazioni lo prenderanno come costo base 
 
 - **Descrizione**: è la descrizione assegnata a quel materiale (campo in sola lettura)
 - **Unità di misura**: è l’unità di misura di riferimento per il valore del costo unitario. (campo in sola lettura)
-- **Costo unitario**: inserire il costo unitario conformemente all’unità di misura
+- **Costo unitario**: qui inserire il costo unitario conformemente all’unità di misura
 - **Articolo**: articolo assegnato (campo in sola lettura)<br>
 
 Eventuali aggiunte di materiali generici sono conseguenti alla personalizzazione delle applicazioni, non possono essere aggiunti dall’utente.
 
 ### Modalità di gestione della tabella:
 
-Oltre all’inserimento dei costi generici, è possibile importare l’intera lista dei materiali presenti nel vostro sistema gestionale. Ecco come procedere:
+Oltre all’inserimento dei costi generici, come si diceva, è possibile importare l’intera lista dei materiali presenti nel vostro sistema gestionale. Ecco come procedere:
 
 #### Gestione della prima esportazione dei dati dei materiali lato sistema gestionale:
 
@@ -71,6 +73,6 @@ Qualsiasi sia la scelta, è auspicabile creare una **procedura** lato gestionale
 #### Facilitazioni di lettura della tabella:
 - Come in ogni altra tabella potete utilizzare il **filtro** in alto a sinistra per la ricerca di famiglia di materiali o di un materiale specifico, oppure modificare l’ordinamento delle colonne.
 - Se il costo dei materiali è = 0 viene contraddistinto dal colore **rosso**.
-- Se nelle tabelle specifiche che avete compilato in precedenze vedete un articolo colorato in **rosso** significa che  in questa tabella non c’è l’articolo corrispondente.
+- Se nelle tabelle specifiche che avete compilato in precedenza vedete un articolo colorato in **rosso** significa che nella tabella “costo unitario materiali” non esiste l’articolo corrispondente.
 
 

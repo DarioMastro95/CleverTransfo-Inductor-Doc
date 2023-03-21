@@ -7,7 +7,7 @@ Questa tabella di rocchetti viene utilizzata dalle applicazioni per gli elementi
 
 ### Campi della tabella (Rocchetti UL)
 - **Codice**: sigla con la quale viene identificato il tipo di lamierino stampato che può montare il rocchetto.
-- **Tipo**: definizione del rocchetto**: A x B (vedi disegno)
+- **Tipo**: definizione del rocchetto: A x B (vedi disegno)
 - **Larghezza lamierino**: larghezza della colonna del lamierino sulla quale il rocchetto viene montato (Dimensione B nel disegno).
 - **Spess. nucleo**: spessore a disposizione per il nucleo (Dimensione B nel disegno).
 - **H avvolgimento**: altezza a disposizione per l’avvolgimento (Dimensione F nel disegno).

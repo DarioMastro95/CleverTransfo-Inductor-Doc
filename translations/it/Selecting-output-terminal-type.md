@@ -3,7 +3,7 @@
 ### Introduzione
 In questa tabella si definisce il tipo di uscita che le applicazioni sceglieranno di automaticamente, in funzione dei seguenti parametri:
 - **Tipo di conduttore** 
-- **Correnti nominale**
+- **Corrente nominale**
 - **Tensione nominale**
 
 

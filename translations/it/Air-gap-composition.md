@@ -12,8 +12,8 @@ A seconda della vostra disponibilità potete modificare questa tabella, inserend
 - **Spessore totale**: spessore del traferro ottenuto con la composizione presente sulla riga.
 - **Materiale 1**: materiale relativo al primo isolante.<br>Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.
 - **Numero fogli 1**: numero delle carte o delle lastre sovrapposte.
-- **Spessore 1**: spessore del singolo isolante.
+- **Spessore 1**: spessore del (primo) singolo isolante.
 - **Materiale 2**: materiale relativo al secondo isolante.<br>
 Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.
 - **Numero fogli 2**: numero delle carte o delle lastre sovrapposte.
-- **Spessore 2**: spessore del singolo isolante.
+- **Spessore 2**: spessore del (secondo) singolo isolante.

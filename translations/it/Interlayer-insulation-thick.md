@@ -2,11 +2,13 @@
 
 ## Introduzione
 Questa tabella viene utilizzata unicamente nelle applicazioni Clever Small-T e Clever Small-I per scegliere automaticamente lo spessore degli isolanti interstrato e tra avvolgimenti.
-Gli spessore scelti, all’interno di un progetto, possono essere modificati manualmente.
+Gli spessore scelti automaticamente, all’interno di un progetto, possono essere modificati manualmente.
 
 ### Campi della tabella (Isolamento interstrato)
 - **Classe temperatura**: classe di temperatura dell’elemento (A-E-B-F-H).
-- **Materiale conduttore**: materiale del conduttore.
+- **Materiale conduttore**: materiale del conduttore.<br>
+0 = Alluminio<br>
+1 = Rame<br>
 - **Tipo conduttore**: inserire il tipo conduttore secondo il codice seguente: <br>
 1 = Conduttore piatto <br>
 2 = Nastro<br>

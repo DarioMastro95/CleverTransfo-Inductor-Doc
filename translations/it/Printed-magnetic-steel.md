@@ -1,7 +1,8 @@
 # Lamierini stampati
 
 ## Introduzione
-In questa tabella si inseriscono i lamierini stampati a disposizione. 
+In questa tabella si inseriscono i lamierini stampati a disposizione.<br> 
+
 <img src="img/LamieriniStampati.png" height="250px">
 
 ### Campi della tabella (Lamierini Stampati)

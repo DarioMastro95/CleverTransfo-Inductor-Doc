@@ -13,6 +13,6 @@ Possono essere in acciaio piegato o UNP (come da disegno)  Si differenziano tra 
 - **Larghezza**: larghezza del semilavorato (Dimensione H del disegno).
 - **Altezza**: altezza del semilavorato (Dimensione B del disegno).
 - **Spessore 1**: spessore 1 del semilavorato (Dimensione S del disegno).
-- **Spessore 2**: spessore 2 del semilavorato (Dimensione T del disegno).
+- **Spessore 2**: spessore 2 del semilavorato (Dimensione t del disegno).
 - **Peso kg/m**: peso al metro. Valore da recuperare dalla tabella del fornitore.
 - **Articolo**: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.

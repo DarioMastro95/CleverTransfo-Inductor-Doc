@@ -1,4 +1,4 @@
-# Summary
+# Indice
 
 - [Operatori](./Users.md)
 - [Impostazioni generali](./General-settings.md)

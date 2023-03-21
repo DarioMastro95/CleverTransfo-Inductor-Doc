@@ -11,7 +11,7 @@ Nel disegno sopra è rappresentata una staffa a L a titolo. In realtà in questa
 - **Lamierino**: tipo di lamierino compatibile.<br>
 ***Esempi: 
 EI oppure EIT (trifase) o UI (per elementi a due colonne).***
-- **Lunghezza**: lunghezza del lamierino relativa alla specifica staffa.<br>
+- **Lunghezza**: lunghezza del lamierino per cui la staffa é utilizzabile.<br>
 ***Esempio: 
 Se si tratta di un EI120 qui si inserirà 120.***
 - **Descrizione**: descrizione della staffa che può essere di aiuto per il riconoscimento della stessa.

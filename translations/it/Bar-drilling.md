@@ -17,6 +17,6 @@ Potete aggiungere altre forature speciali o modificare quelle esistenti. Resta i
 - **Dim. E1**: distanza tra i fori: dimensione e1 del disegno.
 - **Dim. E2**: distanza tra i fori: dimensione e2 del disegno.
 - **Dim. E3**: distanza tra i fori: dimensione e3 del disegno.
-- **Dim A**: spessore dell’isolante necessario.
+- **Dim. A**: campo per utilizzo futuro. Inserire 0. 
 - **Tipo foratura**: vedi disegno in alto
 - **Nr. fori**: nr. fori sulla barra. Il nr. dei fori è già implicito scegliendo una certa foratura, ma lo si riporta per chiarezza.

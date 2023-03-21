@@ -5,7 +5,7 @@ Le tubetti isolanti si utilizzano per l’isolamento dei tiranti nel serraggio o
 
 ### Campi della tabella (Tubetti isolanti)
 
-- **Codice**: questo codice è utile per eventuali sotto-famiglie. Al momento occorre utilizzare come codice TUI per tutte i tubetti.
+- **Codice**: questo codice è utile per eventuali sotto-famiglie. Al momento occorre utilizzare come codice TUI per i tubetti standard.
 - **Spessore**: spessore del materiale (valore da recuperare dalle tabelle del fornitore). Questo valore si può omettere.
 - **Diametro esterno**: diametro esterno del tubetto.
 - **Diametro interno**: diametro interno del tubetto.

@@ -1,7 +1,7 @@
 # Misure carpenteria
 
 ## Introduzione
-Questa è una tabella misura/valore che permette di inserire, per ciascuna carpenteria, ciascun componente e ciascuna misura, il valore della misura stessa per ogni larghezza lamierino.
+Questa è una tabella misura/valore che permette di inserire, per ciascuna carpenteria, ciascun componente, ciascuna misura e il valore della misura stessa per ogni larghezza lamierino.
 Nello standard si copre il range di lamierini da 40 a 200, con un incremento di 5 mm.
 È ovviamente possibile inserire tutti i lamierini in uso, anche inferiori a 40 e/o superiori a 200. La possibilità di ordinare la tabella per qualsiasi colonna, (anche con selezioni multiple, tenendo premuto il tasto CTRL mentre si selezionano le varie colonne) rende facile l’inserimento e il controllo dei valori.
 In caso di aggiunta di un lamierino, occorre inserire valori per tutte le quote che identificano ogni componente della carpenteria interessata.
@@ -10,7 +10,7 @@ Osservando la tabella e ordinandola per carpenteria + componente + lamierino sar
 
 ### Campi della tabella (Misure carpenteria)
 
-- **Carpenteria**: tipo di carpenteria. Valgono i tipi elencati nel menu a tendina della videata di ingresso dati sotto l’etichetta ***“Tipo carpenteria”.***
+- **Carpenteria**: tipo di carpenteria, scelto tra i tipi elencati nel menu a tendina della videata di ingresso dati sotto l’etichetta  ***“carpenteria”.***
 - **Elemento**: codice del componente che fa parte di quella carpenteria. I codici sono assegnati durante l’implementazione di quella carpenteria nel software e **non devono essere modificati.**
 - **Misura**: nome della misura alla quale si attribuirà valore in questa riga. 
 ***Esempio: L*** 
