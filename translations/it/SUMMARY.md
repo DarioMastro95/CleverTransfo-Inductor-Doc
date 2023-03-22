@@ -1,5 +1,6 @@
 # Indice
 
+- [Interazione tabelle](./Operating-instructions.md)
 - [Operatori](./Users.md)
 - [Impostazioni generali](./General-settings.md)
 - [Parametri elettrici](./Electrical-parameters.md)

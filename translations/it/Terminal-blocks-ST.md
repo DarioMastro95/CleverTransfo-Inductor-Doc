@@ -4,7 +4,7 @@
 Questa tabella contiene i morsetti si utilizzano nelle applicazioni Clever Small-T e Clever Small-I, come terminali d’uscita quando la corrente o altri parametri ne permettono l’uso. Si noti che questa tabella non è valida per le applicazioni **Clever Transfo e Clever Inductor** che utilizzano la tabella **Morsetti**.
 I morsetti possono essere fissati direttamente ai profili di serraggio (morsetti in liste) oppure su un binario che a sua volta verrà fissato al profilo, come nel disegno sopra riportato.
 Esistono svariati tipi di morsetto e la tabella consente di distinguerli tramite il campo **Codice**.
-<img src="img/MorsettiST.png" height="250px">
+<img src="img/MorsettiST.png" height="220px">
 
 ### Campi della tabella (Morsetti ST)
 

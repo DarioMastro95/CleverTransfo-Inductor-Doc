@@ -1,8 +1,7 @@
 # Brackets
 
 ## Introduction
-The brackets included in this table are used to assemble elements on printed magnetic steel. 
-In the drawing above, an L-bracket is shown. Any type of bracket can be inserted in this table. The **code** will be the discriminant. The purpose of this table is to provide the bracket overhang from the element so that the overall dimensions of the element can be calculated correctly.
+The brackets included in this table are used to assemble elements on printed magnetic steel. In the drawing above, an L-bracket is shown. Any type of bracket can be inserted in this table and the **code** will be the distinguishing feature. The purpose of this table is to provide the bracket overhang from the element so that the overall dimensions of the element can be calculated correctly.
 
 
 

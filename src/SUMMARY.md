@@ -1,5 +1,6 @@
 # Summary
 
+- [Operating instructions](./Operating-instructions.md)
 - [Users](./Users.md)
 - [General settings](./General-settings.md)
 - [Electrical parameters](./Electrical-parameters.md)

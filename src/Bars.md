@@ -2,9 +2,9 @@
 
 ## Introduction
 Aluminium or copper bars are used as winding output terminals and can be welded directly onto the conductor foil or be welded externally to the coil in the case of a flat wire or wire. In the latter two cases, their function will be similar to the lug or clamp. The bars are semi-finished products which will be cut to size and/or shaped as required.
-The output and connection bars are dimensioned following the **thermal current** flowing through them, in accordance with the DIN limits.
+The output and connection bars are ized according to the **thermal current** flowing through them, in accordance with the DIN limits.
 The table shows the correlation between the **maximum admitted current** and the **type of bar.**
-A distinction is made between bars constituting a customer connection, which are dimensioned using the values given in the column **"maximum current client side"** as maximum current, the bars internal to the coil - whose maximum current corresponds to **"maximum current winding side"** - and those connecting bars whose maximum current corresponds to **"maximum connection current".**
+A distinction is made between bars constituting a **customer connection**, which are sized using the values given in the column **"maximum current client side"** as maximum current, the bars internal to the coil - whose maximum current corresponds to **"maximum current winding side"** - and those connecting bars whose maximum current corresponds to **"maximum connection current".**
 
 
 ### Table fields (Bars)
