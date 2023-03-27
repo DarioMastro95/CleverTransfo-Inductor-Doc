@@ -8,11 +8,6 @@ The path of the source folder must be selected in this field.
 The application, starting from this base folder, defines the folder in which documents will be saved using this sequence:
 **Starting folder\Application type\Product code\Version**
 
-Path for saving documents
-When using applications, pressing the export button saves all documents onto a predefined folder.
-The path of the source folder must be selected in this field. 
-The application, starting from this base folder, defines the folder in which documents will be saved using this sequence:
-
 
 
 ## Example
