@@ -7,5 +7,6 @@ title = ""
 
 [[output.i18n.translations]]
 language = "it"
+src = "translations/it"
 translators = [""]
 title = ""
