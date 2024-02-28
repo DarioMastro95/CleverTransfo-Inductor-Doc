@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="it" class="sidebar-visible no-js light">
+<html lang="it" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -8,10 +8,9 @@
 
         <!-- Custom HTML head -->
         
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -32,15 +31,29 @@
         <!-- Custom theme stylesheets -->
 
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "";
-            var default_theme = "light";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-  
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
@@ -48,45 +61,76 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
-        <nav id="sidebar" class="sidebar" aria-label="Table of contents" style="margin-top: 45px;">
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
                 <ol class="chapter"><li class="chapter-item expanded "><a href="Operating-instructions.html"><strong aria-hidden="true">1.</strong> Interazione tabelle</a></li><li class="chapter-item expanded "><a href="Users.html"><strong aria-hidden="true">2.</strong> Operatori</a></li><li class="chapter-item expanded "><a href="General-settings.html"><strong aria-hidden="true">3.</strong> Impostazioni generali</a></li><li class="chapter-item expanded "><a href="Electrical-parameters.html"><strong aria-hidden="true">4.</strong> Parametri elettrici</a></li><li class="chapter-item expanded "><a href="Bulging-of-the-windings.html"><strong aria-hidden="true">5.</strong> Coefficienti di stipamento</a></li><li class="chapter-item expanded "><a href="Construction-parameters.html"><strong aria-hidden="true">6.</strong> Parametri costruttivi</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="NO-core.html"><strong aria-hidden="true">6.1.</strong> Lamierino NO</a></li><li class="chapter-item expanded "><a href="GO-core.html"><strong aria-hidden="true">6.2.</strong> Lamierino GO</a></li><li class="chapter-item expanded "><a href="Generic-elements.html"><strong aria-hidden="true">6.3.</strong> Elementi generici</a></li><li class="chapter-item expanded "><a href="UL-elements.html"><strong aria-hidden="true">6.4.</strong> Elementi UL</a></li></ol></li><li class="chapter-item expanded "><a href="Material-tables.html"><strong aria-hidden="true">7.</strong> Tabelle dei materiali</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Threaded-rods.html"><strong aria-hidden="true">7.1.</strong> Aste filettate</a></li><li class="chapter-item expanded "><a href="Insulating-bushes.html"><strong aria-hidden="true">7.2.</strong> Bussole isolanti</a></li><li class="chapter-item expanded "><a href="Lugs.html"><strong aria-hidden="true">7.3.</strong> Capicorda</a></li><li class="chapter-item expanded "><a href="Multi-wire-cables.html"><strong aria-hidden="true">7.4.</strong> Cavetti multifilari</a></li><li class="chapter-item expanded "><a href="Conductors.html"><strong aria-hidden="true">7.5.</strong> Conduttori</a></li><li class="chapter-item expanded "><a href="Nuts.html"><strong aria-hidden="true">7.6.</strong> Dadi</a></li><li class="chapter-item expanded "><a href="Steel-ducts.html"><strong aria-hidden="true">7.7.</strong> Distanziatori</a></li><li class="chapter-item expanded "><a href="Eyebolts.html"><strong aria-hidden="true">7.8.</strong> Golfari</a></li><li class="chapter-item expanded "><a href="Sheaths.html"><strong aria-hidden="true">7.9.</strong> Guaine</a></li><li class="chapter-item expanded "><a href="Insulating-sheets.html"><strong aria-hidden="true">7.10.</strong> Fogli isolanti</a></li><li class="chapter-item expanded "><a href="Insulators.html"><strong aria-hidden="true">7.11.</strong> Isolatori</a></li><li class="chapter-item expanded "><a href="Magnetic-steel.html"><strong aria-hidden="true">7.12.</strong> Lamierini</a></li><li class="chapter-item expanded "><a href="Insulating-slabs.html"><strong aria-hidden="true">7.13.</strong> Lastre isolanti</a></li><li class="chapter-item expanded "><a href="Terminal-blocks.html"><strong aria-hidden="true">7.14.</strong> Morsetti</a></li><li class="chapter-item expanded "><a href="Terminal-blocks-ST.html"><strong aria-hidden="true">7.15.</strong> Morsetti ST</a></li><li class="chapter-item expanded "><a href="Thermo-shrink-ribbons.html"><strong aria-hidden="true">7.16.</strong> Nastri termorestringenti</a></li><li class="chapter-item expanded "><a href="U-profiles.html" class="active"><strong aria-hidden="true">7.17.</strong> Profili a U</a></li><li class="chapter-item expanded "><a href="Flat-profiles.html"><strong aria-hidden="true">7.18.</strong> Profili piatti</a></li><li class="chapter-item expanded "><a href="Resins-and-varnishes.html"><strong aria-hidden="true">7.19.</strong> Resine e vernici</a></li><li class="chapter-item expanded "><a href="Washers.html"><strong aria-hidden="true">7.20.</strong> Rondelle</a></li><li class="chapter-item expanded "><a href="Bars.html"><strong aria-hidden="true">7.21.</strong> Barre</a></li><li class="chapter-item expanded "><a href="Corner-dog-bones.html"><strong aria-hidden="true">7.22.</strong> Stecche d'angolo</a></li><li class="chapter-item expanded "><a href="Dog-bones.html"><strong aria-hidden="true">7.23.</strong> Stecche in triglass</a></li><li class="chapter-item expanded "><a href="Insulating-tubes.html"><strong aria-hidden="true">7.24.</strong> Tubetti isolanti</a></li><li class="chapter-item expanded "><a href="Screws.html"><strong aria-hidden="true">7.25.</strong> Viti</a></li><li class="chapter-item expanded "><a href="Bobbins.html"><strong aria-hidden="true">7.26.</strong> Rocchetti</a></li><li class="chapter-item expanded "><a href="UL-bobbins.html"><strong aria-hidden="true">7.27.</strong> Rocchetti UL</a></li><li class="chapter-item expanded "><a href="Printed-magnetic-steel.html"><strong aria-hidden="true">7.28.</strong> Lamierini stampati</a></li><li class="chapter-item expanded "><a href="Brackets.html"><strong aria-hidden="true">7.29.</strong> Staffe di serraggio</a></li></ol></li><li class="chapter-item expanded "><a href="Design-rules.html"><strong aria-hidden="true">8.</strong> Regole di progetto</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Winding-insulation.html"><strong aria-hidden="true">8.1.</strong> Isolante tra avvolgimenti</a></li><li class="chapter-item expanded "><a href="Bar-drilling.html"><strong aria-hidden="true">8.2.</strong> Foratura barre</a></li><li class="chapter-item expanded "><a href="Carpentry-details.html"><strong aria-hidden="true">8.3.</strong> Misure carpenteria</a></li><li class="chapter-item expanded "><a href="Selecting-output-terminal-type.html"><strong aria-hidden="true">8.4.</strong> Scelta tipo uscite</a></li><li class="chapter-item expanded "><a href="Air-gap-composition.html"><strong aria-hidden="true">8.5.</strong> Composizione traferri</a></li><li class="chapter-item expanded "><a href="Interlayer-insulation-thick.html"><strong aria-hidden="true">8.6.</strong> Isolamento interstrato</a></li></ol></li><li class="chapter-item expanded "><a href="Material-costs.html"><strong aria-hidden="true">9.</strong> Costo unitario materiali</a></li></ol>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
                                 <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered" >
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -100,13 +144,6 @@
                     <h1 class="menu-title"></h1>
 
                     <div class="right-buttons">
-                        <button id="lang-toggle" class="icon-button" type="button" title="Change language" aria-label="Change language" aria-haspopup="true" aria-expanded="false" aria-controls="lang-list">
-                            <i class="fa fa-globe"></i>
-                        </button>
-                        <ul id="lang-list" class="theme-popup" style="left: auto;" aria-label="Languages" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="en">English</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="it">Italiano</button></li>
-                        </ul>
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
@@ -161,7 +198,7 @@ Possono essere in acciaio piegato o UNP (come da disegno)  Si differenziano tra 
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="Flat-profiles.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="Flat-profiles.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -175,7 +212,7 @@ Possono essere in acciaio piegato o UNP (come da disegno)  Si differenziano tra 
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="Flat-profiles.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="Flat-profiles.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -206,74 +243,17 @@ Possono essere in acciaio piegato o UNP (come da disegno)  Si differenziano tra 
         </script>
 
 
-        <script src="elasticlunr.min.js" charset="utf-8"></script>
-        <script src="mark.min.js" charset="utf-8"></script>
-        <script src="searcher.js" charset="utf-8"></script>
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="clipboard.min.js" charset="utf-8"></script>
-        <script src="highlight.js" charset="utf-8"></script>
-        <script src="book.js" charset="utf-8"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
 
 
-        <script type="text/javascript">
-        var langs = [
-            'it',
-            'en',
-        ];
-
-        (function langs() {
-            var html = document.querySelector('html');
-            var langToggleButton = document.getElementById('lang-toggle');
-            var langPopup = document.getElementById('lang-list');
-
-            function showLangs() {
-                langPopup.style.display = 'block';
-                langToggleButton.setAttribute('aria-expanded', true);
-            }
-
-            function hideLangs() {
-                langPopup.style.display = 'none';
-                langToggleButton.setAttribute('aria-expanded', false);
-                langToggleButton.focus();
-            }
-
-            langToggleButton.addEventListener('click', function () {
-                if (langPopup.style.display === 'block') {
-                    hideLangs();
-                } else {
-                    showLangs();
-                }
-            });
-
-            langPopup.addEventListener('click', function (e) {
-                var lang = e.target.id || e.target.parentElement.id;
-                window.location.pathname = window.location.pathname
-                    .split('/')
-                    .map((s, idx) => {
-                        return idx == 2 ? lang : s;
-                    })
-                    .join('/');
-            });
-
-            langPopup.addEventListener('focusout', function(e) {
-                // e.relatedTarget is null in Safari and Firefox on macOS (see workaround below)
-                if (!!e.relatedTarget && !langToggleButton.contains(e.relatedTarget) && !langPopup.contains(e.relatedTarget)) {
-                    hideLangs();
-                }
-            });
-
-            // Should not be needed, but it works around an issue on macOS & iOS: https://github.com/rust-lang-nursery/mdBook/issues/628
-            document.addEventListener('click', function(e) {
-                if (langPopup.style.display === 'block' && !langToggleButton.contains(e.target) && !langPopup.contains(e.target)) {
-                    hideLangs();
-                }
-            });
-
-        })();
-        </script>
-
-
+    </div>
     </body>
 </html>
