@@ -2,7 +2,7 @@
 
 ## Introduzione
 Qui si trovano alcuni parametri che intervengono nel calcolo elettrico e nella progettazione meccanica e che sono tipici di ogni azienda.
-### Sporgenza isolante a lato degli avv.ti (mm)
+### Sporgenza isolante di default a lato degli avv.ti in nastro (mm)
 Inserire la sporgenza dell’isolante tra le spire in caso di avvolgimento in nastro. Questo valore viene impostato automaticamente nei progetti. Vale solo per il conduttore nastro. Per i conduttori piattina e filo la sporgenza impostata è 0.<br>
 Per tutti i tipi di conduttore, durante il progetto, c’è la possibilità di modificare questo valore.<br>
 

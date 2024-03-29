@@ -2,9 +2,9 @@
 
 ## Introduction
 Here you can define some parameters that are involved in the electrical calculation or mechanical design, specific to each company.
-### Insulator overhang at the side of the coils (mm)
+### Default insulating overhang at the side of the foil winding (mm)
 Enter the insulator overhang between the coil in the case of foil winding. This value will then be set automatically in the designs. It only applies to foil conductors as the set overhang for strip and wire conductors is always 0.<br>
-For all conductor types, it is possible to change the set value throughout the project.
+For all conductor types, it is possible to change the set value throughout the design.
 
 ### Flat wire insulation thickness (mm)
 

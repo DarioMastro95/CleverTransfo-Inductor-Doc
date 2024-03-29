@@ -18,7 +18,7 @@ The current applications are not yet designed for cylindrical coils so the conte
 
 - **Material**: select the material of the winding - **AL** or **CU.**
 - **Code**: select the type of winding by entering one of the following codes: **F** = wire **P** = flat wire **B** = foil 
-- **MAX. thickness**: the maximum radial thickness of the conductor
-If the chosen coefficient of use is applicable for any thickness enter **0.** If there is a thickness limitation, enter the **thickness limit.** In this latter case, enter an additional line for type and/or conductor material without set limitation, i.e. with Thickness MAX. = 0 and enter the correct coefficient.
+- **MAX. thickness**: the maximum radial thickness of the conductor for this bulging.
+If the chosen coefficient of use is applicable for any thickness enter **0.** If there is a thickness limitation, enter the **thickness limit.** In this latter case, enter an additional line for type and/or conductor material without set limitation, i.e. with **MAX.thickness = 0** and enter the correct coefficient.
 
 - **Coefficient**: multiplication factor to be applied to the theoretical thickness to obtain the actual thickness.

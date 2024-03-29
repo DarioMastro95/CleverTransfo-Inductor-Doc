@@ -1,7 +1,12 @@
 # Lamierino NO
 
 ### Campi della tabella (Lamierino NO e Lamierino GO)
-- **Norm**: codifica del tipo di elemento, da rispettare rigorosamente. In caso si debba aggiungere una nuova tipologia di elementi occorre che vi mettiate in contatto con noi per la scelta del codice.
+- **Norm**: codifica del tipo di elemento, da rispettare rigorosamente. In caso si debba aggiungere una nuova tipologia di elementi occorre che vi mettiate in contatto con noi per la scelta del codice. Ecco i significati delle lettere utilizzate:<br>
+A = Induttori monofase DC<br>
+B = Induttori monofase AC<br>
+C = Induttori trifase<br>
+O = Trasformatori monofase<br>
+P = Trasformatori trifase<br>
 - **Descrizione**: descrizione libera del tipo di elemento. Non viene utilizzata all’interno delle applicazioni e quindi potete scrivere ciò che preferite.
 - **Potenza VA**: potenza di dimensionamento dell' elemento in VA.
 - **Tratti Avv.Prim**: numero tratti dell’avvolgimento primario (nel caso di induttori sarà il numero dei tratti totale poiché c’è solo un avvolgimento).
@@ -17,3 +22,4 @@
 soprattutto per gli induttori). Se non esiste canale laterale introdurre 0.
 - **L Finestra**: larghezza della finestra. Per larghezza finestra s’intende lo spazio tra le colonne.
 - **H Finestra**: altezza finestra. Per altezza finestra s’intende lo spazio tra i due gioghi.
+- - **Descrizione**: descrizione libera del tipo di elemento. Non viene utilizzata all’interno delle applicazioni e quindi potete scrivere ciò che preferite.

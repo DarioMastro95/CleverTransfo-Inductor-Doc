@@ -2,11 +2,11 @@
 
 
 ## Introduction
-Insulating bushes are used in Clever Small-T and Clever Small-I applications for insulating screws in horizontal clamping. They can be replaced by insulating tubes if required. Several fields included in the table are currently not operational. Hence, must have a value of 0. 
+Insulating bushes are used in Clever Small-T and Clever Small-I applications for insulating screws in horizontal clamping of the elements. They can be replaced by insulating tubes if required. Several fields included in the table are currently not operational. Hence, must have a value of 0. 
 
 <img src="img/BussoleIsolanti.png" height="240px">
 
-### Table fields (insulating sleeves)
+### Table fields (insulating bushes)
 - **External diameter**: dimension B of the drawing above. This value is not used enter 0 (dimension B of the drawing).
 - **Collar diameter**: dimension C of the drawing above. This value is not used, enter 0.
 - **Thickness**: dimension D of the drawing above. This value is not used enter 0.

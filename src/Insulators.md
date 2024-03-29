@@ -15,7 +15,7 @@ Other types of insulators will have different codes, agreed with us.
 - **Hole diameter**: hole diameter **D**. See drawing above.
 - **Height**: insulator height **H**. See drawing above.
 - **Type**: name of the insulator. Generally, the name is given to it by the supplier.
-- **Width**: width in the key of the insulator **Ch**. See drawing above.
+- **Length**: width in the key of the insulator **Ch**. See drawing above.
 - **Lower thread depth**: thread depth **F**. See drawing above.
 - **Force Nm**: the field for future use. Do not fill in.
 - **M upper screw**: **M** size of the lower internal thread. See drawing above.

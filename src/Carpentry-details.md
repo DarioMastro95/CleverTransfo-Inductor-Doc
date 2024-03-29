@@ -14,7 +14,7 @@ The option of sorting the table by any column, including multiple selections - b
 - **Value**: a value only needs to be entered if it is fixed, i.e. it depends exclusively on the width of the sheet. Enter 0 if a field (for example the width of a profile) depends on parameters that vary according to the design. It will be the design rule that, during the calculation, will attribute the correct value to this parameter.
 - **Core width**: width of the magnetic steel for which the assigned value is valid.
 - **Phases nr**: the number of phases for which the assigned value is valid.
-- **L1**: the field for future use: enter 0.
-- **L2**: the field for future use: enter 0.
+- **L1**: the field for future use: enter **0**.
+- **L2**: the field for future use: enter **0**.
 - **Calculated?**: enter **False** if you entered a value in the Value field.<br>
-Enter **True** if you entered 0 in the Value field.
+Enter **True** if you entered **0** in the Value field because the field is defined by an internal software rule.

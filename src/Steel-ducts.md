@@ -9,7 +9,7 @@ They can be made of Ac Zn for transformer core/coil channels. In all other cases
 
 ### Table fields (steel ducts)
 
-- **Material**: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.
+- **Code**: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.
 - **Number**: the number of steel ducts used for a channel. For standardisation reasons, it is possible to place 2 or even 3 steel ducts side by side in order to achieve the desired channel width. Normally this value is 1.
 - **Core width**: width of the core column on which the winding is made.
 - **Width**: width of the steel duct.

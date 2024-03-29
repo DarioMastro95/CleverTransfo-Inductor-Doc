@@ -1,8 +1,8 @@
 # Air gap composition
 
 ## Introduction
-Generally, the air gap defined in the calculation phase seldom corresponds to the air gap that can be realistically achieved with the insulating materials available. This table defines the possible air gaps based on the standard materials available. Once an optimal air gap has been defined, the applications read this table, choose the closest air gap, and use it, making all the relevant corrections (head air gap, internal air gaps, etc.) so as to obtain an accurate total air gap. This system prevents the air gap data in the technical documentation from having to be corrected manually. In addition, the materials in question will be available in the necessary quantities in the bill of materials.
-Limits: the envisaged compositions allow the combination of up to two different insulating materials, each with up to **three sheets or plate in parallel.**
+Generally, the air gap defined in the calculation phase seldom corresponds to the air gap that can be realistically achieved with the insulating materials available. This table defines the possible air gaps based on the standard materials available. Once an optimal air gap has been defined, the applications read this table, choose the closest air gap, and use it, making all the relevant corrections (head air gap, internal air gaps, etc.) so as to obtain an accurate total air gap. This system prevents the air gap data in the documentation for the factory from having to be corrected manually. In addition, the materials in question will be available in the necessary quantities in the bill of materials.<br>
+**Limits:** the envisaged compositions allow the combination of up to two different insulating materials, each with up to **three sheets or plate in parallel.**
 Depending on your availability, you can modify this table by inserting other materials and deleting or inserting other lines.
 
 ### Table fields (Air gap composition)

@@ -7,9 +7,9 @@ I golfari o ganci di sollevamento vengono montati sulla parte superiore degli el
 
 ### Campi della tabella (Golfari)
 
-- **Dimensione B**: diametro foro interno. Vedi disegno.
-- **Dimensione C**: diametro esterno. Vedi disegno.
-- **Spessore**: altezza anello. Vedi disegno.
+- **Dimensione B**: diametro foro interno **B**. Vedi disegno.
+- **Dimensione C**: diametro esterno **C**. Vedi disegno.
+- **Spessore**: altezza anello **F**. Vedi disegno.
 - **Codice**: codice che identifica il tipo di golfare. Il golfare standard, rappresentato nel disegno corrisponde a GF. 
 Quello con foro filettato all’esterno corrisponde a GM.
 - **Dimensione M**: diametro del foro filettato. Vedi disegno.

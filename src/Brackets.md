@@ -1,7 +1,7 @@
 # Brackets
 
 ## Introduction
-The brackets included in this table are used to assemble elements on printed magnetic steel. In the drawing above, an L-bracket is shown. Any type of bracket can be inserted in this table and the **code** will be the distinguishing feature. The purpose of this table is to provide the bracket overhang from the element so that the overall dimensions of the element can be calculated correctly.
+The brackets included in this table are used to assemble elements on printed magnetic steel. In the drawing above, an L-bracket is shown. Any type of bracket can be inserted in this table and the **code** will be the distinguishing feature. The purpose of this table is to provide the bracket overhang from the element and the fixing quotes, so that the overall dimensions of the element can be calculated correctly.
 
 
 
@@ -43,11 +43,11 @@ Fixing_B = 15 <br>
 Core thickness = 70<br>
 Fixing dimension of element in depth = 2x15 + 70 = 100
 - **Buttonhole L**:
-Dimension L of the buttonhole accommodated by the bracket (in the sense of width).
+Dimension **L** of the buttonhole accommodated by the bracket (in the sense of width).
 - **Buttonhole B**:
-L-dimension of the buttonhole accommodated by the bracket (in the sense of depth).
+Dimension **B** of the buttonhole accommodated by the bracket (in the sense of depth).
 - **Weight kg**:
-The value is normally given by the supplier. Otherwise, calculate with volume x 7.65 (specific weight of the steel)
+The value is normally given by the supplier. Otherwise, you can calculate it with volume x 7.65 (specific weight of the steel)
 - **Article**:
 To select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table Material Unit Cost by importing the list of materials available in your warehouse.
 

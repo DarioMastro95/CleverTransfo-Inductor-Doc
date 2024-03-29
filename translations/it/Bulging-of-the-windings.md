@@ -15,7 +15,7 @@ Nella tabella esiste la possibilità di definire il coefficiente di stipamento a
 Nelle applicazioni attuali non è ancora prevista la bobina cilindrica quindi il contenuto di questo campo deve essere sempre **R**. La diversificazione è stata prevista per usi futuri.
 - **Materiale**: materiale di cui è costituito l’avvolgimento **AL o CU**.
 - **Codice**: identifica il tipo di avvolgimento. Inserire uno dei seguenti codici: **F** = filo **P** = Piattina **B** = Nastro.
-- **Spessore MAX**: spessore radiale massimo del conduttore.
+- **Spessore MAX**: spessore radiale massimo del conduttore previsto per quel coefficiente.<br>
 Se il coefficiente di stipamento introdotto vale per qualsiasi spessore inserire **0** se invece c’è una limitazione di spessore inserire lo **spessore limite**. In questo caso, per quel tipo e/o materiale conduttore sarà necessario inserire un’ulteriore riga senza limitazione, ossia con Spessore MAX = 0 inserendo il giusto coefficiente.
 - **Coefficiente**: fattore moltiplicativo da applicare allo spessore teorico per ottenere lo spessore reale.
 

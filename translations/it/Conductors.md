@@ -1,11 +1,11 @@
 # Conduttori
 
 ## Introduzione
-In questa tabella sono stati inseriti tutti i tipi di conduttore (filo, conduttore piatto, nastro) nei due materiali AL e CU.
+In questa tabella sono stati inseriti tutti i tipi di conduttore (filo, conduttore piatto, nastro) nei due materiali AL e CU normalmente utilizzati.
 
-### Campi della tabella (Bussole)
+### Campi della tabella (Conduttori)
 - **Dim. Assiale**: in caso di **filo** inserire il diametro nudo, in caso di **conduttore piatto o nastro** inserire la dimensione assiale.
-- **Dim. Radiale**: in caso di filo inserire il diametro isolato, in caso di **conduttore piatto o nastro** inserire la dimensione radiale.
+- **Dim. Radiale**: in caso di **filo** inserire il diametro isolato, in caso di **conduttore piatto o nastro** inserire la dimensione radiale.
 - **Sezione mm2**: inserire la sezione netta, possibilmente ricavata dalla tabella del fornitore. Se non fosse possibile, nel caso del **conduttore piatto** la sezione netta si calcola nel modo seguente:
   1. Caso spessore radiale <= 2.24 <br>Sezione = Dim. Assiale x Dim. Radiale – 0.363
   2. Caso spessore radiale > 2.24 <br>
@@ -13,7 +13,7 @@ In questa tabella sono stati inseriti tutti i tipi di conduttore (filo, condutto
 
   Per **filo e nastro** invece si calcola l’area precisa.
 
-- **Peso/metro**: si consiglia di ricavare questo parametro dalle tabelle del fornitore. Altrimenti occorre calcolarlo a partire dalla sezione e dal peso specifico (CU = 8,90 kg/dm3  AL = 2,70 kg/dm3).
+- **Kg/metro**: si consiglia di ricavare questo parametro dalle tabelle del fornitore. Altrimenti occorre calcolarlo a partire dalla sezione e dal peso specifico (CU = 8,90 kg/dm3  AL = 2,70 kg/dm3).
 - **R/metro Ohm**: si consiglia di ricavare questo parametro dalle tabelle del fornitore. Altrimenti occorre calcolarlo a partire dalla sezione e dalla resistenza specifica (CU = 0,00175  &#8486;/m  AL = 0 ,0028  &#8486;/m).
 - **Codice**: questo codice definisce completamente il conduttore sia come tipo che come materiale.<br>Inserire:
 

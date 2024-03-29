@@ -7,9 +7,9 @@ Eyebolts or lifting hooks are mounted on the top of elements to facilitate lifti
 
 ### Table Ranges (Eyebolts)
 
-- **Dimension B**: internal hole diameter. See drawing above.
-- **Dimension C**: external diameter. See drawing above.
-- **Thickness**: ring height. See drawing.
+- **Dimension B**: internal hole diameter **B**. See drawing.
+- **Dimension C**: external diameter **C**. See drawing.
+- **Thickness**: ring height **F**. See drawingS.
 - **Code**: it is the code that identifies the type of eyebolt. The standard eyebolt shown in the drawing above corresponds to GF. The one with a threaded hole on the outside corresponds to GM.
 - **Dimension M**: diameter of the threaded hole. See drawing above.
 - **Materiale**: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.

@@ -9,7 +9,7 @@ Le rondelle si utilizzano nei serraggi orizzontale e verticale, nel serraggio de
 ### Campi della tabella (Rondelle)
 
 - **Codice**: sigla con la quale viene identificata la forma della rondella. Le sigle correnti sono:<br>
-**RGR** = Rondella Grower<br>
+**RGR** = Rondella grower<br>
 **RPN** = Rondella piana<br> 
 **RPNL** = Rondella piana larga.<br>
 Altre forme potrebbero essere definite in fase di personalizzazione delle applicazioni.

@@ -3,6 +3,8 @@
 ## Introduction
 Corner dog bones are used to make the core/coil channels when channels feature around the entire perimeter of the column. They are placed on the four corners of the core.
 
+<img src="img/Stecche angolo.png" height="270px"><br>
+
 ### Table fields (Corner dog bone)
 
 - **Code**: it is the code by which the type of corner dog bone is identified. Current code = STT.

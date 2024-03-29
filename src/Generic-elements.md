@@ -4,12 +4,12 @@
 - **Norm**: element type coding, which must be strictly respected. If a new element type is to be added, you must contact us for the code.
 - **Nr. Phases**: no. of phases of the element.
 - **Power VA**:	dimensioning power of the element in VA.
-- **Flux density T**: recommended induction (for NO core)
+- **Flux density T**: recommended flux density (for NO core)
 - **Type magnetic steel EI**: printed magnetic steel used (external dimension).
 - **Spec. core losses  W/kg**: grade of the magnetic steel  used for this table (example: 1.7 , 1.3 or other).
 - **Core section cm2**:	core section (column) which is calculated as follows:<br>
 	Core width x Core thickness x 0.965 
-0.965<br> gives the actual section, less the spaces occupied by the insulation of the individual laminations.
+<br> gives the actual section, less the spaces occupied by the insulation of the individual laminations.
 - **Core thickness**: core thickness is calculated from the raw core section.
 - **Core width**: width of the central core colunm.
 - **Core weight kg**: total core weight.

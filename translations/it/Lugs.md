@@ -5,7 +5,7 @@ I capicorda non isolati si utilizzano nelle applicazioni Clever Transfo e Clever
 
 <img src="img/Capicorda.png" height="120px">
 
-### Campi della tabella (Coefficienti stipamento)
+### Campi della tabella (Capicorda)
 - **Materiale**: in questo caso non ci si riferisce alla tabella “Nomi dei materiali” ma si inserisce direttamente 
 AL in caso di alluminio o CU in caso di rame.
 - **Sezione in mm2**: sezione nominale utile. Si riferisce alla sezione massima del conduttore che vi verrà inserito.
