@@ -1,1 +1,1 @@
-# CleverTransfo-Inductor-Doc
+# CleverSuite Help Doc
