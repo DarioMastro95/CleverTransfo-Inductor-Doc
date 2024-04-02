@@ -375,8 +375,38 @@ P = Trasformatori trifase<br></li>
 <li><strong>H Finestra</strong>: altezza finestra. Per altezza finestra s’intende lo spazio tra i due gioghi.</li>
 <li><strong>Descrizione</strong>: descrizione libera del tipo di elemento. Non viene utilizzata all’interno delle applicazioni e quindi potete scrivere ciò che preferite.</li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="lamierino-stampato--rocchetto"><a class="header" href="#lamierino-stampato--rocchetto">Lamierino stampato / rocchetto</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lamierino-stampato-rocchetto"><a class="header" href="#lamierino-stampato-rocchetto">Lamierino stampato rocchetto<br></a></h1>
+<p>Questa standardizzazione prevede avvolgimenti in alluminio e lamierino a grani non orientati NO. Per condizioni differenti il proporzionamento non è ottimizzato.</p>
+<h3 id="campi-della-tabella-lamierino-stampato-e-rocchetto"><a class="header" href="#campi-della-tabella-lamierino-stampato-e-rocchetto">Campi della tabella (Lamierino stampato e rocchetto)</a></h3>
+<ul>
+<li><strong>Norm</strong>: codifica del tipo di elemento, da rispettare rigorosamente. In caso si debba aggiungere una nuova tipologia di elementi occorre che vi  mettiate in contatto con noi per la scelta del codice. Ecco i significati delle lettere utilizzate:<br>
+IDC = Induttori monofase DC<br>
+IAC = Induttori monofase e trifase AC<br>
+TR  = Trasformatori monofase e trifase <br></li>
+<li><strong>Nr. Fasi</strong>: Monofase = 1 Trifase = 3.</li>
+<li><strong>Potenza VA</strong>: potenza di dimensionamento dell' elemento in VA.</li>
+<li><strong>Codice Lam.</strong>:Tipo lamierino stampato (es: EIT , EI , UI)</li>
+<li><strong>Lungh. Lamierino</strong>: Lunghezza del lamierino stampato</li>
+<li><strong>Induzione T</strong>: Induzione consigliata.</li>
+<li><strong>Sez. Nucleo cm2</strong>: sezione del nucleo (colonna) che si calcola in questo modo: <br> <strong>Larghezza Lamierino x Spessore Nucleo x 0.965</strong>. <br>
+<strong>0.965</strong> permette di ottenere la sezione reale, dedotti gli spazi occupati dall’isolante dei singoli lamierini stampati.</li>
+<li><strong>Larghezza Lamierino</strong>: la larghezza del lamierino della colonna (Lo spessore del nucleo viene calcolato automaticamente dall’applicazione, partendo dalla sezione del nucleo, tenuto conto della formula sopra riportata).</li>
+<li><strong>Spessore nucleo</strong>: deve essere coerente con sezione nucleo e larghezza lamierino.</li>
+<li><strong>L Finestra</strong>: larghezza della finestra. Per larghezza finestra s’intende lo spazio tra le colonne. In questo caso, una volta che si è scelto il lamierino, è un valore fisso.</li>
+<li><strong>H Finestra</strong>: altezza finestra. Per altezza finestra s’intende lo spazio tra i due gioghi. In questo caso, una volta che si è scelto il lamierino, è un valore fisso.</li>
+<li><strong>Canale front. N/B</strong>: spessore dello spazio presente frontalmente tra nucleo e bobina. Viene inserito lo spessore del rocchetto più un eventuale canale frontale.</li>
+<li><strong>Canale lat. N/B</strong>: spessore dello spazio presente lateralmente tra nucleo e bobina. Viene inserito lo spessore del rocchetto. Per questo tipo di elemento non è possibile inserire un canale di ventilazione laterale.</li>
+<li><strong>Tipo rocchetto</strong>: Identificazione del rocchetto secondo le regole dei fornitori.</li>
+<li><strong>H avvolgimento</strong>: Altezza netta disponibile per gli avvolgimenti (tutti gli avvolgimenti vengono impostati a uguale altezza).</li>
+<li><strong>Can. tra avv.ti</strong>: spessore del canale frontale tra gli avvolgimenti. Questo canale viene utilizzato tra il primario e il secondario.</li>
+<li><strong>Tratti avv. int.</strong>: Nr. tratti negli avvolgimenti interni.</li>
+<li><strong>Canale avv. int.</strong>: spessore del canale frontale tra tratti. Questo canale viene utilizzato negli avvolgimenti interni.</li>
+<li><strong>Tratti avv. est.</strong>: Nr. tratti nell'avvolgimento esterno.</li>
+<li><strong>Canale avv. est.</strong>: spessore del canale frontale tra tratti. Questo canale viene utilizzato nell'avvolgimento esterno.</li>
+<li><strong>Descrizione</strong>: descrizione libera del tipo di elemento. Non viene utilizzata all’interno delle applicazioni e quindi potete scrivere ciò che preferite.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="elementi-generici"><a class="header" href="#elementi-generici">Elementi generici</a></h1>
+<p>Questa standardizzazione prevede avvolgimenti in rame e lamierino stampato a grani non orientati NO. Per condizioni differenti il proporzionamento non è ottimizzato.</p>
 <h3 id="campi-della-tabella-elementi-generici-e-elementi-ul"><a class="header" href="#campi-della-tabella-elementi-generici-e-elementi-ul">Campi della tabella (Elementi generici e Elementi UL)</a></h3>
 <ul>
 <li><strong>Norm</strong>: codifica del tipo di elemento, da rispettare rigorosamente. In caso si debba aggiungere una nuova tipologia di elementi occorre che vi mettiate in contatto con noi per la scelta del codice.</li>
@@ -386,17 +416,17 @@ P = Trasformatori trifase<br></li>
 <li><strong>Tipo lamierino EI</strong>: dimensione principale del lamierino utilizzato.</li>
 <li><strong>Cifra perd. W/kg</strong>:	qualità del lamierino utilizzata per questa tabella (esempio: 1.7 , 1.3 o altro).</li>
 <li><strong>Sez. nucleo cm2</strong>: sezione del nucleo (colonna) che si calcola in questo modo:<br>
-Largh. Lamierino x Spessore Nucleo x 0.965
-<br>e permette di ottenere la sezione reale, dedotti gli spazi occupati dall’isolante dei singoli lamierini.</li>
-<li><strong>Spess. nucleo</strong>: lo spessore del nucleo viene calcolato partendo dalla sezione lorda del nucleo.</li>
+Largh. lamierino x Spessore Nucleo x 0.965
+<br>e permette di ottenere la sezione reale, dedotti gli spazi occupati dall’isolante dei singoli lamierini.<br></li>
+<li><strong>Spess. nucleo</strong>: lo spessore del nucleo viene calcolato partendo dalla sezione lorda del nucleo. Deve essere coerente con sezione nucleo e larghezza lamierino.</li>
 <li><strong>Largh. lamierino</strong>: larghezza della colonna avvolta.</li>
 <li><strong>Peso nucleo kg</strong>: peso totale del nucleo magnetico.</li>
-<li><strong>L finestra</strong>: larghezza della finestra. Per larghezza finestra s’intende lo spazio tra le colonne o tra la colonna centrale colonna laterale.</li>
+<li><strong>L finestra</strong>: larghezza della finestra. Per larghezza finestra s’intende lo spazio tra le colonne o tra la colonna centrale e la colonna laterale.</li>
 <li><strong>H finestra</strong>: altezza finestra. Per altezza finestra s’intende lo spazio tra i due gioghi.</li>
 <li><strong>Tipo rocchetto</strong>: identificazione del rocchetto in accordo con l'identificazione del fornitore.</li>
-<li><strong>H avvolgimento</strong>: altezza avvolgimento a disposizione nel rocchetto.</li>
+<li><strong>H avvolgimento</strong>: altezza avvolgimento a disposizione nel rocchetto per ospitare l'avvolgimento</li>
 <li><strong>Spess. avvolgimento</strong>: spessore a disposizione nel rocchetto per ospitare l’avvolgimento</li>
-<li><strong>Perimetro rocchetto</strong>: perimetro interno del rocchetto, dato di partenza per il calcolo della lunghezza mediadel conduttore</li>
+<li><strong>Perimetro rocchetto</strong>: perimetro interno del rocchetto, dato di partenza per il calcolo della lunghezza media del conduttore</li>
 <li><strong>Spessore rocchetto</strong>: spessore delle pareti del rocchetto.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="elementi-ul"><a class="header" href="#elementi-ul">Elementi UL</a></h1>
