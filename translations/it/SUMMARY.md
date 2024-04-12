@@ -45,6 +45,7 @@
     -   [Isolante tra avvolgimenti](./Winding-insulation.md)
     -   [Foratura barre](./Bar-drilling.md)
     -   [Misure carpenteria](./Carpentry-details.md)
+    -   [Isolante di default](./Default-insulation.md)
     -   [Scelta tipo uscite](./Selecting-output-terminal-type.md)
     -   [Composizione traferri](./Air-gap-composition.md)
     -   [Isolamento interstrato](./Interlayer-insulation-thick.md)

@@ -4,7 +4,7 @@
 All impregnation resins and varnishes used can be entered in this table.
 The design rules choose the product to be used in the design according to the code.
 
-### Table fields (Resins and Varnishes)
+### Table fields (Resins and varnishes)
 - **Material**: in this case, the material is not required to be entered. This field has been inserted for future use.
 - **Description**: the extended name of the resin or paint.
 - **Code**: the code defines the type of impregnation resin or varnish. The standard impregnation resin is identified with the code = LIX.<br>

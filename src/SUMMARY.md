@@ -43,6 +43,7 @@
     -   [Brackets](./Brackets.md)
 -   [Design rules](./Design-rules.md)
     -   [Winding insulation](./Winding-insulation.md)
+    -   [Default insulation](./Default-insulation.md)
     -   [Bar drilling](./Bar-drilling.md)
     -   [Carpentry details](./Carpentry-details.md)
     -   [Selecting output terminal type](./Selecting-output-terminal-type.md)
