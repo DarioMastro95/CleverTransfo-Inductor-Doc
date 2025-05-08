@@ -2,7 +2,8 @@
 
 ## Introduzione
 Questa tabella permette di inserire tutti gli utenti che utilizzeranno le applicazioni.<br>
-Il numero degli utenti non deve necessariamente coincidere con il numero di licenze.  
+**Si noti che nella START edition è possibile inserire un solo utente che deve essere necessariamente l’amministratore.**<br>
+Nella **PRO edition** invece, il numero degli utenti non deve necessariamente coincidere con il numero di licenze.  
 Infatti, il numero di licenze limita solo il numero di accessi contemporanei a Clever Suite.
 
 

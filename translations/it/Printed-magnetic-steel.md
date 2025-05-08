@@ -1,7 +1,7 @@
 # Lamierini stampati
 
 ## Introduzione
-In questa tabella si inseriscono i lamierini stampati a disposizione.<br> 
+In questa tabella si inseriscono i lamierini stampati a disposizione.<br> Non è specificato il tipo di lamierino perché ci interessano solo le dimensioni. Il tipo sarà quello scelto in fase di progettazione, nelle schermate di ingresso dati. 
 
 <img src="img/LamieriniStampati.png" height="250px">
 

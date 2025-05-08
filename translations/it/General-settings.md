@@ -4,7 +4,7 @@
  Qui si definiscono le caratteristiche generali delle applicazioni.<br>
  <br>
 **Percorso per salvataggio documenti**<br>
-Durante l’utilizzo delle applicazioni, premendo il bottone **esporta**, tutti i documenti prodotti dall’applicazione stessa vengono salvati in una cartella ben definita.<br>
+Durante l’utilizzo delle applicazioni, premendo il pulsante **Esporta PDF**, tutti i documenti prodotti dall’applicazione stessa vengono salvati in una cartella ben definita.<br>
 Percorso per il salvataggio dei documenti = Percorso della cartella di partenza. <br>
 L’applicazione, a partire da questa cartella di base, definisce, in questo modo, la cartella in cui verranno salvati i documenti:<br>
 **Cartella di partenza\Tipo applicazione\Codice prodotto\Versione**
