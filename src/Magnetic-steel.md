@@ -6,6 +6,7 @@
 
 This table lists the available magnetic steels. It is possible to indicate the dimensions of both the sheet supplied in coil form and the sheet supplied already cut to standardised lengths. The number of holes must be entered for the sheet already cut to distinguish its use in yokes or columns. The type could be deduced from the material but has been entered for immediate information.
 
+<img src="img/Lamierino magnetico.png" height="200px">
 
 
 ### Table fields (magnetic steel)

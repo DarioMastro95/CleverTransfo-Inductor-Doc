@@ -1,8 +1,8 @@
 # Guaine
 
 ## Introduzione
-Le guaine servono a isolare quel tratto di conduttore che esce dall’avvolgimento per arrivare al terminale d’uscita (morsetto o capicorda).<br>
-Sono dei tubetti che esistono in vari colori e che l’azienda può associare a un codice preciso. Solitamente sono un semilavorato 
+Le guaine servono a isolare il  tratto di conduttore che esce dall’avvolgimento per arrivare al terminale d’uscita (morsetto o capicorda).<br>
+Sono  tubetti in vari colori  che l’azienda può associare a un codice preciso. Solitamente sono un semilavorato.
 Il tipo di materiale di cui sono costituite dipende principalmente dalla classe di temperatura e dalla tensione d’isolamento dell’elemento.
 
 ### Campi della tabella (Guaine)

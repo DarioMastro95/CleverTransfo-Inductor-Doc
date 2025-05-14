@@ -22,4 +22,4 @@ L’applicazione, a partire da questa cartella di base, definisce, in questo mod
 
   **Logo**: qui è possibile inserire il proprio logo aziendale che deve avere una risoluzione massima di 300 x 300 pixel. Premendo il bottone a lato del logo si apre una finestra di dialogo che permette di caricare il disegno desiderato. Se l'importazione del logo non va a buon fine significa che il disegno ha una risoluzione troppo alta e quindi occorre ridurlo.<br>
   **Moneta**: scegliendo nel box sottostante è possibile selezionare la moneta desiderata.<br>
-  **Password eliminazione Archivio Comune**: poiché l’eliminazione di progetti dall’Archivio COmune è un’operazione critica, occorre introdurre una password per procedere in quest’operazione. Per sicurezza il campo successivo chiede conferma.
+  **Password eliminazione Archivio Comune**: poiché l’eliminazione di progetti dall’Archivio Comune è un’operazione critica, occorre introdurre una password per procedere in quest’operazione. Per sicurezza il campo successivo chiede conferma.

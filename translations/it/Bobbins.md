@@ -1,7 +1,7 @@
 # Rocchetti
 
 ## Introduzione
-Questa tabella di rocchetti viene utilizzata dalle applicazioni per gli elementi generici, mentre per gli elementi che devono sottostare alle norme UL esiste una tabella apposita. 
+Questa tabella di rocchetti viene utilizzata dalle applicazioni per gli elementi generici, mentre per gli elementi che devono sottostare alle norme UL esiste una tabella apposita. Per la ****START edition** esistono solo gli elementi generici
 
 <img src="img/Rocchetti.png" height="250px">
 

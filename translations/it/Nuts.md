@@ -1,7 +1,7 @@
 # Dadi
 
 ## Introduzione
-I dadi si utilizzano per il serraggio orizzontale e verticale degli elementi, per la vite di terra e per il fissaggio dei terminali d’uscita (capicorda o barre) su piastre o isolatori.
+I dadi fanno parte della viteria utilizzata per il serraggio orizzontale e verticale degli elementi, per la vite di terra e per il fissaggio dei terminali d’uscita (capicorda o barre) su piastre o isolatori.
 
 <img src="img/Dadi.jpg" height="150px">
 

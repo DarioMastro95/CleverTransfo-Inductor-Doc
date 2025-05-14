@@ -4,6 +4,7 @@
 
 In questa tabella si inseriscono i lamierini magnetici a disposizione. È possibile indicare le dimensioni sia del lamierino fornito in forma di bobina sia del lamierino fornito già tagliato a lunghezze normalizzate. Per il lamierino già tagliato è necessario inserire il nr. dei fori per distinguere l’impiego di quest’ultimo nei gioghi o nelle colonne. Il tipo si potrebbe desumere dal materiale ma è stato inserito per un’informazione immediata.
 
+<img src="img/Lamierino magnetico.png" height="270px">
 
 ### Campi della tabella (Lamierini)
 
