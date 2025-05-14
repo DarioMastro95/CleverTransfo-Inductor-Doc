@@ -176,6 +176,7 @@
                         <h1 id="magnetic-steel"><a class="header" href="#magnetic-steel">Magnetic steel</a></h1>
 <h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
 <p>This table lists the available magnetic steels. It is possible to indicate the dimensions of both the sheet supplied in coil form and the sheet supplied already cut to standardised lengths. The number of holes must be entered for the sheet already cut to distinguish its use in yokes or columns. The type could be deduced from the material but has been entered for immediate information.</p>
+<img src="img/Lamierino magnetico.png" height="200px">
 <h3 id="table-fields-magnetic-steel"><a class="header" href="#table-fields-magnetic-steel">Table fields (magnetic steel)</a></h3>
 <ul>
 <li><strong>Material</strong>: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
@@ -217,22 +218,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

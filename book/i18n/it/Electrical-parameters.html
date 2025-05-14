@@ -177,7 +177,7 @@
 <h2 id="introduzione"><a class="header" href="#introduzione">Introduzione</a></h2>
 <p>Qui si trovano alcuni parametri che intervengono nel calcolo elettrico e nella progettazione meccanica e che sono tipici di ogni azienda.</p>
 <h3 id="sporgenza-isolante-di-default-a-lato-degli-avvti-in-nastro-mm"><a class="header" href="#sporgenza-isolante-di-default-a-lato-degli-avvti-in-nastro-mm">Sporgenza isolante di default a lato degli avv.ti in nastro (mm)</a></h3>
-<p>Inserire la sporgenza dell’isolante tra le spire in caso di avvolgimento in nastro. Questo valore viene impostato automaticamente nei progetti. Vale solo per il conduttore nastro. Per i conduttori piattina e filo la sporgenza impostata è 0.<br>
+<p>Inserire la sporgenza dell’isolante tra le spire in caso di avvolgimento in nastro. Questo valore viene impostato automaticamente nei progetti. <strong>Vale solo per il conduttore nastro</strong>. Per i conduttori piattina e filo la sporgenza impostata è 0.<br>
 Per tutti i tipi di conduttore, durante il progetto, c’è la possibilità di modificare questo valore.<br></p>
 <h3 id="spessore-isolamento-conduttore-piatto"><a class="header" href="#spessore-isolamento-conduttore-piatto">Spessore isolamento conduttore piatto</a></h3>
 <p>Il conduttore piatto (piattina) può essere smaltato o isolato Nomex. A seconda del tipo di isolamento cambia lo spessore dello stesso.
@@ -223,22 +223,6 @@ Inserire qui lo spessore utilizzato nella vostra azienda.</p>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

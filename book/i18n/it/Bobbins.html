@@ -175,7 +175,7 @@
                     <main>
                         <h1 id="rocchetti"><a class="header" href="#rocchetti">Rocchetti</a></h1>
 <h2 id="introduzione"><a class="header" href="#introduzione">Introduzione</a></h2>
-<p>Questa tabella di rocchetti viene utilizzata dalle applicazioni per gli elementi generici, mentre per gli elementi che devono sottostare alle norme UL esiste una tabella apposita.</p>
+<p>Questa tabella di rocchetti viene utilizzata dalle applicazioni per gli elementi generici, mentre per gli elementi che devono sottostare alle norme UL esiste una tabella apposita. Per la **<strong>START edition</strong> esistono solo gli elementi generici</p>
 <img src="img/Rocchetti.png" height="250px">
 <h3 id="campi-della-tabella-rocchetti"><a class="header" href="#campi-della-tabella-rocchetti">Campi della tabella (Rocchetti)</a></h3>
 <ul>
@@ -221,22 +221,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

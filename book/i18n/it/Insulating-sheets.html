@@ -180,7 +180,7 @@
 <ul>
 <li><strong>Materiale</strong>: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
 <li><strong>Spessore</strong>: inserire lo spessore del foglio isolante.</li>
-<li><strong>Larghezza</strong>: qui è possibile inserire sia la larghezza del semilavorato (se si acquista in rotoli nelle dimensioni STD e si procede al taglio in fabbrica) sia tutte le larghezze corrispondenti alle varie altezze di avvolgimento (se si acquista già tagliata a misura). Le applicazioni controllano se esiste la misura esatta. Se non esiste cercano il semilavorato.<br>
+<li><strong>Larghezza</strong>: qui è possibile inserire sia la larghezza del semilavorato (se si acquista in rotoli nelle dimensioni STD e si procede al taglio in fabbrica) sia tutte le larghezze corrispondenti alle varie altezze di avvolgimento (se si acquista già tagliato a misura). Le applicazioni controllano se esiste la misura esatta. Se non esiste cercano il semilavorato.<br>
 <strong>Kg/m2</strong>: si consiglia di ricavare questo parametro dalle tabelle del fornitore. Altrimenti occorre calcolarlo a partire dallo spessore e dal peso specifico del materiale.</li>
 <li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
 </ul>
@@ -214,22 +214,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

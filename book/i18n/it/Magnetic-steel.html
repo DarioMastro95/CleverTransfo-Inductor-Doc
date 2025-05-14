@@ -176,6 +176,7 @@
                         <h1 id="lamierini"><a class="header" href="#lamierini">Lamierini</a></h1>
 <h2 id="introduzione"><a class="header" href="#introduzione">Introduzione</a></h2>
 <p>In questa tabella si inseriscono i lamierini magnetici a disposizione. È possibile indicare le dimensioni sia del lamierino fornito in forma di bobina sia del lamierino fornito già tagliato a lunghezze normalizzate. Per il lamierino già tagliato è necessario inserire il nr. dei fori per distinguere l’impiego di quest’ultimo nei gioghi o nelle colonne. Il tipo si potrebbe desumere dal materiale ma è stato inserito per un’informazione immediata.</p>
+<img src="img/Lamierino magnetico.png" height="270px">
 <h3 id="campi-della-tabella-lamierini"><a class="header" href="#campi-della-tabella-lamierini">Campi della tabella (Lamierini)</a></h3>
 <ul>
 <li><strong>Materiale</strong>: sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’elenco di tutti i materiali disponibili e potete scegliere la sigla corretta.</li>
@@ -217,22 +218,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
