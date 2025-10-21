@@ -1,5 +1,5 @@
 # Generic elements
-### Table Fields ( Generic elements and UL elements)
+### Table Fields 
 
 - **Norm**: element type coding, which must be strictly respected. If a new element type is to be added, you must contact us for the code.
 - **Phases nr.**: no. of phases of the element.

@@ -1,6 +1,9 @@
-# Generic elements
+# Copper elements
 
-### Table Fields ( Generic elements and UL elements)
+This standardization involves copper windings and non-oriented grain printed lamination. For different conditions, the proportions are not optimized.
+
+
+### Table Fields 
 
 -   **Norm**: element type coding, which must be strictly respected. If a new element type is to be added, you must contact us for the code.
 -   **Phases nr.**: no. of phases of the element.

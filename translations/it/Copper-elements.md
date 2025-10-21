@@ -1,8 +1,8 @@
-# Elementi generici
+# Elementi CU
 
 Questa standardizzazione prevede avvolgimenti in rame e lamierino stampato a grani non orientati NO. Per condizioni differenti il proporzionamento non è ottimizzato.
 
-### Campi della tabella (Elementi generici e Elementi UL)
+### Campi della tabella
 
 -   **Norm**: codifica del tipo di elemento, da rispettare rigorosamente. In caso si debba aggiungere una nuova tipologia di elementi occorre che vi mettiate in contatto con noi per la scelta del codice.
 -   **Nr. fasi** nr. delle fasi dell’elemento.
