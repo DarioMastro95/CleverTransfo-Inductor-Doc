@@ -21,7 +21,7 @@
     -   [Conductors](./Conductors.md)
     -   [Nuts](./Nuts.md)
     -   [Steel ducts](./Steel-ducts.md)
-    -   [Spacers for bobbins](/Spacers-for-bobbins.md)
+    -   [Spacers for bobbins](./Spacers-for-bobbins.md)
     -   [Eyebolts](./Eyebolts.md)
     -   [Sheaths](./Sheaths.md)
     -   [Insulating sheets](./Insulating-sheets.md)
