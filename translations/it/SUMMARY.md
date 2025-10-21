@@ -6,11 +6,15 @@
 -   [Parametri elettrici](./Electrical-parameters.md)
 -   [Coefficienti di stipamento](./Bulging-of-the-windings.md)
 -   [Parametri costruttivi](./Construction-parameters.md)
+
     -   [Lamierino NO](./NO-core.md)
     -   [Lamierino GO](./GO-core.md)
     -   [Lamierino stampato rocchetto](./Printed-lamination-bobbin.md)
     -   [Elementi generici](./Generic-elements.md)
     -   [Elementi UL](./UL-elements.md)
+    -   [Elementi CU](./Copper-elements.md)
+    -   [Elementi AL](./Aluminium-elements.md)
+
 -   [Tabelle dei materiali](./Material-tables.md)
     -   [Aste filettate](./Threaded-rods.md)
     -   [Bussole isolanti](./Insulating-bushes.md)
@@ -19,6 +23,7 @@
     -   [Conduttori](./Conductors.md)
     -   [Dadi](./Nuts.md)
     -   [Distanziatori](./Steel-ducts.md)
+    -   [Distanziatori per rocchetti](./Spacers-for-bobbins.md)
     -   [Golfari](./Eyebolts.md)
     -   [Guaine](./Sheaths.md)
     -   [Fogli isolanti](./Insulating-sheets.md)
