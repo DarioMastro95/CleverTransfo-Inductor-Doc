@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="it" class="light" dir="ltr">
+<html lang="it" class="light sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 
 
         <!-- Custom HTML head -->
-        
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
@@ -25,26 +25,41 @@
         <link rel="stylesheet" href="fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
-    </head>
-    <body class="sidebar-visible no-js">
-    <div id="body-container">
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
-        </script>
 
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -58,70 +73,51 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
+            const html = document.documentElement;
             html.classList.remove('light')
             html.classList.add(theme);
-            var body = document.querySelector('body');
-            body.classList.remove('no-js')
-            body.classList.add('js');
+            html.classList.add("js");
         </script>
 
         <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var body = document.querySelector('body');
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            body.classList.remove('sidebar-visible');
-            body.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="Operating-instructions.html"><strong aria-hidden="true">1.</strong> Interazione tabelle</a></li><li class="chapter-item expanded "><a href="Users.html"><strong aria-hidden="true">2.</strong> Operatori</a></li><li class="chapter-item expanded "><a href="General-settings.html"><strong aria-hidden="true">3.</strong> Impostazioni generali</a></li><li class="chapter-item expanded "><a href="Electrical-parameters.html"><strong aria-hidden="true">4.</strong> Parametri elettrici</a></li><li class="chapter-item expanded "><a href="Bulging-of-the-windings.html"><strong aria-hidden="true">5.</strong> Coefficienti di stipamento</a></li><li class="chapter-item expanded "><a href="Construction-parameters.html"><strong aria-hidden="true">6.</strong> Parametri costruttivi</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="NO-core.html"><strong aria-hidden="true">6.1.</strong> Lamierino NO</a></li><li class="chapter-item expanded "><a href="GO-core.html"><strong aria-hidden="true">6.2.</strong> Lamierino GO</a></li><li class="chapter-item expanded "><a href="Printed-lamination-bobbin.html"><strong aria-hidden="true">6.3.</strong> Lamierino stampato rocchetto</a></li><li class="chapter-item expanded "><a href="Generic-elements.html"><strong aria-hidden="true">6.4.</strong> Elementi generici</a></li><li class="chapter-item expanded "><a href="UL-elements.html"><strong aria-hidden="true">6.5.</strong> Elementi UL</a></li></ol></li><li class="chapter-item expanded "><a href="Material-tables.html"><strong aria-hidden="true">7.</strong> Tabelle dei materiali</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Threaded-rods.html"><strong aria-hidden="true">7.1.</strong> Aste filettate</a></li><li class="chapter-item expanded "><a href="Insulating-bushes.html"><strong aria-hidden="true">7.2.</strong> Bussole isolanti</a></li><li class="chapter-item expanded "><a href="Lugs.html"><strong aria-hidden="true">7.3.</strong> Capicorda</a></li><li class="chapter-item expanded "><a href="Multi-wire-cables.html"><strong aria-hidden="true">7.4.</strong> Cavetti multifilari</a></li><li class="chapter-item expanded "><a href="Conductors.html"><strong aria-hidden="true">7.5.</strong> Conduttori</a></li><li class="chapter-item expanded "><a href="Nuts.html"><strong aria-hidden="true">7.6.</strong> Dadi</a></li><li class="chapter-item expanded "><a href="Steel-ducts.html"><strong aria-hidden="true">7.7.</strong> Distanziatori</a></li><li class="chapter-item expanded "><a href="Eyebolts.html"><strong aria-hidden="true">7.8.</strong> Golfari</a></li><li class="chapter-item expanded "><a href="Sheaths.html"><strong aria-hidden="true">7.9.</strong> Guaine</a></li><li class="chapter-item expanded "><a href="Insulating-sheets.html"><strong aria-hidden="true">7.10.</strong> Fogli isolanti</a></li><li class="chapter-item expanded "><a href="Insulators.html"><strong aria-hidden="true">7.11.</strong> Isolatori</a></li><li class="chapter-item expanded "><a href="Magnetic-steel.html"><strong aria-hidden="true">7.12.</strong> Lamierini</a></li><li class="chapter-item expanded "><a href="Insulating-slabs.html"><strong aria-hidden="true">7.13.</strong> Lastre isolanti</a></li><li class="chapter-item expanded "><a href="Terminal-blocks.html"><strong aria-hidden="true">7.14.</strong> Morsetti</a></li><li class="chapter-item expanded "><a href="Terminal-blocks-ST.html"><strong aria-hidden="true">7.15.</strong> Morsetti ST</a></li><li class="chapter-item expanded "><a href="Thermo-shrink-ribbons.html"><strong aria-hidden="true">7.16.</strong> Nastri termorestringenti</a></li><li class="chapter-item expanded "><a href="U-profiles.html"><strong aria-hidden="true">7.17.</strong> Profili a U</a></li><li class="chapter-item expanded "><a href="Flat-profiles.html"><strong aria-hidden="true">7.18.</strong> Profili piatti</a></li><li class="chapter-item expanded "><a href="Resins-and-varnishes.html"><strong aria-hidden="true">7.19.</strong> Resine e vernici</a></li><li class="chapter-item expanded "><a href="Washers.html"><strong aria-hidden="true">7.20.</strong> Rondelle</a></li><li class="chapter-item expanded "><a href="Bars.html"><strong aria-hidden="true">7.21.</strong> Barre</a></li><li class="chapter-item expanded "><a href="Corner-dog-bones.html"><strong aria-hidden="true">7.22.</strong> Stecche d'angolo</a></li><li class="chapter-item expanded "><a href="Dog-bones.html"><strong aria-hidden="true">7.23.</strong> Stecche in triglass</a></li><li class="chapter-item expanded "><a href="Insulating-tubes.html"><strong aria-hidden="true">7.24.</strong> Tubetti isolanti</a></li><li class="chapter-item expanded "><a href="Screws.html"><strong aria-hidden="true">7.25.</strong> Viti</a></li><li class="chapter-item expanded "><a href="Bobbins.html"><strong aria-hidden="true">7.26.</strong> Rocchetti</a></li><li class="chapter-item expanded "><a href="UL-bobbins.html"><strong aria-hidden="true">7.27.</strong> Rocchetti UL</a></li><li class="chapter-item expanded "><a href="Printed-magnetic-steel.html"><strong aria-hidden="true">7.28.</strong> Lamierini stampati</a></li><li class="chapter-item expanded "><a href="Brackets.html"><strong aria-hidden="true">7.29.</strong> Staffe di serraggio</a></li></ol></li><li class="chapter-item expanded "><a href="Design-rules.html"><strong aria-hidden="true">8.</strong> Regole di progetto</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Winding-insulation.html"><strong aria-hidden="true">8.1.</strong> Isolante tra avvolgimenti</a></li><li class="chapter-item expanded "><a href="Bar-drilling.html"><strong aria-hidden="true">8.2.</strong> Foratura barre</a></li><li class="chapter-item expanded "><a href="Carpentry-details.html"><strong aria-hidden="true">8.3.</strong> Misure carpenteria</a></li><li class="chapter-item expanded "><a href="Default-insulation.html"><strong aria-hidden="true">8.4.</strong> Isolante di default</a></li><li class="chapter-item expanded "><a href="Selecting-output-terminal-type.html"><strong aria-hidden="true">8.5.</strong> Scelta tipo uscite</a></li><li class="chapter-item expanded "><a href="Air-gap-composition.html"><strong aria-hidden="true">8.6.</strong> Composizione traferri</a></li><li class="chapter-item expanded "><a href="Interlayer-insulation-thick.html"><strong aria-hidden="true">8.7.</strong> Isolamento interstrato</a></li></ol></li><li class="chapter-item expanded "><a href="Material-costs.html"><strong aria-hidden="true">9.</strong> Costo unitario materiali</a></li></ol>
-            </div>
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
             </div>
         </nav>
 
-        <!-- Track and set sidebar scroll position -->
-        <script>
-            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
-            sidebarScrollbox.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A') {
-                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
-                }
-            }, { passive: true });
-            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
-            sessionStorage.removeItem('sidebar-scroll');
-            if (sidebarScrollTop) {
-                // preserve sidebar scroll position when navigating via links within sidebar
-                sidebarScrollbox.scrollTop = sidebarScrollTop;
-            } else {
-                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
-                var activeSection = document.querySelector('#sidebar .active');
-                if (activeSection) {
-                    activeSection.scrollIntoView({ block: 'center' });
-                }
-            }
-        </script>
-
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -131,13 +127,14 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -154,7 +151,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -457,6 +459,54 @@ Largh. Lamierino x Spessore Nucleo x 0.965
 <li><strong>Perimetro rocchetto</strong>: perimetro interno del rocchetto, dato di partenza per il calcolo della lunghezza media</li>
 <li><strong>Spessore rocchetto</strong>: spessore delle pareti del rocchetto.</li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="elementi-generici-1"><a class="header" href="#elementi-generici-1">Elementi generici</a></h1>
+<p>Questa standardizzazione prevede avvolgimenti in rame e lamierino stampato a grani non orientati NO. Per condizioni differenti il proporzionamento non è ottimizzato.</p>
+<h3 id="campi-della-tabella-elementi-generici-e-elementi-ul-2"><a class="header" href="#campi-della-tabella-elementi-generici-e-elementi-ul-2">Campi della tabella (Elementi generici e Elementi UL)</a></h3>
+<ul>
+<li><strong>Norm</strong>: codifica del tipo di elemento, da rispettare rigorosamente. In caso si debba aggiungere una nuova tipologia di elementi occorre che vi mettiate in contatto con noi per la scelta del codice.</li>
+<li><strong>Nr. fasi</strong> nr. delle fasi dell’elemento.</li>
+<li><strong>Potenza VA</strong>: potenza di dimensionamento dell’elemento in VA .</li>
+<li><strong>Induzione T</strong>: induzione consigliata (per lamierino NO).</li>
+<li><strong>Tipo lamierino EI</strong>: dimensione principale del lamierino utilizzato.</li>
+<li><strong>Cifra perd. W/kg</strong>: qualità del lamierino utilizzata per questa tabella (esempio: 1.7 , 1.3 o altro).</li>
+<li><strong>Sez. nucleo cm2</strong>: sezione del nucleo (colonna) che si calcola in questo modo:<br>
+Largh. lamierino x Spessore Nucleo x 0.965
+<br>e permette di ottenere la sezione reale, dedotti gli spazi occupati dall’isolante dei singoli lamierini.<br></li>
+<li><strong>Spess. nucleo</strong>: lo spessore del nucleo viene calcolato partendo dalla sezione lorda del nucleo. Deve essere coerente con sezione nucleo e larghezza lamierino.</li>
+<li><strong>Largh. lamierino</strong>: larghezza della colonna avvolta.</li>
+<li><strong>Peso nucleo kg</strong>: peso totale del nucleo magnetico.</li>
+<li><strong>L finestra</strong>: larghezza della finestra. Per larghezza finestra s’intende lo spazio tra le colonne o tra la colonna centrale e la colonna laterale.</li>
+<li><strong>H finestra</strong>: altezza finestra. Per altezza finestra s’intende lo spazio tra i due gioghi.</li>
+<li><strong>Tipo rocchetto</strong>: identificazione del rocchetto in accordo con l'identificazione del fornitore.</li>
+<li><strong>H avvolgimento</strong>: altezza avvolgimento a disposizione nel rocchetto per ospitare l'avvolgimento</li>
+<li><strong>Spess. avvolgimento</strong>: spessore a disposizione nel rocchetto per ospitare l’avvolgimento</li>
+<li><strong>Perimetro rocchetto</strong>: perimetro interno del rocchetto, dato di partenza per il calcolo della lunghezza media del conduttore</li>
+<li><strong>Spessore rocchetto</strong>: spessore delle pareti del rocchetto.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="elementi-generici-2"><a class="header" href="#elementi-generici-2">Elementi generici</a></h1>
+<p>Questa standardizzazione prevede avvolgimenti in rame e lamierino stampato a grani non orientati NO. Per condizioni differenti il proporzionamento non è ottimizzato.</p>
+<h3 id="campi-della-tabella-elementi-generici-e-elementi-ul-3"><a class="header" href="#campi-della-tabella-elementi-generici-e-elementi-ul-3">Campi della tabella (Elementi generici e Elementi UL)</a></h3>
+<ul>
+<li><strong>Norm</strong>: codifica del tipo di elemento, da rispettare rigorosamente. In caso si debba aggiungere una nuova tipologia di elementi occorre che vi mettiate in contatto con noi per la scelta del codice.</li>
+<li><strong>Nr. fasi</strong> nr. delle fasi dell’elemento.</li>
+<li><strong>Potenza VA</strong>: potenza di dimensionamento dell’elemento in VA .</li>
+<li><strong>Induzione T</strong>: induzione consigliata (per lamierino NO).</li>
+<li><strong>Tipo lamierino EI</strong>: dimensione principale del lamierino utilizzato.</li>
+<li><strong>Cifra perd. W/kg</strong>: qualità del lamierino utilizzata per questa tabella (esempio: 1.7 , 1.3 o altro).</li>
+<li><strong>Sez. nucleo cm2</strong>: sezione del nucleo (colonna) che si calcola in questo modo:<br>
+Largh. lamierino x Spessore Nucleo x 0.965
+<br>e permette di ottenere la sezione reale, dedotti gli spazi occupati dall’isolante dei singoli lamierini.<br></li>
+<li><strong>Spess. nucleo</strong>: lo spessore del nucleo viene calcolato partendo dalla sezione lorda del nucleo. Deve essere coerente con sezione nucleo e larghezza lamierino.</li>
+<li><strong>Largh. lamierino</strong>: larghezza della colonna avvolta.</li>
+<li><strong>Peso nucleo kg</strong>: peso totale del nucleo magnetico.</li>
+<li><strong>L finestra</strong>: larghezza della finestra. Per larghezza finestra s’intende lo spazio tra le colonne o tra la colonna centrale e la colonna laterale.</li>
+<li><strong>H finestra</strong>: altezza finestra. Per altezza finestra s’intende lo spazio tra i due gioghi.</li>
+<li><strong>Tipo rocchetto</strong>: identificazione del rocchetto in accordo con l'identificazione del fornitore.</li>
+<li><strong>H avvolgimento</strong>: altezza avvolgimento a disposizione nel rocchetto per ospitare l'avvolgimento</li>
+<li><strong>Spess. avvolgimento</strong>: spessore a disposizione nel rocchetto per ospitare l’avvolgimento</li>
+<li><strong>Perimetro rocchetto</strong>: perimetro interno del rocchetto, dato di partenza per il calcolo della lunghezza media del conduttore</li>
+<li><strong>Spessore rocchetto</strong>: spessore delle pareti del rocchetto.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="tabelle-materiali"><a class="header" href="#tabelle-materiali">Tabelle Materiali</a></h1>
 <h2 id="introduzione-5"><a class="header" href="#introduzione-5">Introduzione</a></h2>
 <p>Le tabelle del sotto-menu contengono  i materiali che vengono utilizzati per la costruzione degli elementi progettati. Esiste una tabella per ciascuna classe di materiali.<br></p>
@@ -614,6 +664,22 @@ Sigla del materiale. Aprendo il menu a tendina del campo Materiale vedete l’el
 <li><strong>Spessore</strong>: spessore del foglio di acciaio dal quale viene ricavato il distanziatore.</li>
 <li><strong>Canale</strong>: spessore del canale di raffreddamento che il distanziatore realizza.</li>
 <li><strong>Articolo</strong>: inserire il codice articolo che questo materiale ha assunto nel vostro sistema gestionale. Questo valore permetterà alle applicazioni di recuperare la descrizione e il costo unitario sulla tabella “Costo unitario Materiali” nella quale viene importata la lista dei materiali presenti nel vostro magazzino.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="distanziatori-per-rocchetti"><a class="header" href="#distanziatori-per-rocchetti">Distanziatori per rocchetti</a></h1>
+<h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
+<p>Steel ducts are used for the formation of <strong>front or side</strong> cooling channels in transformer or inductor windings. They are not suitable for channels along the entire perimeter of the coil. The shape is generally C-shaped as shown in the figure above and there are C-shaped variants with rounded edges.
+They can be made of Ac Zn for transformer core/coil channels. In all other cases, the recommended material is AC 18/10 stainless steel.</p>
+<img src="img/Distanziatori.jpg" height="120px">
+<h3 id="table-fields-steel-ducts"><a class="header" href="#table-fields-steel-ducts">Table fields (steel ducts)</a></h3>
+<ul>
+<li><strong>Code</strong>: material abbreviation. By opening the drop-down menu of the Material field, you see a list of all available materials and can choose the correct abbreviation.</li>
+<li><strong>Number</strong>: the number of steel ducts used for a channel. For standardisation reasons, it is possible to place 2 or even 3 steel ducts side by side in order to achieve the desired channel width. Normally this value is 1.</li>
+<li><strong>Core width</strong>: width of the core column on which the winding is made.</li>
+<li><strong>Width</strong>: width of the steel duct.</li>
+<li><strong>Length</strong>: length of the steel duct. If the steel duct is made from a sheet of metal with a length &gt; the height of the windings. This measurement can be omitted.</li>
+<li><strong>Thickness</strong>: the thickness of the steel sheet from which the steel ducts is cut.</li>
+<li><strong>Channel</strong>: the thickness of the cooling channel that the steel duct produces.</li>
+<li><strong>Article</strong>: To select the material, use the article code of your management system. This value will allow the applications to retrieve the description and unit cost into the table <strong><em>Material Unit Cost</em></strong> by importing the list of materials available in your warehouse.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="golfari"><a class="header" href="#golfari">Golfari</a></h1>
 <h2 id="introduzione-13"><a class="header" href="#introduzione-13">Introduzione</a></h2>
@@ -900,7 +966,7 @@ TC = Vite a testa cilindrica</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rocchetti"><a class="header" href="#rocchetti">Rocchetti</a></h1>
 <h2 id="introduzione-31"><a class="header" href="#introduzione-31">Introduzione</a></h2>
-<p>Questa tabella di rocchetti viene utilizzata dalle applicazioni per gli elementi generici, mentre per gli elementi che devono sottostare alle norme UL esiste una tabella apposita. Per la **<strong>START edition</strong> esistono solo gli elementi generici</p>
+<p>Questa tabella di rocchetti viene utilizzata dalle applicazioni per gli elementi generici, mentre per gli elementi che devono sottostare alle norme UL esiste una tabella apposita. Per la <strong>START edition</strong> esistono solo gli elementi generici</p>
 <img src="img/Rocchetti.png" height="250px">
 <h3 id="campi-della-tabella-rocchetti"><a class="header" href="#campi-della-tabella-rocchetti">Campi della tabella (Rocchetti)</a></h3>
 <ul>
@@ -1244,6 +1310,22 @@ Ovviamente nell’organizzazione iniziale di questo lavoro, occorre decidere qua
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
@@ -1267,6 +1349,7 @@ Ovviamente nell’organizzazione iniziale di questo lavoro, occorre decidere qua
             window.setTimeout(window.print, 100);
         });
         </script>
+
 
     </div>
     </body>
